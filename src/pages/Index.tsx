@@ -298,6 +298,49 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
+              What Our Customers <span style={{ color: "#3B6B96" }}>Say</span>
+            </h2>
+            <p className="text-gray-600 text-lg">272 five-star reviews and counting.</p>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                text: "Fantastic experience all around. Adam and his crew made the repair process seamless. From initial assessment — communication along the way — and interfacing with the insurance company — everything was handled flawlessly. They did what was best for my vehicle to bring it back to 100% after being damaged, not just what was quick and easy.",
+                name: "Stephen H.",
+              },
+              {
+                text: "Adam saw how the fender was pulled out. He offered to put the fender back into position until a permanent repair could be done. He did not want any money. I'm thoroughly impressed by his skill and wanting to help a stranger passing through. I cannot say enough good things about Adam.",
+                name: "Philip A.",
+              },
+              {
+                text: "If you need work done in Charleston, this is the place to go. Very transparent and no BS upselling or anything like that. They truly just want to work with you to get the job done as effectively as possible within your budget. They even cleaned my car after they did the repairs!",
+                name: "Adam E.",
+              },
+            ].map((review, i) => (
+              <motion.div
+                key={i}
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="bg-white rounded-xl border border-gray-200 px-6 py-8 shadow-sm"
+              >
+                <p className="text-gray-600 text-sm leading-relaxed italic mb-4">"{review.text}"</p>
+                <div className="border-t border-gray-100 pt-4">
+                  <p className="font-extrabold text-sm" style={{ color: "#111" }}>{review.name}</p>
+                  <p className="text-xs text-gray-400">Google Review</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Preview — placeholder */}
       <section style={{ backgroundColor: "#000000" }} className="py-20 border-t border-white/5">
         <div className="max-w-[1200px] mx-auto px-6">
