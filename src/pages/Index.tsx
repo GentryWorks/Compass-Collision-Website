@@ -65,16 +65,12 @@ const reasons = [
 ];
 
 const serviceAreas = [
-  { name: "Charleston", link: "/" },
   { name: "North Charleston", link: "/north-charleston" },
   { name: "Mount Pleasant", link: "/mount-pleasant" },
   { name: "Summerville", link: "/summerville" },
   { name: "West Ashley", link: "/west-ashley" },
   { name: "James Island", link: "/james-island" },
   { name: "Goose Creek", link: "/goose-creek" },
-  { name: "Johns Island" },
-  { name: "Kiawah Island" },
-  { name: "Ravenel" },
 ];
 
 const faqs = [
