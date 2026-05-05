@@ -30,7 +30,7 @@ const stats = [
   { value: "2021", label: "Serving Charleston" },
   { value: "20+", label: "Years experience" },
   { value: "100%", label: "Satisfaction focus" },
-  { value: "4", label: "Core services" },
+  { value: "3", label: "Core services" },
 ];
 
 const reasons = [
