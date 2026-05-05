@@ -98,14 +98,6 @@ const faqs = [
 
 const sliderPairs = [
   {
-    label: "Toyota RAV4",
-    before: rav4After,
-    after: rav4Before,
-    beforeAlt: "Toyota RAV4 before collision repair Charleston SC",
-    afterAlt: "Toyota RAV4 after collision repair Charleston SC",
-    thumb: rav4After,
-  },
-  {
     label: "BMW Sedan",
     before: bmwAfter,
     after: bmwBefore,
@@ -120,6 +112,14 @@ const sliderPairs = [
     beforeAlt: "Pickup truck dent before repair Charleston SC",
     afterAlt: "Pickup truck after dent repair Charleston SC",
     thumb: truckAfter,
+  },
+  {
+    label: "Toyota RAV4",
+    before: rav4After,
+    after: rav4Before,
+    beforeAlt: "Toyota RAV4 before collision repair Charleston SC",
+    afterAlt: "Toyota RAV4 after collision repair Charleston SC",
+    thumb: rav4After,
   },
 ];
 
