@@ -47,6 +47,14 @@
           })(window,document,"clarity","script","wmfvxirvdu");
         }, delay);
 
+        // GA4
+        var ga=document.createElement('script');ga.async=true;
+        ga.src='https://www.googletagmanager.com/gtag/js?id=G-667DBCCXJD';
+        document.head.appendChild(ga);
+        window.dataLayer=window.dataLayer||[];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js',new Date());gtag('config','G-667DBCCXJD');
+
         // Ahrefs analytics
         var ah=document.createElement('script');ah.async=true;
         ah.src='https://analytics.ahrefs.com/analytics.js';
