@@ -1,21 +1,34 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { PHONE, PHONE_HREF } from "@/data/constants";
 import logo from "@/assets/compass-collision-logo.webp";
 
-const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "Collision Repair", to: "/collision-repair" },
-  { label: "Dent Repair", to: "/dent-repair" },
-  { label: "Auto Painting", to: "/auto-painting" },
-  { label: "About", to: "/about" },
-  { label: "Gallery", to: "/gallery" },
-  { label: "Contact", to: "/contact" },
+const serviceAreas = [
+  { label: "North Charleston", to: "/north-charleston" },
+  { label: "Mount Pleasant", to: "/mount-pleasant" },
+  { label: "Summerville", to: "/summerville" },
+  { label: "West Ashley", to: "/west-ashley" },
+  { label: "James Island", to: "/james-island" },
+  { label: "Goose Creek", to: "/goose-creek" },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [areasOpen, setAreasOpen] = useState(false);
+  const [mobileAreasOpen, setMobileAreasOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setAreasOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
@@ -27,16 +40,94 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+          <Link
+            to="/"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Home
+          </Link>
+          <Link
+            to="/collision-repair"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Collision Repair
+          </Link>
+          <Link
+            to="/dent-repair"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Dent Repair
+          </Link>
+          <Link
+            to="/auto-painting"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Auto Painting
+          </Link>
+
+          {/* Service Areas Dropdown */}
+          <div ref={dropdownRef} className="relative">
+            <button
+              onClick={() => setAreasOpen(!areasOpen)}
+              className="flex items-center gap-1 text-xs font-bold uppercase tracking-wide hover:opacity-70 transition-opacity"
               style={{ color: "#000" }}
             >
-              {link.label}
-            </Link>
-          ))}
+              Service Areas
+              <ChevronDown
+                className="w-3.5 h-3.5 transition-transform duration-200"
+                style={{ transform: areasOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+              />
+            </button>
+            {areasOpen && (
+              <div className="absolute top-full mt-2 left-0 bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[180px]">
+                {serviceAreas.map((area) => (
+                  <Link
+                    key={area.to}
+                    to={area.to}
+                    onClick={() => setAreasOpen(false)}
+                    className="block px-4 py-2 text-xs font-bold uppercase tracking-wide no-underline hover:bg-gray-50 transition-colors"
+                    style={{ color: "#000" }}
+                  >
+                    {area.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link
+            to="/about"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            About
+          </Link>
+          <Link
+            to="/gallery"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Gallery
+          </Link>
+          <Link
+            to="/blog"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Blog
+          </Link>
+          <Link
+            to="/contact"
+            className="text-xs font-bold uppercase tracking-wide no-underline hover:opacity-70 transition-opacity"
+            style={{ color: "#000" }}
+          >
+            Contact
+          </Link>
+
           <a
             href={PHONE_HREF}
             className="inline-flex items-center gap-2 text-white font-extrabold uppercase tracking-wide text-xs px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity no-underline"
@@ -70,17 +161,58 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200 px-6 py-4">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              onClick={() => setMobileOpen(false)}
-              className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100"
-              style={{ color: "#000" }}
-            >
-              {link.label}
-            </Link>
-          ))}
+          <Link to="/" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            Home
+          </Link>
+          <Link to="/collision-repair" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            Collision Repair
+          </Link>
+          <Link to="/dent-repair" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            Dent Repair
+          </Link>
+          <Link to="/auto-painting" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            Auto Painting
+          </Link>
+
+          {/* Mobile Service Areas Accordion */}
+          <button
+            onClick={() => setMobileAreasOpen(!mobileAreasOpen)}
+            className="w-full flex items-center justify-between py-3 text-sm font-bold uppercase tracking-wide border-b border-gray-100"
+            style={{ color: "#000" }}
+          >
+            Service Areas
+            <ChevronDown
+              className="w-4 h-4 transition-transform duration-200"
+              style={{ transform: mobileAreasOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+            />
+          </button>
+          {mobileAreasOpen && (
+            <div className="pl-4 border-b border-gray-100">
+              {serviceAreas.map((area) => (
+                <Link
+                  key={area.to}
+                  to={area.to}
+                  onClick={() => { setMobileOpen(false); setMobileAreasOpen(false); }}
+                  className="block py-2.5 text-sm font-semibold no-underline text-gray-600 hover:text-black transition-colors"
+                >
+                  {area.label}
+                </Link>
+              ))}
+            </div>
+          )}
+
+          <Link to="/about" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            About
+          </Link>
+          <Link to="/gallery" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            Gallery
+          </Link>
+          <Link to="/blog" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline border-b border-gray-100" style={{ color: "#000" }}>
+            Blog
+          </Link>
+          <Link to="/contact" onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-bold uppercase tracking-wide no-underline" style={{ color: "#000" }}>
+            Contact
+          </Link>
         </div>
       )}
     </nav>

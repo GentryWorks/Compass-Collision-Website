@@ -200,7 +200,7 @@ const Index = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {stats.map((s, i) => (
               <div key={i}>
-                <p className="text-4xl font-extrabold mb-1 text-white">{s.value}</p>
+                <p className="text-4xl font-extrabold mb-1" style={{ color: s.value === "20+" ? "#000" : "#fff" }}>{s.value}</p>
                 <p className="text-[#9AB8D3] text-sm uppercase tracking-widest font-semibold">{s.label}</p>
               </div>
             ))}
