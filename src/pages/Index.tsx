@@ -361,8 +361,8 @@ const Index = () => {
             </p>
           </div>
           <BeforeAfterSlider
-            beforeSrc={rav4Before}
-            afterSrc={rav4After}
+            beforeSrc={rav4After}
+            afterSrc={rav4Before}
             beforeAlt="Toyota RAV4 before collision repair Charleston SC"
             afterAlt="Toyota RAV4 after collision repair Charleston SC"
             beforeLabel="Before"
