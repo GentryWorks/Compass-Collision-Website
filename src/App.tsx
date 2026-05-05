@@ -1,5 +1,7 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Pages
 const Index = lazy(() => import("./pages/Index"));
@@ -24,7 +26,8 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const AppLayout = () => {
   return (
     <>
-      <main>
+      <Navbar />
+      <main className="pt-16">
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -48,6 +51,7 @@ const AppLayout = () => {
           </Routes>
         </Suspense>
       </main>
+      <Footer />
     </>
   );
 };
