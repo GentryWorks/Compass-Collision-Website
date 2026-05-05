@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Wrench, Paintbrush, CircleDot, MapPin, ChevronDown, Star, Shield, Clock, Users } from "lucide-react";
 import { PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import rav4Before from "@/assets/toyota-rav4-collision-repair-after-side-charleston.webp";
+import rav4After from "@/assets/toyota-rav4-collision-repair-after-charleston.webp";
 
 const services = [
   {
@@ -346,28 +349,25 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Gallery Preview — placeholder */}
+      {/* Before & After Slider */}
       <section style={{ backgroundColor: "#000000" }} className="py-20 border-t border-white/5">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              Our <span style={{ color: "#5A8DB8" }}>Work</span>
+              See the <span style={{ color: "#5A8DB8" }}>Difference</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Real repairs on real cars. Photos coming soon.
+              Drag the slider to compare. Every repair leaves looking factory fresh.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[1, 2, 3, 4, 5, 6].map((_, i) => (
-              <div
-                key={i}
-                className="rounded-xl border border-white/10 aspect-[4/3] flex items-center justify-center"
-                style={{ backgroundColor: "#1a1a1a" }}
-              >
-                <p className="text-gray-500 text-sm font-semibold uppercase tracking-wide">Photo {i + 1}</p>
-              </div>
-            ))}
-          </div>
+          <BeforeAfterSlider
+            beforeSrc={rav4Before}
+            afterSrc={rav4After}
+            beforeAlt="Toyota RAV4 before collision repair Charleston SC"
+            afterAlt="Toyota RAV4 after collision repair Charleston SC"
+            beforeLabel="Before"
+            afterLabel="After"
+          />
           <div className="text-center mt-10">
             <Link
               to="/gallery"
