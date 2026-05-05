@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 — Logo + NAP + Hours */}
           <div>
-            <img src={logoWhite} alt="Compass Collision" className="h-16 w-auto mb-6" width={400} height={400} />
+            <img src={logoWhite} alt="Compass Collision" className="h-20 w-auto mb-6" width={400} height={400} />
 
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-start gap-2">

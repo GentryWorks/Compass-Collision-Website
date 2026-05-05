@@ -19,10 +19,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-      <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-16">
+      <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline">
-          <img src={logo} alt="Compass Collision" className="h-12 w-auto" width={400} height={400} />
+          <img src={logo} alt="Compass Collision" className="h-16 w-auto" width={400} height={400} />
         </Link>
 
         {/* Desktop Nav */}

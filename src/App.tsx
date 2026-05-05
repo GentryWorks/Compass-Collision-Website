@@ -27,7 +27,7 @@ const AppLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      <main className="pt-20">
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Index />} />
