@@ -7,6 +7,10 @@ import { PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import rav4Before from "@/assets/toyota-rav4-collision-repair-after-side-charleston.webp";
 import rav4After from "@/assets/toyota-rav4-collision-repair-after-charleston.webp";
+import bmwBefore from "@/assets/bmw-sedan-collision-repair-before-charleston.webp";
+import bmwAfter from "@/assets/bmw-sedan-collision-repair-during-charleston.webp";
+import truckBefore from "@/assets/collision-repair-truck-bed-dent-during-charleston.webp";
+import truckAfter from "@/assets/collision-repair-truck-panel-prep-during-charleston.webp";
 
 const services = [
   {
@@ -91,8 +95,36 @@ const faqs = [
   },
 ];
 
+const sliderPairs = [
+  {
+    label: "Toyota RAV4",
+    before: rav4After,
+    after: rav4Before,
+    beforeAlt: "Toyota RAV4 before collision repair Charleston SC",
+    afterAlt: "Toyota RAV4 after collision repair Charleston SC",
+    thumb: rav4After,
+  },
+  {
+    label: "BMW Sedan",
+    before: bmwBefore,
+    after: bmwAfter,
+    beforeAlt: "BMW sedan before collision repair Charleston SC",
+    afterAlt: "BMW sedan after collision repair Charleston SC",
+    thumb: bmwAfter,
+  },
+  {
+    label: "Pickup Truck",
+    before: truckBefore,
+    after: truckAfter,
+    beforeAlt: "Pickup truck dent before repair Charleston SC",
+    afterAlt: "Pickup truck after dent repair Charleston SC",
+    thumb: truckAfter,
+  },
+];
+
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [activeSlider, setActiveSlider] = useState(0);
 
   return (
     <>
@@ -361,13 +393,36 @@ const Index = () => {
             </p>
           </div>
           <BeforeAfterSlider
-            beforeSrc={rav4After}
-            afterSrc={rav4Before}
-            beforeAlt="Toyota RAV4 before collision repair Charleston SC"
-            afterAlt="Toyota RAV4 after collision repair Charleston SC"
+            key={activeSlider}
+            beforeSrc={sliderPairs[activeSlider].before}
+            afterSrc={sliderPairs[activeSlider].after}
+            beforeAlt={sliderPairs[activeSlider].beforeAlt}
+            afterAlt={sliderPairs[activeSlider].afterAlt}
             beforeLabel="Before"
             afterLabel="After"
           />
+          {/* Thumbnail selector */}
+          <div className="flex justify-center gap-3 mt-6">
+            {sliderPairs.map((pair, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveSlider(i)}
+                className={`rounded-lg overflow-hidden border-2 transition-all ${
+                  activeSlider === i ? "border-[#3B6B96] opacity-100" : "border-transparent opacity-50 hover:opacity-75"
+                }`}
+              >
+                <img
+                  src={pair.thumb}
+                  alt={pair.label}
+                  className="w-24 h-16 sm:w-32 sm:h-20 object-cover"
+                  loading="lazy"
+                />
+                <p className="text-[10px] font-bold uppercase tracking-wide text-gray-400 py-1.5 bg-black/80">
+                  {pair.label}
+                </p>
+              </button>
+            ))}
+          </div>
           <div className="text-center mt-10">
             <Link
               to="/gallery"
