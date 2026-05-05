@@ -7,19 +7,19 @@ import { PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
 
 const services = [
   {
-    icon: <Wrench className="w-7 h-7" style={{ color: "#1E40AF" }} />,
+    icon: <Wrench className="w-7 h-7" style={{ color: "#3B6B96" }} />,
     title: "Collision Repair",
     description: "Fender benders to major wrecks. We restore your car to the way it looked before the accident. We work with all insurance companies.",
     link: "/collision-repair",
   },
   {
-    icon: <CircleDot className="w-7 h-7" style={{ color: "#1E40AF" }} />,
+    icon: <CircleDot className="w-7 h-7" style={{ color: "#3B6B96" }} />,
     title: "Dent Repair",
     description: "Parking lot dings. Door dents. Hail damage. We remove dents without affecting your factory paint whenever possible.",
     link: "/dent-repair",
   },
   {
-    icon: <Paintbrush className="w-7 h-7" style={{ color: "#1E40AF" }} />,
+    icon: <Paintbrush className="w-7 h-7" style={{ color: "#3B6B96" }} />,
     title: "Auto Painting",
     description: "Panel painting. Bumper refinishing. Color matching down to the exact factory code. Your repair will be invisible.",
     link: "/auto-painting",
@@ -140,7 +140,7 @@ const Index = () => {
       </Helmet>
 
       {/* Trust Bar */}
-      <div style={{ backgroundColor: "#1E40AF" }} className="text-white text-[13px] font-semibold py-2.5 px-4">
+      <div style={{ backgroundColor: "#3B6B96" }} className="text-white text-[13px] font-semibold py-2.5 px-4">
         <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 text-center">
           <span>Serving Charleston Since 2021</span>
           <span>Insurance Claims Welcome</span>
@@ -149,8 +149,8 @@ const Index = () => {
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#0F172A" }}>
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900" />
+      <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#000000" }}>
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-black via-[#1a1a1a] to-black" />
         <div className="max-w-[1200px] mx-auto px-6 z-10 w-full py-20">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -160,13 +160,13 @@ const Index = () => {
           >
             <div
               className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6"
-              style={{ backgroundColor: "#1E40AF" }}
+              style={{ backgroundColor: "#3B6B96" }}
             >
               Charleston's Trusted Body Shop
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Auto Body Shop
-              <span className="block" style={{ color: "#60A5FA" }}>
+              <span className="block" style={{ color: "#5A8DB8" }}>
                 Charleston, SC.
               </span>
             </h1>
@@ -177,7 +177,7 @@ const Index = () => {
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#1E40AF" }}
+                style={{ backgroundColor: "#3B6B96" }}
               >
                 Get Free Estimate
               </Link>
@@ -195,13 +195,13 @@ const Index = () => {
       </section>
 
       {/* Stats Bar */}
-      <section style={{ backgroundColor: "#1E40AF" }} className="py-12">
+      <section style={{ backgroundColor: "#3B6B96" }} className="py-12">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {stats.map((s, i) => (
               <div key={i}>
                 <p className="text-4xl font-extrabold mb-1 text-white">{s.value}</p>
-                <p className="text-blue-200 text-sm uppercase tracking-widest font-semibold">{s.label}</p>
+                <p className="text-[#9AB8D3] text-sm uppercase tracking-widest font-semibold">{s.label}</p>
               </div>
             ))}
           </div>
@@ -212,7 +212,7 @@ const Index = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-center" style={{ color: "#111" }}>
-            Charleston's Honest <span style={{ color: "#1E40AF" }}>Auto Body Shop</span>
+            Charleston's Honest <span style={{ color: "#3B6B96" }}>Auto Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Your car got hit. Now you need it fixed. You need someone who tells you the truth about what it costs and how long it takes. That is what we do at Compass Collision.
@@ -234,7 +234,7 @@ const Index = () => {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
-              What We <span style={{ color: "#1E40AF" }}>Fix</span>
+              What We <span style={{ color: "#3B6B96" }}>Fix</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
               Three core services. All done in-house by our own team.
@@ -248,7 +248,7 @@ const Index = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="bg-white rounded-xl border border-gray-200 px-6 py-8 shadow-sm hover:border-blue-300 transition-colors"
+                className="bg-white rounded-xl border border-gray-200 px-6 py-8 shadow-sm hover:border-[#3B6B96] transition-colors"
               >
                 <div className="mb-4">{s.icon}</div>
                 <h3 className="font-extrabold text-base uppercase tracking-wide mb-3" style={{ color: "#111" }}>
@@ -258,7 +258,7 @@ const Index = () => {
                 <Link
                   to={s.link}
                   className="text-sm font-bold uppercase tracking-wide no-underline hover:opacity-80 transition-opacity"
-                  style={{ color: "#1E40AF" }}
+                  style={{ color: "#3B6B96" }}
                 >
                   Learn More →
                 </Link>
@@ -269,11 +269,11 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section style={{ backgroundColor: "#0F172A" }} className="py-20">
+      <section style={{ backgroundColor: "#000000" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              Why Charleston Trusts <span style={{ color: "#60A5FA" }}>Compass Collision</span>
+              Why Charleston Trusts <span style={{ color: "#5A8DB8" }}>Compass Collision</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
               We care about people more than money. That shows up in every repair we do.
@@ -289,7 +289,7 @@ const Index = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="rounded-xl px-6 py-8 border border-white/10"
               >
-                <div className="mb-4 text-blue-400">{r.icon}</div>
+                <div className="mb-4 text-[#5A8DB8]">{r.icon}</div>
                 <h3 className="font-extrabold text-sm uppercase tracking-wide mb-3 text-white">{r.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{r.description}</p>
               </motion.div>
@@ -299,11 +299,11 @@ const Index = () => {
       </section>
 
       {/* Gallery Preview — placeholder */}
-      <section style={{ backgroundColor: "#0F172A" }} className="py-20 border-t border-white/5">
+      <section style={{ backgroundColor: "#000000" }} className="py-20 border-t border-white/5">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              Our <span style={{ color: "#60A5FA" }}>Work</span>
+              Our <span style={{ color: "#5A8DB8" }}>Work</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
               Real repairs on real cars. Photos coming soon.
@@ -314,7 +314,7 @@ const Index = () => {
               <div
                 key={i}
                 className="rounded-xl border border-white/10 aspect-[4/3] flex items-center justify-center"
-                style={{ backgroundColor: "#1E293B" }}
+                style={{ backgroundColor: "#1a1a1a" }}
               >
                 <p className="text-gray-500 text-sm font-semibold uppercase tracking-wide">Photo {i + 1}</p>
               </div>
@@ -336,7 +336,7 @@ const Index = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center" style={{ color: "#111" }}>
-            How It <span style={{ color: "#1E40AF" }}>Works</span>
+            How It <span style={{ color: "#3B6B96" }}>Works</span>
           </h2>
           <div className="space-y-8">
             {[
@@ -371,7 +371,7 @@ const Index = () => {
               >
                 <div
                   className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-extrabold text-sm"
-                  style={{ backgroundColor: "#1E40AF" }}
+                  style={{ backgroundColor: "#3B6B96" }}
                 >
                   {item.step}
                 </div>
@@ -392,7 +392,7 @@ const Index = () => {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
-              Common <span style={{ color: "#1E40AF" }}>Questions</span>
+              Common <span style={{ color: "#3B6B96" }}>Questions</span>
             </h2>
           </div>
           <div className="flex flex-col gap-3">
@@ -407,7 +407,7 @@ const Index = () => {
                   </span>
                   <ChevronDown
                     className="w-5 h-5 flex-shrink-0 ml-4 transition-transform duration-300"
-                    style={{ color: "#1E40AF", transform: openFaq === i ? "rotate(180deg)" : "rotate(0deg)" }}
+                    style={{ color: "#3B6B96", transform: openFaq === i ? "rotate(180deg)" : "rotate(0deg)" }}
                   />
                 </button>
                 <AnimatePresence>
@@ -430,7 +430,7 @@ const Index = () => {
             <Link
               to="/faq"
               className="text-sm font-bold uppercase tracking-wide hover:opacity-80 transition-opacity no-underline"
-              style={{ color: "#1E40AF" }}
+              style={{ color: "#3B6B96" }}
             >
               View All FAQs →
             </Link>
@@ -443,7 +443,7 @@ const Index = () => {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
-              Serving the <span style={{ color: "#1E40AF" }}>Charleston Area</span>
+              Serving the <span style={{ color: "#3B6B96" }}>Charleston Area</span>
             </h2>
             <p className="text-gray-500 text-base">{ADDRESS}</p>
           </div>
@@ -451,7 +451,7 @@ const Index = () => {
             {serviceAreas.map((area, i) => {
               const inner = (
                 <span className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-5 py-2.5 shadow-sm">
-                  <MapPin className="w-4 h-4" style={{ color: "#1E40AF" }} />
+                  <MapPin className="w-4 h-4" style={{ color: "#3B6B96" }} />
                   <span className="text-sm font-bold" style={{ color: "#111" }}>{area.name}</span>
                 </span>
               );
@@ -468,10 +468,10 @@ const Index = () => {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ backgroundColor: "#1E40AF" }} className="py-20">
+      <section style={{ backgroundColor: "#3B6B96" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ready to Get Your <span style={{ color: "#0F172A" }}>Car Fixed?</span>
+            Ready to Get Your <span style={{ color: "#000000" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate in minutes. No pressure. No obligation. Just an honest price from people who do the work.
@@ -480,7 +480,7 @@ const Index = () => {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#0F172A" }}
+              style={{ backgroundColor: "#000000" }}
             >
               Get Free Estimate
             </Link>
