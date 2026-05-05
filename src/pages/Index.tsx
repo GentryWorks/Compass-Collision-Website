@@ -330,6 +330,11 @@ const Index = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="bg-white rounded-xl border border-gray-200 px-6 py-8 shadow-sm"
               >
+                <div className="flex gap-1 mb-3">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star key={s} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
                 <p className="text-gray-600 text-sm leading-relaxed italic mb-4">"{review.text}"</p>
                 <div className="border-t border-gray-100 pt-4">
                   <p className="font-extrabold text-sm" style={{ color: "#111" }}>{review.name}</p>
