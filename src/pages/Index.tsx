@@ -37,7 +37,7 @@ const services = [
 const stats = [
   { value: "2021", label: "Serving Charleston" },
   { value: "20+", label: "Years experience" },
-  { value: "100%", label: "Satisfaction focus" },
+  { value: "272", label: "Five-star reviews" },
   { value: "3", label: "Core services" },
 ];
 
@@ -175,6 +175,7 @@ const Index = () => {
       <div style={{ backgroundColor: "#2D5F5D" }} className="text-white text-[13px] font-semibold py-2.5 px-4">
         <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 text-center">
           <span>Serving Charleston Since 2021</span>
+          <span>272 Five-Star Google Reviews</span>
           <span>Insurance Claims Welcome</span>
           <span>Free Estimates</span>
         </div>
@@ -225,6 +226,20 @@ const Index = () => {
               </a>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Stats Bar */}
+      <section style={{ backgroundColor: "#2D5F5D" }} className="py-12">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+            {stats.map((s, i) => (
+              <div key={i}>
+                <p className="text-4xl font-extrabold mb-1 text-white">{s.value}</p>
+                <p className="text-[#6BA3A0] text-sm uppercase tracking-widest font-semibold">{s.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
