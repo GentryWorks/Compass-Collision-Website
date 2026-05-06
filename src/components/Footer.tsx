@@ -37,23 +37,23 @@ const Footer = () => {
 
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#3B6B96" }} />
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#8da8a2" }} />
                 <span>{ADDRESS}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 flex-shrink-0" style={{ color: "#3B6B96" }} />
+                <Phone className="w-4 h-4 flex-shrink-0" style={{ color: "#8da8a2" }} />
                 <a href={PHONE_HREF} className="no-underline text-gray-400 hover:text-white transition-colors">
                   {PHONE}
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 flex-shrink-0" style={{ color: "#3B6B96" }} />
+                <Mail className="w-4 h-4 flex-shrink-0" style={{ color: "#8da8a2" }} />
                 <a href={`mailto:${EMAIL}`} className="no-underline text-gray-400 hover:text-white transition-colors">
                   {EMAIL}
                 </a>
               </div>
               <div className="flex items-start gap-2 pt-2">
-                <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#3B6B96" }} />
+                <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#8da8a2" }} />
                 <div>
                   <p>Mon–Thu: 8am–4pm</p>
                   <p>Fri: 8am–12pm</p>
