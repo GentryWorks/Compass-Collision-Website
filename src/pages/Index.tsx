@@ -116,6 +116,7 @@ const sliderPairs = [
     beforeAlt: "Motorcycle gas tank before custom paint Charleston SC",
     afterAlt: "Motorcycle gas tank after custom paint Charleston SC",
     thumb: motoTankAfter,
+    objectFit: "contain" as const,
   },
 ];
 
@@ -261,6 +262,7 @@ const Index = () => {
             afterAlt={sliderPairs[activeSlider].afterAlt}
             beforeLabel="Before"
             afterLabel="After"
+            objectFit={sliderPairs[activeSlider].objectFit || "cover"}
           />
           {/* Thumbnail selector */}
           <div className="flex justify-center gap-3 mt-6">
