@@ -160,7 +160,7 @@ const About = () => {
                 95+ Years of <span style={{ color: "#2D5F5D" }}>Experience</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
-                Our team brings more than two decades of hands-on collision repair experience. We repair all makes and models — cars, trucks, and SUVs. Foreign and domestic.
+                Our team brings a combined 95+ years of hands-on collision repair experience. We repair all makes and models — cars, trucks, and SUVs. Foreign and domestic.
               </p>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
                 We handle everything in-house. <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Collision repair</Link>. <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Dent repair</Link>. <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Auto painting</Link> and color matching. No subcontracting. No outsourcing. Your car stays in our shop from start to finish.
