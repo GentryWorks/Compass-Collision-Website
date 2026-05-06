@@ -100,11 +100,11 @@ const BeforeAfterSlider = ({
       >
         {/* Slider handle */}
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center"
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M6 10L2 10M2 10L4.5 7.5M2 10L4.5 12.5" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M14 10L18 10M18 10L15.5 7.5M18 10L15.5 12.5" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
+            <path d="M6 10L2 10M2 10L4.5 7.5M2 10L4.5 12.5" stroke="#2D5F5D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M14 10L18 10M18 10L15.5 7.5M18 10L15.5 12.5" stroke="#2D5F5D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
       </div>
