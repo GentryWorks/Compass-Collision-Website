@@ -111,13 +111,13 @@ const BeforeAfterSlider = ({
 
       {/* Labels — fade based on slider position */}
       <div
-        className="absolute top-4 left-4 z-20 bg-black/60 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full transition-opacity"
+        className="absolute top-4 left-4 z-20 bg-[#2D5F5D] text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full transition-opacity"
         style={{ opacity: sliderPos > 10 ? 1 : 0 }}
       >
         {beforeLabel}
       </div>
       <div
-        className="absolute top-4 right-4 z-20 bg-black/60 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full transition-opacity"
+        className="absolute top-4 right-4 z-20 bg-[#2D5F5D] text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-full transition-opacity"
         style={{ opacity: sliderPos < 90 ? 1 : 0 }}
       >
         {afterLabel}
