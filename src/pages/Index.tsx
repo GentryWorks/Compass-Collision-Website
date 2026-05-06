@@ -357,7 +357,7 @@ const Index = () => {
                 className="rounded-xl px-6 py-8"
                 style={{ backgroundColor: "#2D5F5D" }}
               >
-                <div className="mb-4 text-[#4A8A87]">{r.icon}</div>
+                <div className="mb-4 text-[#242021]">{r.icon}</div>
                 <h3 className="font-extrabold text-sm uppercase tracking-wide mb-3 text-white">{r.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{r.description}</p>
               </motion.div>
