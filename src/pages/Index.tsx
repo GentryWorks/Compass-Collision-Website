@@ -182,7 +182,7 @@ const Index = () => {
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#646567" }}>
+      <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#242021" }}>
         <div className="absolute inset-0 z-0">
           <img src={heroImg} alt="Camaro ZL1 collision repair Charleston SC" className="w-full h-full object-cover opacity-40" loading="eager" fetchPriority="high" width={1800} height={1200} />
         </div>
@@ -244,7 +244,7 @@ const Index = () => {
       </section>
 
       {/* Before & After Slider */}
-      <section style={{ backgroundColor: "#646567" }} className="py-20">
+      <section style={{ backgroundColor: "#242021" }} className="py-20">
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
@@ -337,7 +337,7 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section style={{ backgroundColor: "#646567" }} className="py-20">
+      <section style={{ backgroundColor: "#242021" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
@@ -574,7 +574,7 @@ const Index = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ready to Get Your <span style={{ color: "#646567" }}>Car Fixed?</span>
+            Ready to Get Your <span style={{ color: "#242021" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate in minutes. No pressure. No obligation. Just an honest price from people who do the work.
@@ -583,7 +583,7 @@ const Index = () => {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#646567" }}
+              style={{ backgroundColor: "#242021" }}
             >
               Get Free Estimate
             </Link>
