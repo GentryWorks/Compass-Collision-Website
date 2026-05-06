@@ -176,7 +176,6 @@ const Index = () => {
         <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 text-center">
           <span>Serving Charleston Since 2021</span>
           <span>272 Five-Star Google Reviews</span>
-          <span>Insurance Claims Welcome</span>
           <span>Free Estimates</span>
         </div>
       </div>
