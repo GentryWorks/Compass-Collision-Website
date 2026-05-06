@@ -175,7 +175,7 @@ const GooseCreek = () => {
             {[
               "Estimators who do the work — honest prices from hands-on experience",
               "All insurance companies accepted and claims handled for you",
-              "20+ years of collision repair experience in the industry",
+              "95+ years of collision repair experience in the industry",
               "272 five-star Google reviews from Charleston area customers",
               "All work done in-house — no subcontracting",
               "Realistic timelines and on-time delivery",

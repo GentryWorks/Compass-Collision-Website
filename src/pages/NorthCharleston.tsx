@@ -217,7 +217,7 @@ const NorthCharleston = () => {
             {[
               "The people writing your estimate actually do the repairs — your price is accurate from day one",
               "We work with all insurance companies and handle the entire claims process",
-              "20+ years of collision repair experience",
+              "95+ years of collision repair experience",
               "272 five-star Google reviews from customers across the Charleston area",
               "All work done in-house — no subcontracting, no outsourcing",
               "Honest timelines and on-time delivery",

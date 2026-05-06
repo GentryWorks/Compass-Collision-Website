@@ -175,7 +175,7 @@ const WestAshley = () => {
               "Located right in West Ashley — most neighbors are less than 10 minutes away",
               "Estimators who do the repairs — your price is honest from the start",
               "All insurance companies accepted and claims handled for you",
-              "20+ years of collision repair experience",
+              "95+ years of collision repair experience",
               "272 five-star Google reviews",
               "All work done in-house — no subcontracting",
             ].map((item, i) => (

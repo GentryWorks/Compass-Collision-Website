@@ -37,7 +37,7 @@ const About = () => {
     url: DOMAIN,
     logo: `${DOMAIN}/compass-collision-logo.webp`,
     foundingDate: "2021",
-    description: "Family-owned auto body and collision repair shop in Charleston, SC. 20+ years of industry experience. Honest estimates from technicians who do the work.",
+    description: "Family-owned auto body and collision repair shop in Charleston, SC. 95+ years of industry experience. Honest estimates from technicians who do the work.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "1949 Dulsey Road, Unit 202",
@@ -67,7 +67,7 @@ const About = () => {
         <title>About Compass Collision | Charleston SC Auto Body Shop</title>
         <meta
           name="description"
-          content="Family-owned auto body shop in Charleston, SC. 20+ years experience, BMW certified. Honest estimates from techs who do the work. Call (843) 380-7055."
+          content="Family-owned auto body shop in Charleston, SC. 95+ years experience, BMW certified. Honest estimates from techs who do the work. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/about`} />
         <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
@@ -120,7 +120,7 @@ const About = () => {
             Our <span style={{ color: "#2D5F5D" }}>Story</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Compass Collision opened in March 2021. But the experience behind it goes back more than 20 years in the collision repair industry. We opened our doors in Charleston because we saw too many body shops where the person writing the estimate had never actually done the repair.
+            Compass Collision opened in March 2021. But the experience behind it goes back more than 95 combined years in the collision repair industry. We opened our doors in Charleston because we saw too many body shops where the person writing the estimate had never actually done the repair.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             That gap between the estimator and the technician is where surprises happen. Inaccurate quotes. Unexpected delays. Repairs that don't hold up. We built this shop to fix that problem.
@@ -157,7 +157,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h2 className="text-3xl font-extrabold mb-4" style={{ color: "#111" }}>
-                20+ Years of <span style={{ color: "#2D5F5D" }}>Experience</span>
+                95+ Years of <span style={{ color: "#2D5F5D" }}>Experience</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
                 Our team brings more than two decades of hands-on collision repair experience. We repair all makes and models — cars, trucks, and SUVs. Foreign and domestic.

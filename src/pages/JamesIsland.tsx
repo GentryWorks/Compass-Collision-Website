@@ -175,7 +175,7 @@ const JamesIsland = () => {
               "Just 10 to 15 minutes from James Island",
               "Estimators who do the work — accurate pricing from day one",
               "All insurance companies accepted and claims handled for you",
-              "20+ years of collision repair experience",
+              "95+ years of collision repair experience",
               "272 five-star Google reviews",
               "No subcontracting — every repair stays in our shop",
             ].map((item, i) => (

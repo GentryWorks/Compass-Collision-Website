@@ -171,7 +171,7 @@ const Summerville = () => {
             {[
               "Estimators who actually do the work — honest prices from real experience",
               "We handle all insurance companies and claims paperwork",
-              "20+ years of collision repair experience in the industry",
+              "95+ years of collision repair experience in the industry",
               "272 five-star Google reviews from Charleston area customers",
               "No subcontracting — your car stays in our shop from start to finish",
               "On-time delivery with realistic timelines",

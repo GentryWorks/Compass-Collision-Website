@@ -329,7 +329,7 @@ const CollisionRepair = () => {
             We repair all makes and models. Cars, trucks, SUVs. Foreign and domestic. Whether you drive a Honda Civic or a BMW M5, we have the tools and experience to restore it to factory condition.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            With 20+ years of experience in the collision repair industry and 272 five-star Google reviews, Charleston trusts us to get the job done right.
+            With 95+ years of experience in the collision repair industry and 272 five-star Google reviews, Charleston trusts us to get the job done right.
           </p>
         </div>
       </section>

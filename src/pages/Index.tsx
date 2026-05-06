@@ -36,7 +36,7 @@ const services = [
 
 const stats = [
   { value: "2021", label: "Serving Charleston" },
-  { value: "20+", label: "Years experience" },
+  { value: "95+", label: "Years combined experience" },
   { value: "272", label: "Five-star reviews" },
   { value: "3", label: "Core services" },
 ];

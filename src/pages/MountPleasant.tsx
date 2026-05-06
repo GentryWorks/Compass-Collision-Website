@@ -150,7 +150,7 @@ const MountPleasant = () => {
             We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Every job is done in-house by our own technicians.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            With 20+ years of experience and 272 five-star Google reviews, we're the body shop Mount Pleasant residents trust for honest work and honest prices.
+            With 95+ years of experience and 272 five-star Google reviews, we're the body shop Mount Pleasant residents trust for honest work and honest prices.
           </p>
         </div>
       </section>
@@ -186,7 +186,7 @@ const MountPleasant = () => {
             {[
               "Estimators who do the work — your price is accurate because we know exactly what the job takes",
               "All insurance companies accepted — we handle the entire process",
-              "20+ years of hands-on collision repair experience",
+              "95+ years of hands-on collision repair experience",
               "272 five-star Google reviews from real customers",
               "No subcontracting — every repair stays in our shop",
               "Realistic timelines and no surprise charges",
