@@ -7,7 +7,6 @@ interface BeforeAfterSliderProps {
   afterAlt: string;
   beforeLabel?: string;
   afterLabel?: string;
-  objectFit?: "cover" | "contain";
 }
 
 const BeforeAfterSlider = ({
@@ -17,7 +16,6 @@ const BeforeAfterSlider = ({
   afterAlt,
   beforeLabel = "Before",
   afterLabel = "After",
-  objectFit = "cover",
 }: BeforeAfterSliderProps) => {
   const [sliderPos, setSliderPos] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -77,7 +75,7 @@ const BeforeAfterSlider = ({
       <img
         src={afterSrc}
         alt={afterAlt}
-        className={`absolute inset-0 w-full h-full ${objectFit === "contain" ? "object-contain bg-[#242021]" : "object-cover"}`}
+        className="absolute inset-0 w-full h-full object-cover"
         loading="lazy"
       />
 
@@ -89,7 +87,7 @@ const BeforeAfterSlider = ({
         <img
           src={beforeSrc}
           alt={beforeAlt}
-          className={`absolute inset-0 w-full h-full ${objectFit === "contain" ? "object-contain bg-[#242021]" : "object-cover"}`}
+          className="absolute inset-0 w-full h-full object-cover"
           style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : "100vw" }}
           loading="lazy"
         />
