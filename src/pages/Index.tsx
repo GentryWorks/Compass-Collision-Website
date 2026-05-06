@@ -490,7 +490,7 @@ const Index = () => {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -541,7 +541,7 @@ const Index = () => {
       </section>
 
       {/* Service Area */}
-      <section className="bg-white py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
