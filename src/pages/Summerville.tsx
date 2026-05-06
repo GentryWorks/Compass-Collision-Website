@@ -39,6 +39,14 @@ const faqs = [
     q: "What vehicles do you work on?",
     a: "We repair all makes and models. Cars, trucks, and SUVs. Foreign and domestic. If it has collision damage, we can fix it.",
   },
+  {
+    q: "Is the drive from Summerville to your shop easy?",
+    a: "Yes. Take I-26 South for about 20 miles and exit at Savannah Highway. Head toward West Ashley and our shop is on Dulsey Road. The whole drive takes about 25 to 30 minutes with normal traffic. It's a straight highway run with no tricky turns.",
+  },
+  {
+    q: "Do you do free estimates for Summerville residents?",
+    a: "Yes. Every estimate is free no matter where you live. Drive down from Summerville, let us look at the damage, and we will give you an honest price. You can also email us photos first if you want a rough number before making the trip.",
+  },
 ];
 
 const Summerville = () => {
@@ -158,6 +166,24 @@ const Summerville = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local Content */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Serving Summerville and the <span style={{ color: "#2D5F5D" }}>I-26 Corridor</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Summerville has grown from a quiet historic town into one of the most popular suburbs in the Charleston area. Neighborhoods like Nexton, Cane Bay, and Oakbrook keep expanding, and so does the traffic. More cars on Dorchester Road and I-26 means more accidents and more dents.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Our shop is about 25 minutes from downtown Summerville via I-26 South. It's a straight highway drive with no complicated exits. Take I-26 to the Savannah Highway exit, head toward West Ashley, and you're at our door on Dulsey Road. Customers from the Nexton and Cane Bay areas can take US-17A to I-26 for an easy connection.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We've repaired cars for Summerville families, commuters, and business owners. Whether you backed into a pole at the Azalea Square shopping center or got rear-ended on your way down I-26, we fix the damage right. And we handle your insurance claim from start to finish.
+          </p>
         </div>
       </section>
 

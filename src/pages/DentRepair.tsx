@@ -214,7 +214,7 @@ const DentRepair = () => {
             Paintless Dent Repair vs. <span style={{ color: "#2D5F5D" }}>Traditional Dent Repair</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Not every dent can be fixed the same way. We use the method that gives you the best result at the best price.
+            Not every dent can be fixed the same way. We use the method that gives you the best result at the best price. A shopping cart ding in a flat panel is very different from a crease along a body line. Hail damage across your hood is different from a deep dent on your door. We look at the size, location, and paint condition before recommending the right approach.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mt-8">
@@ -274,7 +274,7 @@ const DentRepair = () => {
           </div>
 
           <p className="text-gray-500 text-base leading-relaxed mt-8">
-            Not sure which method your dent needs? Bring your car in for a free estimate. We will look at the damage and tell you exactly which approach will give you the best result. No pressure. No upselling.
+            Not sure which method your dent needs? Bring your car in for a free estimate. We will look at the damage and tell you exactly which approach will give you the best result. No pressure. No upselling. Many customers come in expecting an expensive traditional repair and leave with a same-day PDR fix at a fraction of the cost.
           </p>
         </div>
       </section>

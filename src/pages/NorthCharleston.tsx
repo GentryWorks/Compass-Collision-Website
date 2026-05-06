@@ -43,6 +43,14 @@ const faqs = [
     q: "Do I need an appointment?",
     a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 and we will schedule a time that works for you. Walk-ins are welcome when our schedule allows.",
   },
+  {
+    q: "I got in an accident on I-26 near the airport. Can you help?",
+    a: "Yes. We handle collision damage from highway accidents regularly. Bring your car in or have it towed to our shop at 1949 Dulsey Road in Charleston. We will assess the damage, give you a free estimate, and work with your insurance company directly.",
+  },
+  {
+    q: "Do you offer free estimates for North Charleston residents?",
+    a: "Yes. Every estimate is free regardless of where you live. Drive in from North Charleston, show us the damage, and we will give you an honest price on the spot. You can also email us photos for a preliminary quote before making the trip.",
+  },
 ];
 
 const NorthCharleston = () => {
@@ -204,6 +212,24 @@ const NorthCharleston = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local Content */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Collision Repair for the <span style={{ color: "#2D5F5D" }}>North Charleston Community</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            North Charleston is one of the busiest areas in the Lowcountry. Between the heavy traffic on I-26 and I-526, the congestion near the airport, and the packed parking lots along Rivers Avenue, vehicle damage happens every day. When it happens to you, we're a quick 15-minute drive south.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Whether you live near Park Circle, the Tanger Outlets area, or off Ashley Phosphate Road, getting to our shop is simple. Take I-26 South to the Savannah Highway exit and you're practically at our door. Many of our customers drop their car off in the morning and pick it up on their way home from work.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We serve North Charleston drivers every week. Rear-end collisions from I-26 stop-and-go traffic. Door dings from shopping center parking lots. Hail damage after spring storms. Whatever the damage, we fix it right and we handle your insurance so you can focus on your day.
+          </p>
         </div>
       </section>
 

@@ -54,6 +54,46 @@ const faqs = [
     q: "Do you offer any warranty on repairs?",
     a: "Yes. We stand behind every repair we do. If something isn't right, bring it back and we will make it right. We use quality materials and factory-spec processes because we want your repair to last — not just look good when you pick it up.",
   },
+  {
+    q: "Do you offer free estimates?",
+    a: "Yes. Every estimate is free with no obligation. Bring your car in and we will look at the damage, explain what needs to be done, and give you an honest price. You can also send us photos by email for a preliminary quote. The in-person estimate is always more accurate since we can check for hidden damage.",
+  },
+  {
+    q: "Can I choose my own body shop for insurance claims?",
+    a: "Yes. South Carolina law gives you the right to take your car to any body shop you choose. Your insurance company may suggest a preferred shop, but they cannot force you to go there. You pick the shop. We handle the rest.",
+  },
+  {
+    q: "What happens if there is hidden damage?",
+    a: "Hidden damage is common in collisions. Metal can bend behind the panels where it is not visible until we start the repair. If we find extra damage, we stop, take photos, and send a supplement to your insurance company. We do not do any extra work without your approval first. Your insurance typically covers the supplement.",
+  },
+  {
+    q: "Do you help with rental car arrangements?",
+    a: "We don't provide rental cars directly, but we can help you coordinate with your insurance company. Most collision policies include rental coverage while your car is in the shop. We will give your insurance an accurate repair timeline so they can set up the rental for the right number of days.",
+  },
+  {
+    q: "How do I know if my car needs collision repair or just dent repair?",
+    a: "It depends on the damage. If the paint is cracked, the metal is torn, or there is structural damage underneath, you need collision repair. If the paint is still intact and the dent is shallow, paintless dent repair may be enough. Bring your car in and we will tell you exactly which service you need. There is no charge for us to look at it.",
+  },
+  {
+    q: "What brands of paint do you use?",
+    a: "We use professional-grade automotive paint systems designed for collision repair. The specific brand depends on what matches your vehicle best. What matters most is that we use your car's factory paint code and a computerized mixing system to get an exact color match. We test the color on a spray panel before painting your vehicle.",
+  },
+  {
+    q: "Do you repair all makes and models?",
+    a: "Yes. We work on cars, trucks, and SUVs. Foreign and domestic. Honda, Toyota, Ford, Chevrolet, BMW, Mercedes, and everything in between. Our team has 95+ years of combined experience across every major manufacturer. If your vehicle has collision damage, we can fix it.",
+  },
+  {
+    q: "Can I get a quote over the phone?",
+    a: "We can give you a rough estimate over the phone based on your description, but the most accurate quote comes from seeing the car in person. Photos by email can also help us give you a better number before you come in. Call us at (843) 380-7055 and we will walk you through it.",
+  },
+  {
+    q: "What should I do right after a car accident?",
+    a: "First, make sure everyone is safe and call 911 if anyone is hurt. Exchange insurance information with the other driver. Take photos of all the damage to every vehicle involved. File a police report if the damage is significant. Then call your insurance company to start a claim. When you're ready, bring the car to us for a free estimate.",
+  },
+  {
+    q: "What is the difference between OEM and aftermarket parts?",
+    a: "OEM parts are made by your vehicle's original manufacturer. They fit and perform exactly like the parts your car came with. Aftermarket parts are made by third-party companies. They are usually less expensive but the fit and quality can vary. We discuss part options with you before we order anything so you can make the best decision for your repair and your budget.",
+  },
 ];
 
 const FAQ = () => {

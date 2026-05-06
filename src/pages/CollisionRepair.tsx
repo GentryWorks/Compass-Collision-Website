@@ -326,10 +326,10 @@ const CollisionRepair = () => {
             We do it differently. The person writing your estimate has done the repair hundreds of times. They know what the job takes because they have done it with their own hands. That means your price is accurate from day one.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We repair all makes and models. Cars, trucks, SUVs. Foreign and domestic. Whether you drive a Honda Civic or a BMW M5, we have the tools and experience to restore it to factory condition.
+            We repair all makes and models. Cars, trucks, SUVs. Foreign and domestic. Whether you drive a Honda Civic or a BMW M5, we have the tools and experience to restore it to factory condition. Our team includes BMW-certified technicians, so even high-end repairs are handled with the precision your vehicle requires.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            With 95+ years of experience in the collision repair industry and 272 five-star Google reviews, Charleston trusts us to get the job done right.
+            With 95+ years of combined experience in the collision repair industry and 272 five-star Google reviews, Charleston trusts us to get the job done right. That experience shows in every repair — from how we prep the panels to how we finish the paint.
           </p>
         </div>
       </section>

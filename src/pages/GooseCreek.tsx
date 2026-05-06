@@ -43,6 +43,14 @@ const faqs = [
     q: "Can you fix hail damage?",
     a: "Yes. We use paintless dent repair for hail damage when the paint is intact. For more severe hail damage, we combine PDR with traditional repair methods. Either way, the dents are gone when we're done.",
   },
+  {
+    q: "Do you work with USAA and military insurance?",
+    a: "Yes. We work with USAA and every other insurance company. Many of our Goose Creek customers are military families with USAA coverage. We handle the entire claims process so you can focus on your schedule at the base.",
+  },
+  {
+    q: "Can I drop off my car early in the morning on my way to base?",
+    a: "Yes. We open at 8am Monday through Thursday and 8am on Friday. Many Goose Creek and Joint Base Charleston customers drop their car off first thing in the morning. Call ahead at (843) 380-7055 and we will have everything ready for a quick drop-off.",
+  },
 ];
 
 const GooseCreek = () => {
@@ -162,6 +170,24 @@ const GooseCreek = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local Content */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Serving the Goose Creek and <span style={{ color: "#2D5F5D" }}>Military Community</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Goose Creek sits just north of North Charleston and is home to many military families stationed at Joint Base Charleston. Between the base traffic on US-52, the busy roads through Crowfield Plantation, and daily commutes down I-26, vehicles in this area take a beating.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Our shop is about 20 to 25 minutes from Goose Creek. Take US-52 South to I-26, then exit at Savannah Highway toward West Ashley. From the Crowfield area, you can hop on I-26 South directly. The highway drive is easy and our shop is simple to find once you exit.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We work with military families regularly and understand the pace of life near a joint base. Whether you need a quick dent repair before a PCS move or full collision repair after a highway accident, we get the job done on time. We also work with USAA and all other military-affiliated insurance providers.
+          </p>
         </div>
       </section>
 

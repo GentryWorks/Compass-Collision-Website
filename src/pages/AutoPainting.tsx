@@ -172,8 +172,11 @@ const AutoPainting = () => {
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             We use computerized color matching and your vehicle's factory paint code to mix an exact match. Then we blend the new paint into the surrounding panels so there is no visible line between old and new. The result is a repair you can't see.
           </p>
-          <p className="text-gray-500 text-base leading-relaxed">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             We paint panels, bumpers, fenders, hoods, and doors. We do not do full vehicle repaints or color changes. Our focus is on <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link> paint work — making the damage disappear.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We handle solid colors, metallics, pearls, and tri-coat finishes. Whether your car has a simple white or a complex candy red with metallic flake, we have the mixing system and the experience to match it. We do not do rust repair or rust-related paint work. If the damage is from a collision, a dent, or a scratch, we can paint it.
           </p>
         </div>
       </section>
@@ -214,7 +217,7 @@ const AutoPainting = () => {
             Our Color Matching <span style={{ color: "#2D5F5D" }}>Process</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Color matching is the difference between a paint job that looks right and one that looks obviously repaired. We take it seriously.
+            Color matching is the difference between a paint job that looks right and one that looks obviously repaired. We take it seriously. Even two cars with the same color code can look slightly different due to sun exposure and age. That's why we don't just mix by code and spray. We test, compare, and adjust until the match is perfect.
           </p>
           <div className="space-y-8 mt-8">
             {[

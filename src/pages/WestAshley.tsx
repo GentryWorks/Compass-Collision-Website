@@ -43,6 +43,14 @@ const faqs = [
     q: "Do I need an appointment?",
     a: "We prefer appointments so we can give you proper attention. Call us at (843) 380-7055 to schedule. Walk-ins are welcome when our schedule allows.",
   },
+  {
+    q: "Can I walk to your shop from nearby West Ashley neighborhoods?",
+    a: "If you live near Savannah Highway and Dulsey Road, you could. But most customers drive since they're bringing in a damaged vehicle. The good news is that from any West Ashley neighborhood — Avondale, Shadowmoss, Bees Ferry, or St. Andrews — you're less than 10 minutes away by car.",
+  },
+  {
+    q: "Do you give free estimates to walk-ins?",
+    a: "Yes. As your neighborhood body shop, we're happy to take a look anytime. Appointments are preferred so we can give you our full attention, but if you're in the area and want to stop by, we'll do our best to help you on the spot.",
+  },
 ];
 
 const WestAshley = () => {
@@ -161,6 +169,24 @@ const WestAshley = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local Content */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Right in Your <span style={{ color: "#2D5F5D" }}>Backyard</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Our shop is in the 29407 zip code, right in the heart of West Ashley. If you live in Avondale, Shadowmoss, the Bees Ferry corridor, or anywhere near Savannah Highway, you're minutes from our door. No crossing the bridge. No sitting in I-26 traffic. Just a short drive down local roads.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            That convenience matters when your car is in the shop. You can drop it off before work and pick it up on your way home. You can swing by on your lunch break to check on the progress. Being close to home means less hassle during an already stressful time.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We've been fixing cars for West Ashley neighbors since 2021. Fender benders on Sam Rittenberg Boulevard. Parking lot dings at Citadel Mall. Side-swipes on Glenn McConnell Parkway. We know the roads you drive and the damage that happens on them. When your car needs repair, your neighborhood body shop is ready.
+          </p>
         </div>
       </section>
 

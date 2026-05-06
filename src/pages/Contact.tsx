@@ -44,8 +44,11 @@ const Contact = () => {
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Contact <span style={{ color: "#4A8A87" }}>Us</span>
             </h1>
-            <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+            <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-4">
               Need a repair estimate? Have a question? Call us, email us, or stop by the shop. We're happy to help.
+            </p>
+            <p className="text-gray-400 text-base max-w-xl mx-auto leading-relaxed">
+              When you reach out, you'll talk to the same people who do the repairs. We'll ask about the damage, give you an honest answer, and schedule a time to see your car. Most calls take less than five minutes. No sales pitch. No pressure.
             </p>
           </motion.div>
         </div>

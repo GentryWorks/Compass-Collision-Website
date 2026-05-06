@@ -43,6 +43,14 @@ const faqs = [
     q: "Do I need an appointment?",
     a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 to schedule. Walk-ins are welcome when our schedule allows.",
   },
+  {
+    q: "Is your shop easy to reach from Folly Beach?",
+    a: "Yes. From Folly Beach, take Folly Road north through James Island. Continue to the Crosstown (US-17) and head toward West Ashley. Our shop on Dulsey Road is about 20 to 25 minutes from Folly Beach, depending on traffic.",
+  },
+  {
+    q: "Do you handle hail damage for James Island customers?",
+    a: "Yes. Hail storms hit the Charleston coast regularly and James Island is no exception. If your car has hail dents, bring it in for a free estimate. We use paintless dent repair when the paint is intact, which saves you time and money compared to traditional body work.",
+  },
 ];
 
 const JamesIsland = () => {
@@ -161,6 +169,24 @@ const JamesIsland = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local Content */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            A Short Drive from <span style={{ color: "#2D5F5D" }}>James Island</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            James Island sits just south of downtown Charleston, surrounded by water and connected by a handful of key roads. Whether you're coming from Folly Road, Maybank Highway, or Harbor View Road, our shop is a quick 10 to 15-minute drive through the Crosstown toward West Ashley.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Living on an island means narrow roads, tight turns, and crowded parking lots near restaurants and shops. Door dings, scraped bumpers, and fender benders happen often. When they do, you don't need to drive far to get quality repair work. Our shop on Dulsey Road is one of the closest body shops to James Island.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            Many James Island residents pass right by our area on their daily commute. Drop your car off on the way to work downtown and pick it up on the way home. We make the process easy so a car repair doesn't turn into a major disruption to your routine.
+          </p>
         </div>
       </section>
 

@@ -43,6 +43,14 @@ const faqs = [
     q: "Do I need an appointment for an estimate?",
     a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 to schedule. Walk-ins are welcome when our schedule allows.",
   },
+  {
+    q: "Is it worth driving from Mount Pleasant across the bridge for a repair?",
+    a: "Our customers from Mount Pleasant think so. The drive takes about 20 to 25 minutes and gets you honest estimates from the people who actually do the repairs. With 272 five-star reviews, the quality speaks for itself. Many Mount Pleasant drivers have been coming back to us for years.",
+  },
+  {
+    q: "Can I email photos of my damage for a quote?",
+    a: "Yes. Send photos to adam.compasscollision@gmail.com and we will give you a preliminary estimate. The final price is confirmed when we see the car in person, but photos help us give you a good starting number before you drive over.",
+  },
 ];
 
 const MountPleasant = () => {
@@ -173,6 +181,24 @@ const MountPleasant = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Local Content */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Why Mount Pleasant Drivers <span style={{ color: "#2D5F5D" }}>Make the Trip</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Mount Pleasant is one of the fastest-growing suburbs in the Charleston metro. With more people on the roads around Coleman Boulevard, the Towne Centre, and US-17, fender benders and parking lot dents are part of daily life. When your car gets hit, you want it fixed by people who know what they're doing.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            The drive from Mount Pleasant to our shop takes about 20 to 25 minutes. You'll cross the Arthur Ravenel Jr. Bridge, head through downtown Charleston, and continue toward West Ashley on the Crosstown. It's a straight shot with no complicated turns. Many Mount Pleasant customers tell us the drive is worth it for the honest pricing and quality of work.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            Whether you live near Shem Creek, Belle Hall, or the Isle of Palms Connector, we're easy to reach. Drop your car off in the morning and we'll call you when it's ready. Our team handles everything — the repair, the insurance, and the follow-up — so you don't have to.
+          </p>
         </div>
       </section>
 
