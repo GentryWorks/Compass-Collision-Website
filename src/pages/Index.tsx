@@ -354,7 +354,8 @@ const Index = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="rounded-xl px-6 py-8 border border-white/10"
+                className="rounded-xl px-6 py-8"
+                style={{ backgroundColor: "#2D5F5D" }}
               >
                 <div className="mb-4 text-[#4A8A87]">{r.icon}</div>
                 <h3 className="font-extrabold text-sm uppercase tracking-wide mb-3 text-white">{r.title}</h3>
