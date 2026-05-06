@@ -228,38 +228,57 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section style={{ backgroundColor: "#2D5F5D" }} className="py-12">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-            {stats.map((s, i) => (
-              <div key={i}>
-                <p className="text-4xl font-extrabold mb-1" style={{ color: s.value === "20+" ? "#000" : "#fff" }}>{s.value}</p>
-                <p className="text-[#6BA3A0] text-sm uppercase tracking-widest font-semibold">{s.label}</p>
-              </div>
+      {/* Before & After Slider */}
+      <section style={{ backgroundColor: "#000000" }} className="py-20">
+        <div className="max-w-[900px] mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-extrabold mb-3 text-white">
+              See the <span style={{ color: "#4A8A87" }}>Difference</span>
+            </h2>
+            <p className="text-gray-400 text-lg max-w-xl mx-auto">
+              Drag the slider to compare. Every repair leaves looking factory fresh.
+            </p>
+          </div>
+          <BeforeAfterSlider
+            key={activeSlider}
+            beforeSrc={sliderPairs[activeSlider].before}
+            afterSrc={sliderPairs[activeSlider].after}
+            beforeAlt={sliderPairs[activeSlider].beforeAlt}
+            afterAlt={sliderPairs[activeSlider].afterAlt}
+            beforeLabel="Before"
+            afterLabel="After"
+          />
+          {/* Thumbnail selector */}
+          <div className="flex justify-center gap-3 mt-6">
+            {sliderPairs.map((pair, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveSlider(i)}
+                className={`rounded-lg overflow-hidden border-2 transition-all ${
+                  activeSlider === i ? "border-[#2D5F5D] opacity-100" : "border-transparent opacity-50 hover:opacity-75"
+                }`}
+              >
+                <img
+                  src={pair.thumb}
+                  alt={pair.label}
+                  className="w-24 h-16 sm:w-32 sm:h-20 object-cover"
+                  loading="lazy"
+                />
+                <p className="text-[10px] font-bold uppercase tracking-wide text-gray-400 py-1.5 bg-black/80">
+                  {pair.label}
+                </p>
+              </button>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Intro — SEO body copy */}
-      <section className="bg-white py-20">
-        <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-center" style={{ color: "#111" }}>
-            Charleston's Honest <span style={{ color: "#2D5F5D" }}>Auto Body Shop</span>
-          </h2>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Your car got hit. Now you need it fixed. You need someone who tells you the truth about what it costs and how long it takes. That is what we do at Compass Collision.
-          </p>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We are a collision repair and auto body shop in Charleston, SC. We handle everything from minor dents to major collision damage. Every estimate is written by a technician who has done the repair before. That means your price is accurate from the start.
-          </p>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Most body shops split the work. One person writes the estimate. A different person does the repair. That gap is where surprises happen. We do it differently. Our estimators work on cars. They know what the job takes because they have done it with their own hands.
-          </p>
-          <p className="text-gray-500 text-base leading-relaxed">
-            We work with all major insurance companies. We handle the paperwork and deal with your adjuster directly. You drop off your car. We fix it right. You pick it up looking like nothing ever happened.
-          </p>
+          <div className="text-center mt-10">
+            <Link
+              to="/gallery"
+              className="inline-flex items-center justify-center font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white"
+              style={{ border: "2px solid #fff" }}
+            >
+              View Full Gallery →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -380,62 +399,29 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Before & After Slider */}
-      <section style={{ backgroundColor: "#000000" }} className="py-20 border-t border-white/5">
-        <div className="max-w-[900px] mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold mb-3 text-white">
-              See the <span style={{ color: "#4A8A87" }}>Difference</span>
-            </h2>
-            <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Drag the slider to compare. Every repair leaves looking factory fresh.
-            </p>
-          </div>
-          <BeforeAfterSlider
-            key={activeSlider}
-            beforeSrc={sliderPairs[activeSlider].before}
-            afterSrc={sliderPairs[activeSlider].after}
-            beforeAlt={sliderPairs[activeSlider].beforeAlt}
-            afterAlt={sliderPairs[activeSlider].afterAlt}
-            beforeLabel="Before"
-            afterLabel="After"
-          />
-          {/* Thumbnail selector */}
-          <div className="flex justify-center gap-3 mt-6">
-            {sliderPairs.map((pair, i) => (
-              <button
-                key={i}
-                onClick={() => setActiveSlider(i)}
-                className={`rounded-lg overflow-hidden border-2 transition-all ${
-                  activeSlider === i ? "border-[#2D5F5D] opacity-100" : "border-transparent opacity-50 hover:opacity-75"
-                }`}
-              >
-                <img
-                  src={pair.thumb}
-                  alt={pair.label}
-                  className="w-24 h-16 sm:w-32 sm:h-20 object-cover"
-                  loading="lazy"
-                />
-                <p className="text-[10px] font-bold uppercase tracking-wide text-gray-400 py-1.5 bg-black/80">
-                  {pair.label}
-                </p>
-              </button>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link
-              to="/gallery"
-              className="inline-flex items-center justify-center font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white"
-              style={{ border: "2px solid #fff" }}
-            >
-              View Full Gallery →
-            </Link>
-          </div>
+      {/* Intro — SEO body copy */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-center" style={{ color: "#111" }}>
+            Charleston's Honest <span style={{ color: "#2D5F5D" }}>Auto Body Shop</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Your car got hit. Now you need it fixed. You need someone who tells you the truth about what it costs and how long it takes. That is what we do at Compass Collision.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We are a collision repair and auto body shop in Charleston, SC. We handle everything from minor dents to major collision damage. Every estimate is written by a technician who has done the repair before. That means your price is accurate from the start.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Most body shops split the work. One person writes the estimate. A different person does the repair. That gap is where surprises happen. We do it differently. Our estimators work on cars. They know what the job takes because they have done it with their own hands.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We work with all major insurance companies. We handle the paperwork and deal with your adjuster directly. You drop off your car. We fix it right. You pick it up looking like nothing ever happened.
+          </p>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="bg-white py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center" style={{ color: "#111" }}>
             How It <span style={{ color: "#2D5F5D" }}>Works</span>
