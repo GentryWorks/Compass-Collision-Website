@@ -124,7 +124,7 @@ const Navbar = () => {
           <a
             href={PHONE_HREF}
             className="inline-flex items-center gap-2 text-white font-extrabold uppercase tracking-wide text-xs px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity no-underline"
-            style={{ backgroundColor: "#8da8a2" }}
+            style={{ backgroundColor: "#768b89" }}
           >
             <Phone className="w-3.5 h-3.5" />
             {PHONE}
@@ -136,7 +136,7 @@ const Navbar = () => {
           <a
             href={PHONE_HREF}
             className="inline-flex items-center gap-2 text-white font-extrabold uppercase tracking-wide text-xs px-4 py-2 rounded-full no-underline"
-            style={{ backgroundColor: "#8da8a2" }}
+            style={{ backgroundColor: "#768b89" }}
           >
             <Phone className="w-3.5 h-3.5" />
             Call
