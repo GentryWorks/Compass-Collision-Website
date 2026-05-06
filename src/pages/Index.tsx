@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Wrench, Paintbrush, CircleDot, MapPin, ChevronDown, Star, Shield, Clock, Users } from "lucide-react";
 import { PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
-import heroImg from "@/assets/lexus-lc-collision-repair-after-charleston.webp";
-import rav4Before from "@/assets/toyota-rav4-collision-repair-after-side-charleston.webp";
-import rav4After from "@/assets/toyota-rav4-collision-repair-after-charleston.webp";
+import heroImg from "@/assets/camaro-zl1-collision-repair-after-charleston.webp";
+import jeepBefore from "@/assets/jeep-grand-cherokee-collision-repair-before-charleston.webp";
+import jeepAfter from "@/assets/jeep-grand-cherokee-collision-repair-after-charleston.webp";
 import bmwBefore from "@/assets/bmw-sedan-collision-repair-before-charleston.webp";
 import bmwAfter from "@/assets/bmw-sedan-collision-repair-during-charleston.webp";
-import truckBefore from "@/assets/collision-repair-truck-bed-dent-during-charleston.webp";
-import truckAfter from "@/assets/collision-repair-truck-panel-prep-during-charleston.webp";
+import motoTankBefore from "@/assets/motorcycle-tank-paint-prep-before-charleston.webp";
+import motoTankAfter from "@/assets/motorcycle-tank-custom-paint-after-charleston.webp";
 
 const services = [
   {
@@ -94,28 +94,28 @@ const faqs = [
 
 const sliderPairs = [
   {
+    label: "Jeep Grand Cherokee",
+    before: jeepBefore,
+    after: jeepAfter,
+    beforeAlt: "Jeep Grand Cherokee before collision repair Charleston SC",
+    afterAlt: "Jeep Grand Cherokee after collision repair Charleston SC",
+    thumb: jeepAfter,
+  },
+  {
     label: "BMW Sedan",
-    before: bmwAfter,
-    after: bmwBefore,
+    before: bmwBefore,
+    after: bmwAfter,
     beforeAlt: "BMW sedan before collision repair Charleston SC",
     afterAlt: "BMW sedan after collision repair Charleston SC",
     thumb: bmwAfter,
   },
   {
-    label: "Pickup Truck",
-    before: truckAfter,
-    after: truckBefore,
-    beforeAlt: "Pickup truck dent before repair Charleston SC",
-    afterAlt: "Pickup truck after dent repair Charleston SC",
-    thumb: truckAfter,
-  },
-  {
-    label: "Toyota RAV4",
-    before: rav4After,
-    after: rav4Before,
-    beforeAlt: "Toyota RAV4 before collision repair Charleston SC",
-    afterAlt: "Toyota RAV4 after collision repair Charleston SC",
-    thumb: rav4After,
+    label: "Motorcycle Tank",
+    before: motoTankBefore,
+    after: motoTankAfter,
+    beforeAlt: "Motorcycle gas tank before custom paint Charleston SC",
+    afterAlt: "Motorcycle gas tank after custom paint Charleston SC",
+    thumb: motoTankAfter,
   },
 ];
 
@@ -183,7 +183,7 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#000000" }}>
         <div className="absolute inset-0 z-0">
-          <img src={heroImg} alt="Lexus LC collision repair Charleston SC" className="w-full h-full object-cover opacity-40" loading="eager" fetchPriority="high" width={1800} height={1200} />
+          <img src={heroImg} alt="Camaro ZL1 collision repair Charleston SC" className="w-full h-full object-cover opacity-40" loading="eager" fetchPriority="high" width={1800} height={1200} />
         </div>
         <div className="max-w-[1200px] mx-auto px-6 z-10 w-full py-20">
           <motion.div
