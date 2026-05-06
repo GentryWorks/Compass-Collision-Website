@@ -103,8 +103,8 @@ const sliderPairs = [
   },
   {
     label: "BMW Sedan",
-    before: bmwBefore,
-    after: bmwAfter,
+    before: bmwAfter,
+    after: bmwBefore,
     beforeAlt: "BMW sedan before collision repair Charleston SC",
     afterAlt: "BMW sedan after collision repair Charleston SC",
     thumb: bmwAfter,
