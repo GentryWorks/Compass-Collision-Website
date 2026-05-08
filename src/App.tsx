@@ -27,7 +27,7 @@ const AppLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-20 min-h-screen">
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Index />} />
