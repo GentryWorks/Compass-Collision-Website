@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, Shield, Clock, Wrench, MapPin } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
 import heroImg from "@/assets/jeep-grand-cherokee-collision-repair-after-charleston.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const damageTypes = [
   "Fender benders and minor collisions",
@@ -174,6 +175,7 @@ const CollisionRepair = () => {
               </Link>
               <a
                 href={PHONE_HREF}
+                onClick={() => trackPhoneClick("collision-repair")}
                 className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white"
                 style={{ border: "2px solid #fff" }}
               >
@@ -424,6 +426,7 @@ const CollisionRepair = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("collision-repair")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

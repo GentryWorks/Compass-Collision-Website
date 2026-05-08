@@ -5,6 +5,7 @@ import { Phone, Users, Shield, Star, Clock } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
 import teamImg from "@/assets/compass-collision-team-charleston.webp";
 import shopImg from "@/assets/compass-collision-shop-exterior-bays-charleston.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const values = [
   {
@@ -220,6 +221,7 @@ const About = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("about")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

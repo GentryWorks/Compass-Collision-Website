@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const faqs = [
   {
@@ -214,6 +215,7 @@ const FAQ = () => {
           </p>
           <a
             href={PHONE_HREF}
+                onClick={() => trackPhoneClick("faq")}
             className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
             style={{ backgroundColor: "#2D5F5D" }}
           >
@@ -242,6 +244,7 @@ const FAQ = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("faq")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

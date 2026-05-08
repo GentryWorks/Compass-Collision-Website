@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
 import heroImg from "@/assets/classic-ford-truck-paint-after-charleston.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const paintServices = [
   "Panel painting after collision repair",
@@ -149,6 +150,7 @@ const AutoPainting = () => {
               </Link>
               <a
                 href={PHONE_HREF}
+                onClick={() => trackPhoneClick("auto-painting")}
                 className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white"
                 style={{ border: "2px solid #fff" }}
               >
@@ -392,6 +394,7 @@ const AutoPainting = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("auto-painting")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

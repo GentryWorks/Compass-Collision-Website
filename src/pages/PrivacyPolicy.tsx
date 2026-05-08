@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, EMAIL, DOMAIN } from "@/data/constants";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const PrivacyPolicy = () => {
   const schemaBreadcrumb = {
@@ -206,7 +207,7 @@ const PrivacyPolicy = () => {
               <p className="mt-2">
                 Compass Collision<br />
                 1949 Dulsey Road, Unit 202, Charleston, SC 29407<br />
-                Phone: <a href={PHONE_HREF} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>({PHONE.slice(0, 3)}) {PHONE.slice(4, 7)}-{PHONE.slice(8)}</a><br />
+                Phone: <a href={PHONE_HREF} onClick={() => trackPhoneClick("privacy-policy")} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>({PHONE.slice(0, 3)}) {PHONE.slice(4, 7)}-{PHONE.slice(8)}</a><br />
                 Email: <a href={`mailto:${EMAIL}`} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>{EMAIL}</a><br />
                 Website: <a href={DOMAIN} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>compasscollisionsc.com</a>
               </p>

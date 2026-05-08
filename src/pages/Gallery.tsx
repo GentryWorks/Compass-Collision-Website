@@ -26,6 +26,7 @@ import shopInterior from "@/assets/compass-collision-shop-interior-wide-charlest
 import paintBooth from "@/assets/compass-collision-shop-paint-booth-tech-charleston.webp";
 import teamPhoto from "@/assets/compass-collision-team-charleston.webp";
 import suvPaintPrep from "@/assets/suv-collision-repair-during-paint-prep-charleston.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 type Category = "All" | "Collision Repair" | "Auto Painting" | "Shop";
 
@@ -187,6 +188,7 @@ const Gallery = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("gallery")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

@@ -12,6 +12,7 @@ import bmwBefore from "@/assets/bmw-sedan-collision-repair-before-charleston.web
 import bmwAfter from "@/assets/bmw-sedan-collision-repair-during-charleston.webp";
 import motoTankBefore from "@/assets/motorcycle-tank-paint-prep-before-charleston.webp";
 import motoTankAfter from "@/assets/motorcycle-tank-custom-paint-after-charleston.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
   {
@@ -218,6 +219,7 @@ const Index = () => {
               </Link>
               <a
                 href={PHONE_HREF}
+                onClick={() => trackPhoneClick("homepage")}
                 className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white"
                 style={{ border: "2px solid #fff" }}
               >
@@ -590,6 +592,7 @@ const Index = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("homepage")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

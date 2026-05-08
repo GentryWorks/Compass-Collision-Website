@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
   {
@@ -147,6 +148,7 @@ const NorthCharleston = () => {
               </Link>
               <a
                 href={PHONE_HREF}
+                onClick={() => trackPhoneClick("north-charleston")}
                 className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white"
                 style={{ border: "2px solid #fff" }}
               >
@@ -369,6 +371,7 @@ const NorthCharleston = () => {
             </Link>
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("north-charleston")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

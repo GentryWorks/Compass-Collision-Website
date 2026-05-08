@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, EMAIL, DOMAIN } from "@/data/constants";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const Contact = () => {
   const schemaBreadcrumb = {
@@ -94,7 +95,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-extrabold text-sm uppercase tracking-wide mb-1" style={{ color: "#111" }}>Phone</h3>
-                    <a href={PHONE_HREF} className="text-gray-500 text-sm no-underline hover:opacity-80">
+                    <a href={PHONE_HREF} onClick={() => trackPhoneClick("contact")} className="text-gray-500 text-sm no-underline hover:opacity-80">
                       {PHONE}
                     </a>
                   </div>
@@ -139,6 +140,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
                 <a
                   href={PHONE_HREF}
+                onClick={() => trackPhoneClick("contact")}
                   className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                   style={{ backgroundColor: "#2D5F5D" }}
                 >
@@ -193,7 +195,7 @@ const Contact = () => {
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-10">
             <p className="text-gray-400 text-sm italic">
               Contact form coming soon. In the meantime, call us at{" "}
-              <a href={PHONE_HREF} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("contact")} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
                 {PHONE}
               </a>{" "}
               or email{" "}
@@ -217,6 +219,7 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={PHONE_HREF}
+                onClick={() => trackPhoneClick("contact")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#242021" }}
             >

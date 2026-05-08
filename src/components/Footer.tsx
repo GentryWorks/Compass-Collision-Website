@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { PHONE, PHONE_HREF, ADDRESS, EMAIL } from "@/data/constants";
 import logoWhite from "@/assets/compass-collision-logo-white.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const serviceLinks = [
   { label: "Collision Repair", to: "/collision-repair" },
@@ -42,7 +43,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" style={{ color: "#2D5F5D" }} />
-                <a href={PHONE_HREF} className="no-underline text-gray-400 hover:text-white transition-colors">
+                <a href={PHONE_HREF} onClick={() => trackPhoneClick("footer")} className="no-underline text-gray-400 hover:text-white transition-colors">
                   {PHONE}
                 </a>
               </div>

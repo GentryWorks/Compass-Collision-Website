@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { PHONE, PHONE_HREF } from "@/data/constants";
 import logo from "@/assets/compass-collision-logo.webp";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
   { label: "Collision Repair", to: "/collision-repair" },
@@ -123,6 +124,7 @@ const Navbar = () => {
 
           <a
             href={PHONE_HREF}
+                onClick={() => trackPhoneClick("navbar")}
             className="inline-flex items-center gap-2 text-white font-extrabold uppercase tracking-wide text-xs px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity no-underline"
             style={{ backgroundColor: "#2D5F5D" }}
           >
@@ -135,6 +137,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3 lg:hidden">
           <a
             href={PHONE_HREF}
+                onClick={() => trackPhoneClick("navbar")}
             className="inline-flex items-center gap-2 text-white font-extrabold uppercase tracking-wide text-xs px-4 py-2 rounded-full no-underline"
             style={{ backgroundColor: "#2D5F5D" }}
           >

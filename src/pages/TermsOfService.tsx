@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, EMAIL, DOMAIN } from "@/data/constants";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const TermsOfService = () => {
   const schemaBreadcrumb = {
@@ -40,7 +41,7 @@ const TermsOfService = () => {
               <p className="mb-3">You can cancel the SMS service at any time. Simply text "STOP" to the same number that sent you messages. Upon sending "STOP," we will confirm your unsubscribe status via SMS. Following this confirmation, you will no longer receive SMS messages from us. To rejoin, sign up as you did initially, and we will resume sending SMS messages to you.</p>
 
               <p className="font-semibold mb-1" style={{ color: "#111" }}>3. Support Information</p>
-              <p className="mb-3">If you experience issues with the messaging program, reply with the keyword "HELP" for more assistance, or reach out directly to <a href={`mailto:${EMAIL}`} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>{EMAIL}</a> or call <a href={PHONE_HREF} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>({PHONE.slice(0, 3)}) {PHONE.slice(4, 7)}-{PHONE.slice(8)}</a> during business hours.</p>
+              <p className="mb-3">If you experience issues with the messaging program, reply with the keyword "HELP" for more assistance, or reach out directly to <a href={`mailto:${EMAIL}`} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>{EMAIL}</a> or call <a href={PHONE_HREF} onClick={() => trackPhoneClick("terms-of-service")} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>({PHONE.slice(0, 3)}) {PHONE.slice(4, 7)}-{PHONE.slice(8)}</a> during business hours.</p>
 
               <p className="font-semibold mb-1" style={{ color: "#111" }}>4. Carrier Liability</p>
               <p className="mb-3">Carriers are not liable for delayed or undelivered messages.</p>
@@ -128,7 +129,7 @@ const TermsOfService = () => {
               <p className="mt-2">
                 Compass Collision<br />
                 1949 Dulsey Road, Unit 202, Charleston, SC 29407<br />
-                Phone: <a href={PHONE_HREF} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>({PHONE.slice(0, 3)}) {PHONE.slice(4, 7)}-{PHONE.slice(8)}</a><br />
+                Phone: <a href={PHONE_HREF} onClick={() => trackPhoneClick("terms-of-service")} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>({PHONE.slice(0, 3)}) {PHONE.slice(4, 7)}-{PHONE.slice(8)}</a><br />
                 Email: <a href={`mailto:${EMAIL}`} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>{EMAIL}</a><br />
                 Website: <a href={DOMAIN} className="no-underline hover:underline" style={{ color: "#2D5F5D" }}>compasscollisionsc.com</a>
               </p>
