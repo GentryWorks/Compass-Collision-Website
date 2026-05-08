@@ -26,6 +26,9 @@ import shopInterior from "@/assets/compass-collision-shop-interior-wide-charlest
 import paintBooth from "@/assets/compass-collision-shop-paint-booth-tech-charleston.webp";
 import teamPhoto from "@/assets/compass-collision-team-charleston.webp";
 import suvPaintPrep from "@/assets/suv-collision-repair-during-paint-prep-charleston.webp";
+import bumperPaint from "@/assets/bumper-paint-repair-charleston.webp";
+import waitingRoom from "@/assets/compass-collision-waiting-room-charleston.webp";
+import waitingRoomCerts from "@/assets/compass-collision-waiting-room-certifications-charleston.webp";
 import { trackPhoneClick } from "@/utils/tracking";
 
 type Category = "All" | "Collision Repair" | "Auto Painting" | "Shop";
@@ -57,6 +60,9 @@ const images: GalleryImage[] = [
   { src: shopExterior, alt: "Compass Collision shop exterior with bays Charleston SC", category: "Shop" },
   { src: shopInterior, alt: "Compass Collision shop interior wide view Charleston SC", category: "Shop" },
   { src: teamPhoto, alt: "Compass Collision team in Charleston SC", category: "Shop" },
+  { src: bumperPaint, alt: "Bumper on paint stand at Compass Collision Charleston SC", category: "Auto Painting" },
+  { src: waitingRoom, alt: "Compass Collision waiting room Charleston SC", category: "Shop" },
+  { src: waitingRoomCerts, alt: "Compass Collision waiting room with certifications Charleston SC", category: "Shop" },
 ];
 
 const categories: Category[] = ["All", "Collision Repair", "Auto Painting", "Shop"];
