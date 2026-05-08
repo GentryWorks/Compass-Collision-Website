@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline">
-          <img src={logo} alt="Compass Collision" className="h-16 w-auto" width={400} height={400} />
+          <img src={logo} alt="Compass Collision" className="h-16" width={64} height={64} style={{ width: "64px", height: "64px" }} />
         </Link>
 
         {/* Desktop Nav */}

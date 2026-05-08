@@ -9,7 +9,6 @@
     <!-- Title and meta description set by react-helmet-async per page -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://api.leadconnectorhq.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" /></noscript>
     <meta name="author" content="Compass Collision" />
@@ -29,16 +28,16 @@
     <!-- Third-party scripts — deferred loading -->
     <script>
       window.addEventListener('load', function() {
-        var delay = 0;
+        var delay = 3000;
 
-        // GHL form embed
+        // GHL form embed — delay 3s
         setTimeout(function(){
           var ghl=document.createElement('script');ghl.async=true;
           ghl.src='https://link.msgsndr.com/js/form_embed.js';
           document.body.appendChild(ghl);
         }, delay);
 
-        // Microsoft Clarity
+        // Microsoft Clarity — delay 3s
         setTimeout(function(){
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -47,19 +46,23 @@
           })(window,document,"clarity","script","wmfvxirvdu");
         }, delay);
 
-        // GA4
-        var ga=document.createElement('script');ga.async=true;
-        ga.src='https://www.googletagmanager.com/gtag/js?id=G-667DBCCXJD';
-        document.head.appendChild(ga);
-        window.dataLayer=window.dataLayer||[];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js',new Date());gtag('config','G-667DBCCXJD');
+        // GA4 — delay 3s
+        setTimeout(function(){
+          var ga=document.createElement('script');ga.async=true;
+          ga.src='https://www.googletagmanager.com/gtag/js?id=G-667DBCCXJD';
+          document.head.appendChild(ga);
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());gtag('config','G-667DBCCXJD');
+        }, delay);
 
-        // Ahrefs analytics
-        var ah=document.createElement('script');ah.async=true;
-        ah.src='https://analytics.ahrefs.com/analytics.js';
-        ah.setAttribute('data-key','NjipHIyE0M8eK9mvLi5HfA');
-        document.head.appendChild(ah);
+        // Ahrefs analytics — delay 3s
+        setTimeout(function(){
+          var ah=document.createElement('script');ah.async=true;
+          ah.src='https://analytics.ahrefs.com/analytics.js';
+          ah.setAttribute('data-key','NjipHIyE0M8eK9mvLi5HfA');
+          document.head.appendChild(ah);
+        }, delay);
       });
     </script>
   </body>

@@ -126,6 +126,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
+        <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <title>Auto Body Shop Charleston SC | Compass Collision</title>
         <meta
           name="description"
