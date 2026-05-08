@@ -18,50 +18,50 @@ const services = [
   {
     icon: <Wrench className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
     title: "Collision Repair",
-    description: "Fender benders to major wrecks. We restore your car to the way it looked before the accident. We work with all insurance companies.",
+    description: "Rear-ended. Side-swiped. Hit a deer. We fix it all — from fender benders to major wrecks. We work with every insurance company and handle the paperwork for you.",
     link: "/collision-repair",
   },
   {
     icon: <CircleDot className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
     title: "Dent Repair",
-    description: "Parking lot dings. Door dents. Hail damage. We remove dents without affecting your factory paint whenever possible.",
+    description: "Parking lot dings. Door dents. Hail damage. We'll give you a free estimate and fix it fast. Most people can't tell the dent was ever there.",
     link: "/dent-repair",
   },
   {
     icon: <Paintbrush className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
-    title: "Auto Painting",
-    description: "Panel painting. Bumper refinishing. Color matching down to the exact factory code. Your repair will be invisible.",
+    title: "Auto Painting & Color Matching",
+    description: "Perfect color match down to your exact factory code. Bumper refinishing. Panel painting. Your repair will be invisible — even on hard-to-match colors.",
     link: "/auto-painting",
   },
 ];
 
 const stats = [
-  { value: "2021", label: "Serving Charleston" },
+  { value: "272", label: "Five-star Google reviews" },
   { value: "95+", label: "Years combined experience" },
-  { value: "272", label: "Five-star reviews" },
-  { value: "3", label: "Core services" },
+  { value: "5.0", label: "Perfect star rating" },
+  { value: "Free", label: "Every estimate, every time" },
 ];
 
 const reasons = [
   {
-    icon: <Users className="w-6 h-6" />,
-    title: "Estimators Who Do the Work",
-    description: "The person writing your estimate has done the repair hundreds of times. You get an honest price because we know exactly what the job takes.",
+    icon: <Phone className="w-6 h-6" />,
+    title: "We Actually Answer the Phone",
+    description: "Call us and a real person picks up. We respond to emails the same day. No voicemails. No waiting weeks just to get an estimate.",
   },
   {
     icon: <Shield className="w-6 h-6" />,
-    title: "No Surprises",
-    description: "We tell you the real cost upfront. No hidden fees. No surprise charges after the work is done.",
+    title: "Free Estimates, Honest Prices",
+    description: "Other shops charge $100 just to look at your car. We never charge for an estimate. The price we quote is the price you pay.",
   },
   {
-    icon: <Clock className="w-6 h-6" />,
-    title: "On-Time Delivery",
-    description: "We give you a realistic timeline and stick to it. Your car is ready when we say it will be.",
+    icon: <Users className="w-6 h-6" />,
+    title: "We Handle Your Insurance",
+    description: "We work with all insurance companies. We deal with your adjuster, fight lowball estimates, and handle the paperwork so you don't have to.",
   },
   {
     icon: <Star className="w-6 h-6" />,
-    title: "People Over Profit",
-    description: "We care about people more than money. Every repair is done the right way — even the parts you can't see.",
+    title: "Technicians Write the Estimates",
+    description: "The person writing your estimate has done the repair hundreds of times. No middleman. No surprises. You get an accurate price because we know exactly what the job takes.",
   },
 ];
 
@@ -76,20 +76,20 @@ const serviceAreas = [
 
 const faqs = [
   {
-    q: "Do you work with insurance companies?",
-    a: "Yes. We work with all major insurance carriers. We handle the paperwork and communicate directly with your adjuster so you don't have to.",
+    q: "Do you charge for estimates?",
+    a: "Never. Every estimate is free. Other shops in Charleston charge $100 or more just to look at your car. We believe you shouldn't have to pay someone to tell you what's wrong. Call us or stop by — no cost and no obligation.",
   },
   {
-    q: "How long does a typical collision repair take?",
-    a: "Most repairs take 3 to 10 business days depending on the damage. We give you an honest timeline before we start and keep you updated throughout the process.",
+    q: "How long will my repair take?",
+    a: "Most collision repairs take 3 to 10 business days. We give you an honest timeline before we start and keep you updated the entire time. Unlike other shops, we don't sit on your car for weeks. We start when we say we will.",
   },
   {
-    q: "Do I need an appointment for an estimate?",
-    a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 or fill out our contact form and we will get back to you the same day.",
+    q: "Do you work with my insurance company?",
+    a: "Yes. We work with all insurance companies — State Farm, GEICO, Progressive, USAA, Allstate, and every other carrier. We deal with your adjuster directly, handle the paperwork, and fight lowball estimates when needed.",
   },
   {
-    q: "What types of vehicles do you repair?",
-    a: "We repair all makes and models. Cars, trucks, and SUVs. Foreign and domestic.",
+    q: "Can't get another shop to answer or fit you in?",
+    a: "This is the most common thing we hear. Customers call us after trying four or five other body shops in Charleston that are booked for months or won't return calls. We answer the phone, we respond to emails the same day, and we get your car in within days — not months.",
   },
 ];
 
@@ -131,7 +131,7 @@ const Index = () => {
         <title>Auto Body Shop Charleston SC | Compass Collision</title>
         <meta
           name="description"
-          content="Charleston's trusted auto body shop. Collision repair, dent repair, and auto painting. Honest estimates from techs who do the work. Call (843) 380-7055."
+          content="Charleston's trusted auto body shop. 272 five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/`} />
         <script type="application/ld+json">
@@ -176,9 +176,9 @@ const Index = () => {
       {/* Trust Bar */}
       <div style={{ backgroundColor: "#2D5F5D" }} className="text-white text-[13px] font-semibold py-2.5 px-4">
         <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 text-center">
-          <span>Serving Charleston Since 2021</span>
+          <span>We Answer the Phone</span>
           <span>272 Five-Star Google Reviews</span>
-          <span>Free Estimates</span>
+          <span>Free Estimates — Always</span>
         </div>
       </div>
 
@@ -198,16 +198,16 @@ const Index = () => {
               className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6"
               style={{ backgroundColor: "#2D5F5D" }}
             >
-              Charleston's Trusted Body Shop
+              Charleston's Trusted Auto Body Shop
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
-              Auto Body Shop
+              Auto Body Shop in
               <span className="block" style={{ color: "#4A8A87" }}>
                 Charleston, SC.
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Collision repair. Dent repair. Auto painting. Honest estimates from technicians who actually do the work. No shortcuts. No surprises.
+              Other shops won't call you back. We answer the phone, give free estimates, and get your car in within days — not months. 272 five-star reviews. BMW certified. All insurance accepted.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -250,10 +250,10 @@ const Index = () => {
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              See the <span style={{ color: "#4A8A87" }}>Difference</span>
+              Your Car Will Look Like It <span style={{ color: "#4A8A87" }}>Never Happened</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Drag the slider to compare. Every repair leaves looking factory fresh.
+              Drag to compare. BMWs, trucks, SUVs — our color matching is so precise you can't tell where the repair was.
             </p>
           </div>
           <BeforeAfterSlider
@@ -307,7 +307,7 @@ const Index = () => {
               What We <span style={{ color: "#2D5F5D" }}>Fix</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Three core services. All done in-house by our own team.
+              Collision damage. Dents. Paint. All done in-house by our own technicians — never farmed out.
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -343,10 +343,10 @@ const Index = () => {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              Why Charleston Trusts <span style={{ color: "#4A8A87" }}>Compass Collision</span>
+              Why Charleston Trusts <span style={{ color: "#4A8A87" }}>Us</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              We care about people more than money. That shows up in every repair we do.
+              Other body shops in Charleston are booked for months. We get you in within days. Here's why 272 customers gave us five stars.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -374,9 +374,9 @@ const Index = () => {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
-              What Our Customers <span style={{ color: "#2D5F5D" }}>Say</span>
+              272 Five-Star Reviews. <span style={{ color: "#2D5F5D" }}>Here's Why.</span>
             </h2>
-            <p className="text-gray-600 text-lg">272 five-star reviews and counting.</p>
+            <p className="text-gray-600 text-lg">Real reviews from real customers in Charleston. Read them all on Google.</p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
@@ -424,16 +424,16 @@ const Index = () => {
             Charleston's Honest <span style={{ color: "#2D5F5D" }}>Auto Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Your car got hit. Now you need it fixed. You need someone who tells you the truth about what it costs and how long it takes. That is what we do at Compass Collision.
+            You just got in an accident. Your car is damaged. You're calling body shops in Charleston and nobody answers. The one shop that does pick up says they can't even look at your car for two months. Sound familiar? You're not alone. This is the number one thing our customers tell us before they find our auto body shop in Charleston, SC.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We are a collision repair and auto body shop in Charleston, SC. We handle everything from minor dents to major collision damage. Every estimate is written by a technician who has done the repair before. That means your price is accurate from the start.
+            We do things differently. We answer the phone. We give free estimates — we never charge you just to look at the damage. And we get your car in within days, not months. Our team has 95+ years of combined experience in collision repair, dent repair, and auto painting. We're BMW certified and we work on everything from F-150s to Porsches. If you drive it, we can fix it.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Most body shops split the work. One person writes the estimate. A different person does the repair. That gap is where surprises happen. We do it differently. Our estimators work on cars. They know what the job takes because they have done it with their own hands.
+            What makes us different from other body shops in Charleston, SC? Honesty. The people writing your estimate have done the repair with their own hands. That means no inflated quotes and no surprise charges after the work is done. We tell you what it costs, how long it takes, and we keep you updated the entire time. When you pick up your car, it looks like the accident never happened.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We work with all major insurance companies. We handle the paperwork and deal with your adjuster directly. You drop off your car. We fix it right. You pick it up looking like nothing ever happened.
+            If you're dealing with insurance, we handle that too. We work with all insurance companies — State Farm, GEICO, Progressive, USAA, all of them. We talk to your adjuster directly, fight lowball estimates when needed, and take care of the paperwork. You have enough to deal with after an accident. Let us take the stress off your plate.
           </p>
         </div>
       </section>
@@ -448,23 +448,23 @@ const Index = () => {
             {[
               {
                 step: "01",
-                title: "Get a Free Estimate",
-                text: "Call us or fill out our form. We will look at the damage and give you an honest price. No pressure. No obligation.",
+                title: "Call or Request Your Free Estimate",
+                text: "Call us at (843) 380-7055 or fill out our online form. We'll look at the damage and give you an honest price — usually within 24 hours. Free. Always.",
               },
               {
                 step: "02",
-                title: "We Handle Insurance",
-                text: "If you are going through insurance, we deal with your adjuster directly. We handle the paperwork so you do not have to.",
+                title: "We Deal With Insurance",
+                text: "Going through insurance? We handle it. We talk to your adjuster, submit the paperwork, and make sure nothing falls through the cracks. You don't have to call the insurance company once.",
               },
               {
                 step: "03",
-                title: "Drop Off Your Car",
-                text: "Bring your car in on the scheduled date. We start work right away. We keep you updated on progress throughout the repair.",
+                title: "We Fix Your Car",
+                text: "We get your car in within days. We keep you updated throughout the repair — no black holes, no wondering what's happening. Most repairs take 3 to 10 business days.",
               },
               {
                 step: "04",
                 title: "Pick Up Like New",
-                text: "Your car is ready on time. The repair is invisible. You drive away like the accident never happened.",
+                text: "Your car comes back looking like the accident never happened. Paint matched to your exact factory code. Panels aligned. We even clean it before you pick it up.",
               },
             ].map((item, i) => (
               <motion.div
@@ -498,7 +498,7 @@ const Index = () => {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
-              Common <span style={{ color: "#2D5F5D" }}>Questions</span>
+              Common Questions About Our <span style={{ color: "#2D5F5D" }}>Body Shop</span>
             </h2>
           </div>
           <div className="flex flex-col gap-3">
@@ -551,7 +551,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
               Serving the <span style={{ color: "#2D5F5D" }}>Charleston Area</span>
             </h2>
-            <p className="text-gray-500 text-base">{ADDRESS}</p>
+            <p className="text-gray-500 text-base">Customers drive to us from across the Lowcountry because they can't find this level of service anywhere else.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceAreas.map((area, i) => {
@@ -577,10 +577,10 @@ const Index = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ready to Get Your <span style={{ color: "#242021" }}>Car Fixed?</span>
+            Don't Wait Months for a Repair. <span style={{ color: "#242021" }}>Call Us Today.</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate in minutes. No pressure. No obligation. Just an honest price from people who do the work.
+            Free estimates. We answer the phone. We get your car in within days. 272 five-star reviews from people who felt the same relief you're about to feel.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
