@@ -10,8 +10,12 @@ import jeepBefore from "@/assets/jeep-grand-cherokee-collision-repair-before-cha
 import jeepAfter from "@/assets/jeep-grand-cherokee-collision-repair-after-charleston.webp";
 import bmwBefore from "@/assets/bmw-sedan-collision-repair-before-charleston.webp";
 import bmwAfter from "@/assets/bmw-sedan-collision-repair-during-charleston.webp";
-import motoTankBefore from "@/assets/motorcycle-tank-paint-prep-before-charleston.webp";
-import motoTankAfter from "@/assets/motorcycle-tank-custom-paint-after-charleston.webp";
+import mustangBefore from "@/assets/green-mustang-collision-damage-before-charleston.webp";
+import mustangAfter from "@/assets/green-mustang-collision-repair-after-charleston.webp";
+import truckBumperBefore from "@/assets/truck-bumper-repair-before-charleston.webp";
+import truckBumperAfter from "@/assets/truck-bumper-repair-after-charleston.webp";
+import acuraBefore from "@/assets/acura-collision-repair-before-charleston.webp";
+import acuraAfter from "@/assets/acura-collision-repair-after-charleston.webp";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -111,12 +115,28 @@ const sliderPairs = [
     thumb: bmwAfter,
   },
   {
-    label: "Motorcycle Tank",
-    before: motoTankBefore,
-    after: motoTankAfter,
-    beforeAlt: "Motorcycle gas tank before custom paint Charleston SC",
-    afterAlt: "Motorcycle gas tank after custom paint Charleston SC",
-    thumb: motoTankAfter,
+    label: "Green Mustang",
+    before: mustangBefore,
+    after: mustangAfter,
+    beforeAlt: "Green Mustang before collision repair Charleston SC",
+    afterAlt: "Green Mustang after collision repair Charleston SC",
+    thumb: mustangAfter,
+  },
+  {
+    label: "Truck Bumper",
+    before: truckBumperBefore,
+    after: truckBumperAfter,
+    beforeAlt: "Truck bumper before repair Charleston SC",
+    afterAlt: "Truck bumper after repair Charleston SC",
+    thumb: truckBumperAfter,
+  },
+  {
+    label: "Acura",
+    before: acuraBefore,
+    after: acuraAfter,
+    beforeAlt: "Acura before collision repair Charleston SC",
+    afterAlt: "Acura after collision repair Charleston SC",
+    thumb: acuraAfter,
   },
 ];
 
