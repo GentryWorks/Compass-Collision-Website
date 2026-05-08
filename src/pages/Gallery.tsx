@@ -25,6 +25,7 @@ import shopExterior from "@/assets/compass-collision-shop-exterior-bays-charlest
 import shopInterior from "@/assets/compass-collision-shop-interior-wide-charleston.webp";
 import paintBooth from "@/assets/compass-collision-shop-paint-booth-tech-charleston.webp";
 import teamPhoto from "@/assets/compass-collision-team-charleston.webp";
+import suvPaintPrep from "@/assets/suv-collision-repair-during-paint-prep-charleston.webp";
 
 type Category = "All" | "Collision Repair" | "Auto Painting" | "Shop";
 
@@ -47,6 +48,7 @@ const images: GalleryImage[] = [
   { src: rav4AfterSide, alt: "Toyota RAV4 side view after collision repair Charleston SC", category: "Collision Repair" },
   { src: truckBedDent, alt: "Truck bed dent repair in progress Charleston SC", category: "Collision Repair" },
   { src: truckPanelPrep, alt: "Truck panel prep during collision repair Charleston SC", category: "Collision Repair" },
+  { src: suvPaintPrep, alt: "SUV masked for paint repair during collision work Charleston SC", category: "Collision Repair" },
   { src: motoTankBefore, alt: "Motorcycle tank before custom paint Charleston SC", category: "Auto Painting" },
   { src: motoTankAfter, alt: "Motorcycle tank after custom paint Charleston SC", category: "Auto Painting" },
   { src: classicFordAfter, alt: "Classic Ford truck after professional paint Charleston SC", category: "Auto Painting" },
