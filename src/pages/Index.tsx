@@ -188,9 +188,9 @@ const Index = () => {
         </div>
         <div className="max-w-[1200px] mx-auto px-6 z-10 w-full py-20">
           <motion.div
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
             <div
@@ -312,8 +312,8 @@ const Index = () => {
             {services.map((s, i) => (
               <motion.div
                 key={i}
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="bg-white rounded-xl border border-gray-200 px-6 py-8 shadow-sm hover:border-[#2D5F5D] transition-colors"
@@ -351,8 +351,8 @@ const Index = () => {
             {reasons.map((r, i) => (
               <motion.div
                 key={i}
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="rounded-xl px-6 py-8"
@@ -393,8 +393,8 @@ const Index = () => {
             ].map((review, i) => (
               <motion.div
                 key={i}
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="bg-white rounded-xl border border-gray-200 px-6 py-8 shadow-sm"
@@ -467,7 +467,7 @@ const Index = () => {
             ].map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ x: -20, opacity: 0 }}
+                initial={{ opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
