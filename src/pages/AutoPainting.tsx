@@ -21,23 +21,39 @@ const paintServices = [
 const faqs = [
   {
     q: "How do you match my car's exact paint color?",
-    a: "Every vehicle has a paint code, usually found on a sticker inside the driver's door jamb. We use that code along with computerized color matching to mix paint that matches your factory color exactly. We also spray a test panel first to verify the match under different lighting before painting your car.",
+    a: "Every vehicle has a paint code — usually on a sticker inside the driver's door jamb. We use that code with a computerized color mixing system to hit your exact factory formula. Then we spray a test panel and compare it to your car under natural light, fluorescent light, and shade. If it doesn't match perfectly, we adjust. We don't skip the test panel step.",
   },
   {
-    q: "Do you do full car repaints?",
-    a: "No. We focus on collision-related paint work. That includes panel painting, bumper refinishing, color matching, and blending after a repair. If you need an entire vehicle repainted or want a color change, we can refer you to a shop that specializes in that type of work.",
+    q: "Do you do full car repaints or color changes?",
+    a: "No. Our painting work is collision-related — panel painting, bumper refinishing, color matching, and blending after a repair. We don't do full vehicle color changes. If that's what you need, we'll point you to a shop that specializes in that work.",
   },
   {
     q: "How long does auto painting take?",
-    a: "A single panel — like a fender or bumper — typically takes 2 to 3 business days. That includes prep, primer, paint, clear coat, and curing time. Multi-panel jobs take longer depending on how many panels need to be painted and blended.",
+    a: "A single panel — like a bumper or fender — typically takes 2 to 3 business days. That includes full prep, primer, base coat, clear coat, and cure time. Multi-panel jobs take longer. We'll give you a timeline before we start so you can plan around it.",
   },
   {
-    q: "Will the new paint match the rest of my car?",
-    a: "That is the entire point of our color matching process. We blend the new paint into the surrounding panels so there is no visible line between the old and new paint. When we're done, you should not be able to tell which panel was repainted.",
+    q: "Will the repainted panel match the rest of my car?",
+    a: "That's the entire goal. We blend the new paint into the surrounding panels so there's no visible line between old and new. When we're done, you shouldn't be able to tell which panel was painted. We see this concern a lot — and it's a fair one. A bad blend is obvious. We've matched solid whites, tri-coat reds, pearl finishes, and heavy metallics. Color matching is something we take seriously on every job.",
+  },
+  {
+    q: "Do you work with insurance companies?",
+    a: "Yes. Most of our painting jobs come through insurance claims after a collision. We work directly with your insurance company and handle the back-and-forth so you don't have to. If the adjuster's estimate doesn't cover what the repair actually requires, we push back — and we document everything to support the claim. You shouldn't have to fight that battle yourself.",
+  },
+  {
+    q: "Does Charleston's humidity affect the paint job?",
+    a: "It can if you're not careful. Coastal humidity and salt air affect how paint cures, and surface prep matters more here than it does in a dry climate. We paint in a climate-controlled spray booth, and we adjust our prep process for the Charleston environment. Rushing paint cure in high humidity leads to adhesion problems down the road. We don't rush it.",
+  },
+  {
+    q: "Do you use OEM-quality paint materials?",
+    a: "Yes. We use manufacturer-grade base coat, clear coat, and primer on every job. The paint formulas in our mixing system are matched to factory specs — not generic substitutes. This is especially important on luxury vehicles and late-model trucks where the factory finish has specific flake sizes, pearl layers, or multi-stage chemistry.",
+  },
+  {
+    q: "Is the paint work guaranteed?",
+    a: "Yes. Our paint work is backed by a workmanship guarantee. If the color match, blend, or finish isn't right, we'll make it right. Bring it back and we'll look at it. We've been doing this long enough to know that a repair isn't finished until you're satisfied with how it looks.",
   },
   {
     q: "Can you fix paint scratches and chips?",
-    a: "Yes. Scratches that have gone through the clear coat or base coat need to be sanded, primed, and repainted. Small chips can sometimes be touched up, but deeper chips may require the panel to be repainted for a seamless finish. Bring your car in and we will tell you which approach makes the most sense.",
+    a: "Yes, if the damage came from a collision or an impact. Scratches that go through the clear coat or base coat need to be sanded, primed, and repainted for a seamless finish. Small surface chips can sometimes be touched up. Bring your car in and we'll tell you honestly which approach makes sense for your situation.",
   },
 ];
 
@@ -97,7 +113,7 @@ const AutoPainting = () => {
         <title>Auto Painting Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. Invisible repairs. Free estimates. Call (843) 380-7055."
+          content="Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/auto-painting`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -106,7 +122,7 @@ const AutoPainting = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative min-h-[60svh] flex items-center overflow-hidden" style={{ backgroundColor: "#242021" }}>
+      <section className="relative min-h-[60svh] flex items-center overflow-hidden" style={{ backgroundColor: "#1A2E2D" }}>
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
@@ -133,18 +149,18 @@ const AutoPainting = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Auto Painting
-              <span className="block" style={{ color: "#4A8A87" }}>
+              <span className="block" style={{ color: "#5A9E9B" }}>
                 Charleston, SC
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Panel painting. Bumper refinishing. Color matching down to the exact factory code. When we paint a panel, you can't tell where the repair ends and the original begins.
+              Panel painting. Bumper refinishing. Color matching down to the exact factory code. 272 five-star reviews. When we paint a panel, you can't tell where the repair ends and the original begins.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#2D5F5D" }}
+                style={{ backgroundColor: "#E8833A" }}
               >
                 Get Free Estimate
               </Link>
@@ -169,16 +185,16 @@ const AutoPainting = () => {
             Collision Paint Repair That's <span style={{ color: "#2D5F5D" }}>Invisible</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            After a collision repair, the paint has to match perfectly. If the new panel is a slightly different shade or the clear coat doesn't blend right, the repair is obvious. That is not how we do things.
+            After a collision, your biggest fear isn't the repair — it's whether the paint will match. A slightly off shade or a hard blend line makes the whole job look wrong. We hear this concern on nearly every job we take in for auto painting in Charleston, and it's completely valid.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We use computerized color matching and your vehicle's factory paint code to mix an exact match. Then we blend the new paint into the surrounding panels so there is no visible line between old and new. The result is a repair you can't see.
+            We use a computerized color mixing system and your vehicle's factory paint code to hit the exact formula. Then we blend into the surrounding panels so there's no visible seam between old and new. We've matched solid whites, tri-coat reds, multi-stage pearls, and heavy metallic flakes on everything from F-150s to BMWs.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We paint panels, bumpers, fenders, hoods, and doors. We do not do full vehicle repaints or color changes. Our focus is on <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link> paint work — making the damage disappear.
+            Most of our painting work comes in after a <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>. We handle the insurance process, coordinate the parts, and make sure the paint is the last thing you have to think about.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We handle solid colors, metallics, pearls, and tri-coat finishes. Whether your car has a simple white or a complex candy red with metallic flake, we have the mixing system and the experience to match it. We do not do rust repair or rust-related paint work. If the damage is from a collision, a dent, or a scratch, we can paint it.
+            We don't do rust repair or full vehicle color changes. Our focus is collision-related paint work — panels, bumpers, fenders, hoods, and doors. If the damage came from an accident or an impact, we can paint it.
           </p>
         </div>
       </section>
@@ -191,7 +207,7 @@ const AutoPainting = () => {
               What We <span style={{ color: "#2D5F5D" }}>Paint</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Every paint job is done in our spray booth with proper prep, primer, base coat, and clear coat.
+              Every paint job is done in our climate-controlled spray booth with full prep, primer, base coat, and clear coat.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 max-w-[800px] mx-auto">
@@ -219,29 +235,32 @@ const AutoPainting = () => {
             Our Color Matching <span style={{ color: "#2D5F5D" }}>Process</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Color matching is the difference between a paint job that looks right and one that looks obviously repaired. We take it seriously. Even two cars with the same color code can look slightly different due to sun exposure and age. That's why we don't just mix by code and spray. We test, compare, and adjust until the match is perfect.
+            Color matching is where most shops cut corners. Two cars with the same paint code can look slightly different after years of sun and salt air exposure. We don't just mix by code and spray — we test, compare, and adjust until the match holds under every lighting condition.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-8">
+            Charleston's coastal humidity also affects how paint cures. We use a climate-controlled spray booth and adjust our prep timing to account for the conditions outside. Rushing cure time in humid air causes adhesion failure down the road. We've seen what that looks like, and we don't let it leave our shop.
           </p>
           <div className="space-y-8 mt-8">
             {[
               {
                 step: "01",
                 title: "Find Your Paint Code",
-                text: "Every vehicle has a paint code on a sticker inside the door jamb, under the hood, or in the trunk. We locate this code and use it as the starting point for mixing your exact color.",
+                text: "Every vehicle has a paint code on a sticker inside the door jamb, under the hood, or in the trunk. We locate this code and use it as the starting point for mixing your factory color.",
               },
               {
                 step: "02",
-                title: "Computerized Color Matching",
-                text: "We use a computerized mixing system to match your paint formula precisely. This accounts for the base color, metallic flake, pearl, and any manufacturer-specific additives.",
+                title: "Computerized Color Mixing",
+                text: "Our mixing system matches your exact paint formula — base color, metallic flake size, pearl layers, and any manufacturer-specific chemistry. Tri-coats and multi-stage finishes require more steps, and we don't skip them.",
               },
               {
                 step: "03",
                 title: "Test Panel Spray",
-                text: "Before painting your car, we spray a test panel and compare it to your vehicle under multiple lighting conditions — daylight, fluorescent, and shade. If it doesn't match perfectly, we adjust the formula.",
+                text: "Before touching your car, we spray a test panel and compare it to your vehicle under natural light, fluorescent light, and shade. If it's not right, we adjust the formula. This step is non-negotiable.",
               },
               {
                 step: "04",
-                title: "Paint and Blend",
-                text: "We apply the base coat, then blend the color into the adjacent panels so there is no hard line between old and new paint. The clear coat goes on last and gets polished to a factory finish.",
+                title: "Paint, Blend, and Polish",
+                text: "We apply the base coat and blend the color into the adjacent panels so there's no hard line between old and new paint. The clear coat goes on last and gets polished to a factory finish. We use manufacturer-grade materials on every job.",
               },
             ].map((item, i) => (
               <motion.div
@@ -271,13 +290,13 @@ const AutoPainting = () => {
       </section>
 
       {/* When You Need Auto Painting */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            When You Need <span style={{ color: "#4A8A87" }}>Auto Painting</span>
+            When You Need <span style={{ color: "#5A9E9B" }}>Auto Painting</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            Most of our paint work follows a collision repair or <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#4A8A87" }}>dent repair</Link>. Here are the most common reasons customers need a panel repainted.
+            Most of our paint work follows a collision repair or <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#5A9E9B" }}>dent repair</Link>. If your job is going through insurance, we handle the claim coordination — including pushing back on adjuster estimates that don't cover what the repair actually requires.
           </p>
           <ul className="space-y-3 mt-6">
             {[
@@ -296,11 +315,32 @@ const AutoPainting = () => {
                 transition={{ duration: 0.3, delay: i * 0.05 }}
                 className="flex items-start gap-3 text-gray-400 text-sm"
               >
-                <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#4A8A87" }} />
+                <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#5A9E9B" }} />
                 {item}
               </motion.li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Choose Us</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We have 272 five-star reviews on Google. Not because we ask people to leave reviews — because customers are genuinely relieved when the car comes back looking right. "My BMW looks brand new and the paint is a perfect match" is something we hear regularly, and it doesn't happen by accident.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We work on everything from F-150s and Silverados to BMWs, Audis, Mercedes, and Lexus vehicles. BMW-certified repair means we understand how the factory finishes on these vehicles are built — and what it takes to match them correctly.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We're a small shop with hands-on involvement on every job. The person who writes your estimate is the same person overseeing the repair. You won't drop your car into a black hole and wait for a phone call that doesn't come. We keep you updated, we answer the phone, and we give you a straight answer on timing.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            Our paint work is backed by a workmanship guarantee. If the match or finish isn't right, bring it back and we'll make it right. That's not a policy — it's just how we do business.
+          </p>
         </div>
       </section>
 
@@ -379,16 +419,16 @@ const AutoPainting = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Need a Panel <span style={{ color: "#242021" }}>Repainted?</span>
+            Need a Panel <span style={{ color: "#1A2E2D" }}>Repainted?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. Factory color matching. Invisible repairs. Honest pricing.
+            Free estimates. Factory color matching. 272 five-star reviews. We'll make it look like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               Get Free Estimate
             </Link>

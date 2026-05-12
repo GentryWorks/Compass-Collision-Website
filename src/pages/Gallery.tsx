@@ -94,7 +94,7 @@ const Gallery = () => {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div
             initial={{ y: -20, opacity: 0 }}
@@ -109,7 +109,7 @@ const Gallery = () => {
               Our Work
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
-              Project <span style={{ color: "#4A8A87" }}>Gallery</span>
+              Project <span style={{ color: "#5A9E9B" }}>Gallery</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
               Real repairs on real cars. See the quality of our collision repair, dent repair, and auto painting work.
@@ -179,7 +179,7 @@ const Gallery = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ready to Get Your <span style={{ color: "#242021" }}>Car Fixed?</span>
+            Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate from Compass Collision. Your car could be the next one in our gallery.
@@ -188,7 +188,7 @@ const Gallery = () => {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               Get Free Estimate
             </Link>

@@ -28,7 +28,7 @@ const Contact = () => {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div
             initial={{ y: -20, opacity: 0 }}
@@ -43,7 +43,7 @@ const Contact = () => {
               Free Estimates
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
-              Contact <span style={{ color: "#4A8A87" }}>Us</span>
+              Contact <span style={{ color: "#5A9E9B" }}>Us</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-4">
               Need a repair estimate? Have a question? Call us, email us, or stop by the shop. We're happy to help.
@@ -211,7 +211,7 @@ const Contact = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ready to Get Your <span style={{ color: "#242021" }}>Car Fixed?</span>
+            Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Free estimates. Honest pricing. No pressure. Just real answers from people who do the work.
@@ -221,7 +221,7 @@ const Contact = () => {
               href={PHONE_HREF}
                 onClick={() => trackPhoneClick("contact")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               <Phone className="w-4 h-4" />
               Call: {PHONE}

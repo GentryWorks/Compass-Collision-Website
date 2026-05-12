@@ -28,7 +28,7 @@ const areaLinks = [
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#242021" }}>
+    <footer style={{ backgroundColor: "#1A2E2D" }}>
       {/* Main Footer */}
       <div className="max-w-[1200px] mx-auto px-6 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">

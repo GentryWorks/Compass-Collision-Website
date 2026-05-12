@@ -23,46 +23,67 @@ const damageTypes = [
 const processSteps = [
   {
     step: "01",
-    title: "Free Estimate",
-    text: "Bring your car in or send us photos. We look at the damage and give you an honest price. No pressure. No obligation.",
+    title: "Free Estimate — Same Day",
+    text: "Bring your car in or send us photos. We look at the damage and give you an honest price. No charge. No pressure. No obligation.",
   },
   {
     step: "02",
     title: "Insurance Coordination",
-    text: "We work directly with your insurance adjuster. We handle the paperwork, the supplements, and the back-and-forth so you don't have to.",
+    text: "We call your adjuster directly. We handle the paperwork, photos, and supplements. If the insurance estimate is too low, we fight it — you don't have to.",
   },
   {
     step: "03",
-    title: "Repair & Restore",
-    text: "Our team repairs the structural damage first, then restores the body panels and paint to factory condition. Every step is done in-house.",
+    title: "Rental Car Coordination",
+    text: "Need a rental while your car is in the shop? We can coordinate that for you. We've even driven customers to the rental location ourselves.",
   },
   {
     step: "04",
-    title: "Final Inspection & Pickup",
-    text: "We inspect every repair before you see the car. When you pick it up, the damage is invisible. Your car looks like the accident never happened.",
+    title: "Repair and Restore",
+    text: "We fix the structural damage first, then restore every panel and paint it to factory color. Everything is done in-house — no farming out to subcontractors.",
+  },
+  {
+    step: "05",
+    title: "Final Inspection and Pickup",
+    text: "We inspect every repair before you see the car. The damage is invisible. You pick up a vehicle that looks like the accident never happened.",
   },
 ];
 
 const faqs = [
   {
     q: "How long does collision repair take?",
-    a: "Most collision repairs take 3 to 10 business days depending on the severity of the damage. Minor fender benders are usually done in 3 to 5 days. Major structural repairs can take 2 weeks or more. We give you a realistic timeline before we start and keep you updated throughout the process.",
+    a: "Most collision repairs take 3 to 10 business days depending on the severity. Minor fender benders are often done in 3 to 5 days. Major structural repairs can take 2 weeks or more. We give you a realistic timeline before we start and keep you updated the whole way through.",
   },
   {
     q: "Do you work with all insurance companies?",
-    a: "Yes. We work with every major insurance carrier including State Farm, GEICO, Progressive, Allstate, USAA, and all others. We handle the claims process, communicate with your adjuster, and file supplements if additional damage is found during the repair.",
+    a: "Yes. We work with every major carrier — State Farm, GEICO, Progressive, Allstate, USAA, and all others. We communicate directly with your adjuster, handle all the paperwork, and file supplements if additional damage turns up during the repair. You don't have to make a single call to your insurance company if you don't want to.",
   },
   {
     q: "Will my car look the same after the repair?",
-    a: "That is the goal of every repair we do. We use factory-spec parts and match your paint down to the exact color code. When we're done, you should not be able to tell where the damage was. If you can, we're not done yet.",
+    a: "That's the goal of every repair we do. We use factory-spec parts and match your paint to the exact color code. Paint matching is something we take seriously — we see it go wrong at other shops all the time, especially on harder colors like red, pearl white, and two-tone finishes. When we're done, you shouldn't be able to tell where the damage was. If you can, we're not done yet.",
   },
   {
     q: "Do I need to get multiple estimates?",
-    a: "No. South Carolina law gives you the right to choose any body shop you want. You do not need multiple estimates, and your insurance company cannot require you to use a specific shop. You choose where your car gets fixed.",
+    a: "No. South Carolina law gives you the right to choose any body shop you want. You don't need multiple estimates, and your insurance company cannot require you to use a specific shop. You choose where your car gets fixed.",
   },
   {
     q: "What if there is hidden damage under the panels?",
-    a: "Hidden damage is common in collisions. If we find additional damage during the repair, we document it with photos and send a supplement to your insurance company. We will not proceed with extra work without your approval first.",
+    a: "Hidden damage is common in collisions — especially in rear-end hits where the bumper cover can look fine but the energy absorber and reinforcement bar behind it are crushed. If we find additional damage during the repair, we document it with photos and file a supplement with your insurance company. We won't proceed with extra work without your approval first.",
+  },
+  {
+    q: "Do you use OEM parts or aftermarket parts?",
+    a: "We use OEM (original equipment manufacturer) parts whenever possible. These are the same parts your vehicle was built with, made to the same spec. If your insurance company pushes for aftermarket parts, we'll let you know and explain the difference. Your car should go back together the way it came from the factory.",
+  },
+  {
+    q: "What should I do right after an accident?",
+    a: "First, make sure everyone is safe and call the police if there are injuries or significant damage. Take photos of the vehicles, the scene, and any damage before anything is moved. Get the other driver's insurance information. Then call us — we can walk you through the claim process from there and tell you exactly what steps to take next.",
+  },
+  {
+    q: "Can you coordinate my rental car?",
+    a: "Yes. If your repair is covered by insurance, you may be entitled to a rental car while your vehicle is in the shop. We can coordinate that directly with your insurance company. We've even driven customers to the rental location ourselves so they're not stranded.",
+  },
+  {
+    q: "Do you repair luxury and European vehicles?",
+    a: "Yes. We repair all makes and models — BMWs, Audis, Mercedes, Porsches, Lexus, and high-end trucks like the F-150, Silverado, and Ram. Our team includes BMW-certified technicians. If you drive it, we can fix it properly.",
   },
 ];
 
@@ -122,7 +143,7 @@ const CollisionRepair = () => {
         <title>Collision Repair Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Collision repair in Charleston, SC. Honest estimates from techs who do the work. We handle insurance. Free estimates. Call (843) 380-7055."
+          content="Collision repair in Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/collision-repair`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -131,7 +152,7 @@ const CollisionRepair = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative min-h-[60svh] flex items-center overflow-hidden" style={{ backgroundColor: "#242021" }}>
+      <section className="relative min-h-[60svh] flex items-center overflow-hidden" style={{ backgroundColor: "#1A2E2D" }}>
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
@@ -154,22 +175,22 @@ const CollisionRepair = () => {
               className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6"
               style={{ backgroundColor: "#2D5F5D" }}
             >
-              Charleston's Trusted Body Shop
+              272 Five-Star Reviews in Charleston
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Collision Repair
-              <span className="block" style={{ color: "#4A8A87" }}>
+              <span className="block" style={{ color: "#5A9E9B" }}>
                 Charleston, SC
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Your car got hit. Now you need it fixed right. We handle everything from minor fender benders to major collision damage — and we deal with your insurance company so you don't have to.
+              Your car got hit. Now you need it fixed right. We handle everything from minor fender benders to major structural damage — and we deal with your insurance company so you don't have to.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#2D5F5D" }}
+                style={{ backgroundColor: "#E8833A" }}
               >
                 Get Free Estimate
               </Link>
@@ -191,16 +212,19 @@ const CollisionRepair = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Honest Collision Repair from <span style={{ color: "#2D5F5D" }}>People You Can Trust</span>
+            Collision Repair in Charleston Done <span style={{ color: "#2D5F5D" }}>Right</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            When your car gets damaged in an accident, the last thing you want is a body shop that gives you the runaround. You want a straight answer on what it costs, how long it takes, and whether the repair will actually hold up.
+            If you've been in an accident, you already know the frustration. You call four shops. You get three voicemails and one person who says the earliest estimate appointment is two months out. That's the reality for most collision repair customers in the Charleston area right now.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            That is exactly what you get here. The people writing your estimate have done the repair hundreds of times with their own hands. They know what the job takes because they have done the work themselves. Your price is accurate from the start because there is no gap between the estimate and the repair.
+            We answer the phone. We offer free same-day estimates. And we have 272 five-star Google reviews from Charleston drivers who were in the exact same situation you're in.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Our team brings 95+ years of combined experience in the collision repair industry. That experience shows in how we write estimates, how we handle your insurance claim, and how your car looks when you pick it up.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We work with all insurance companies. We handle the claims process, communicate with your adjuster, and file supplements when needed. You drop off your car. We fix it. You pick it up looking like nothing ever happened.
+            We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. Our team includes BMW-certified technicians, so even high-end repairs are handled with the precision your vehicle requires.
           </p>
         </div>
       </section>
@@ -234,8 +258,32 @@ const CollisionRepair = () => {
         </div>
       </section>
 
-      {/* Our Process */}
+      {/* Why Choose Us */}
       <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Why Charleston Trusts Us for <span style={{ color: "#2D5F5D" }}>Collision Repair</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Most body shops split the work. One person writes the estimate. A different person does the repair. That gap is where surprises happen — unexpected charges, delays, and repairs that don't match the original quote.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We do it differently. The people writing your estimate have done the repair hundreds of times themselves. They know exactly what the job takes because they've done it with their own hands. Your price is accurate from day one.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We use OEM (original equipment manufacturer) parts whenever possible. These are the same parts your vehicle was built with — not aftermarket substitutes. If your insurance company pushes for cheaper parts, we'll flag it and explain the difference before anything is ordered.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Paint matching is something we take seriously. We match your vehicle's exact factory color code. For difficult finishes — two-tone paint, pearl white, dark red — we take extra time to get it right. We see bad paint matches at other shops regularly. It's one of the most common complaints we hear from customers who tried somewhere else first.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            The shop is clean. We keep you updated throughout the repair. And when you pick up your car, it's been cleaned and vacuumed. Small things — but they tell you a lot about how a shop operates.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Process */}
+      <section className="bg-gray-50 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center" style={{ color: "#111" }}>
             Our Collision Repair <span style={{ color: "#2D5F5D" }}>Process</span>
@@ -269,14 +317,14 @@ const CollisionRepair = () => {
       </section>
 
       {/* Insurance Section */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              We Handle Your <span style={{ color: "#4A8A87" }}>Insurance Claim</span>
+              We Handle Your <span style={{ color: "#5A9E9B" }}>Insurance Claim</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Dealing with insurance after an accident is stressful. We take that off your plate.
+              Dealing with insurance after an accident is stressful. We take that off your plate completely.
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -284,17 +332,17 @@ const CollisionRepair = () => {
               {
                 icon: <Shield className="w-6 h-6" />,
                 title: "All Carriers Welcome",
-                text: "We work with every insurance company. State Farm, GEICO, Progressive, Allstate, USAA, and all others. No restrictions.",
+                text: "We work with every insurance company — State Farm, GEICO, Progressive, Allstate, USAA, and all others. We've handled hundreds of claims across every major carrier.",
               },
               {
                 icon: <Wrench className="w-6 h-6" />,
-                title: "Direct Adjuster Communication",
-                text: "We talk to your adjuster directly. We handle the paperwork, the photos, and the supplement requests. You stay informed without the hassle.",
+                title: "We Fight Low Estimates",
+                text: "Insurance adjusters sometimes write estimates that don't cover the full repair. When that happens, we document the gap, file a supplement, and fight for the dollars your repair actually requires.",
               },
               {
                 icon: <Clock className="w-6 h-6" />,
-                title: "Supplement Filing",
-                text: "If we find hidden damage during the repair, we document it and file a supplement with your insurance. No surprise bills to you.",
+                title: "No Surprise Bills",
+                text: "If we find hidden damage during the repair, we photograph it and file a supplement with your insurance before touching it. You're never charged for work you didn't approve.",
               },
             ].map((item, i) => (
               <motion.div
@@ -306,33 +354,12 @@ const CollisionRepair = () => {
                 className="rounded-xl px-6 py-8"
                 style={{ backgroundColor: "#2D5F5D" }}
               >
-                <div className="mb-4 text-[#242021]">{item.icon}</div>
+                <div className="mb-4 text-[#1A2E2D]">{item.icon}</div>
                 <h3 className="font-extrabold text-sm uppercase tracking-wide mb-3 text-white">{item.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{item.text}</p>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="bg-white py-20">
-        <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Why Choose Us for <span style={{ color: "#2D5F5D" }}>Collision Repair</span>
-          </h2>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Most body shops split the work. One person writes the estimate. A different person does the repair. That gap is where surprises happen. Hidden charges. Unexpected delays. Repairs that don't match the original quote.
-          </p>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We do it differently. The person writing your estimate has done the repair hundreds of times. They know what the job takes because they have done it with their own hands. That means your price is accurate from day one.
-          </p>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We repair all makes and models. Cars, trucks, SUVs. Foreign and domestic. Whether you drive a Honda Civic or a BMW M5, we have the tools and experience to restore it to factory condition. Our team includes BMW-certified technicians, so even high-end repairs are handled with the precision your vehicle requires.
-          </p>
-          <p className="text-gray-500 text-base leading-relaxed">
-            With 95+ years of combined experience in the collision repair industry and 272 five-star Google reviews, Charleston trusts us to get the job done right. That experience shows in every repair — from how we prep the panels to how we finish the paint.
-          </p>
         </div>
       </section>
 
@@ -411,16 +438,16 @@ const CollisionRepair = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Need Collision Repair in <span style={{ color: "#242021" }}>Charleston?</span>
+            Need Collision Repair in <span style={{ color: "#1A2E2D" }}>Charleston?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. Honest pricing. No pressure. No surprises.
+            Free estimates. No runaround. We answer the phone. Call us or request an estimate online and we'll get back to you the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               Get Free Estimate
             </Link>

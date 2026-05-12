@@ -76,7 +76,7 @@ const About = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative min-h-[50svh] flex items-center overflow-hidden" style={{ backgroundColor: "#242021" }}>
+      <section className="relative min-h-[50svh] flex items-center overflow-hidden" style={{ backgroundColor: "#1A2E2D" }}>
         <div className="absolute inset-0 z-0">
           <img
             src={shopImg}
@@ -103,7 +103,7 @@ const About = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               About
-              <span className="block" style={{ color: "#4A8A87" }}>
+              <span className="block" style={{ color: "#5A9E9B" }}>
                 Compass Collision
               </span>
             </h1>
@@ -175,11 +175,11 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              What We <span style={{ color: "#4A8A87" }}>Stand For</span>
+              What We <span style={{ color: "#5A9E9B" }}>Stand For</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -193,7 +193,7 @@ const About = () => {
                 className="rounded-xl px-6 py-8"
                 style={{ backgroundColor: "#2D5F5D" }}
               >
-                <div className="mb-4 text-[#242021]">{v.icon}</div>
+                <div className="mb-4 text-[#1A2E2D]">{v.icon}</div>
                 <h3 className="font-extrabold text-sm uppercase tracking-wide mb-3 text-white">{v.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{v.text}</p>
               </motion.div>
@@ -206,7 +206,7 @@ const About = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ready to Get Your <span style={{ color: "#242021" }}>Car Fixed?</span>
+            Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate. Honest pricing from people who do the work.
@@ -215,7 +215,7 @@ const About = () => {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               Get Free Estimate
             </Link>

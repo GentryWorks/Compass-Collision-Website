@@ -20,19 +20,19 @@ import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
   {
-    icon: <Wrench className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
+    icon: <Wrench className="w-7 h-7" style={{ color: "#E8833A" }} />,
     title: "Collision Repair",
     description: "Rear-ended. Side-swiped. Hit a deer. We fix it all — from fender benders to major wrecks. We work with every insurance company and handle the paperwork for you.",
     link: "/collision-repair",
   },
   {
-    icon: <CircleDot className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
+    icon: <CircleDot className="w-7 h-7" style={{ color: "#E8833A" }} />,
     title: "Dent Repair",
     description: "Parking lot dings. Door dents. Hail damage. We'll give you a free estimate and fix it fast. Most people can't tell the dent was ever there.",
     link: "/dent-repair",
   },
   {
-    icon: <Paintbrush className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
+    icon: <Paintbrush className="w-7 h-7" style={{ color: "#E8833A" }} />,
     title: "Auto Painting & Color Matching",
     description: "Perfect color match down to your exact factory code. Bumper refinishing. Panel painting. Your repair will be invisible — even on hard-to-match colors.",
     link: "/auto-painting",
@@ -203,7 +203,7 @@ const Index = () => {
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#242021" }}>
+      <section className="relative min-h-[85svh] flex items-center overflow-hidden" style={{ backgroundColor: "#1A2E2D" }}>
         <div className="absolute inset-0 z-0">
           <img src={heroImg} alt="Camaro ZL1 collision repair Charleston SC" className="w-full h-full object-cover opacity-40" loading="eager" fetchPriority="high" width={1800} height={1200} />
         </div>
@@ -222,7 +222,7 @@ const Index = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Auto Body Shop in
-              <span className="block" style={{ color: "#4A8A87" }}>
+              <span className="block" style={{ color: "#5A9E9B" }}>
                 Charleston, SC.
               </span>
             </h1>
@@ -233,7 +233,7 @@ const Index = () => {
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#2D5F5D" }}
+                style={{ backgroundColor: "#E8833A" }}
               >
                 Get Free Estimate
               </Link>
@@ -258,7 +258,7 @@ const Index = () => {
             {stats.map((s, i) => (
               <div key={i}>
                 <p className="text-4xl font-extrabold mb-1 text-white">{s.value}</p>
-                <p className="text-[#6BA3A0] text-sm uppercase tracking-widest font-semibold">{s.label}</p>
+                <p className="text-[#8B8680] text-sm uppercase tracking-widest font-semibold">{s.label}</p>
               </div>
             ))}
           </div>
@@ -266,11 +266,11 @@ const Index = () => {
       </section>
 
       {/* Before & After Slider */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[900px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              Your Car Will Look Like It <span style={{ color: "#4A8A87" }}>Never Happened</span>
+              Your Car Will Look Like It <span style={{ color: "#5A9E9B" }}>Never Happened</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
               Drag to compare. BMWs, trucks, SUVs — our color matching is so precise you can't tell where the repair was.
@@ -320,7 +320,7 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -348,7 +348,7 @@ const Index = () => {
                 <Link
                   to={s.link}
                   className="text-sm font-bold uppercase tracking-wide no-underline hover:opacity-80 transition-opacity"
-                  style={{ color: "#2D5F5D" }}
+                  style={{ color: "#E8833A" }}
                 >
                   Learn More →
                 </Link>
@@ -359,11 +359,11 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3 text-white">
-              Why Charleston Trusts <span style={{ color: "#4A8A87" }}>Us</span>
+              Why Charleston Trusts <span style={{ color: "#5A9E9B" }}>Us</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
               Other body shops in Charleston are booked for months. We get you in within days. Here's why 272 customers gave us five stars.
@@ -380,7 +380,7 @@ const Index = () => {
                 className="rounded-xl px-6 py-8"
                 style={{ backgroundColor: "#2D5F5D" }}
               >
-                <div className="mb-4 text-[#242021]">{r.icon}</div>
+                <div className="mb-4 text-[#1A2E2D]">{r.icon}</div>
                 <h3 className="font-extrabold text-sm uppercase tracking-wide mb-3 text-white">{r.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{r.description}</p>
               </motion.div>
@@ -390,7 +390,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -459,7 +459,7 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center" style={{ color: "#111" }}>
             How It <span style={{ color: "#2D5F5D" }}>Works</span>
@@ -497,7 +497,7 @@ const Index = () => {
               >
                 <div
                   className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-extrabold text-sm"
-                  style={{ backgroundColor: "#2D5F5D" }}
+                  style={{ backgroundColor: "#E8833A" }}
                 >
                   {item.step}
                 </div>
@@ -565,7 +565,7 @@ const Index = () => {
       </section>
 
       {/* Service Area */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -597,7 +597,7 @@ const Index = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Don't Wait Months for a Repair. <span style={{ color: "#242021" }}>Call Us Today.</span>
+            Don't Wait Months for a Repair. <span style={{ color: "#1A2E2D" }}>Call Us Today.</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Free estimates. We answer the phone. We get your car in within days. 272 five-star reviews from people who felt the same relief you're about to feel.
@@ -605,8 +605,8 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              className="inline-flex items-center justify-center font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              style={{ backgroundColor: "#E8833A", color: "#fff" }}
             >
               Get Free Estimate
             </Link>

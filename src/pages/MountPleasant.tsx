@@ -115,7 +115,7 @@ const MountPleasant = () => {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -128,13 +128,13 @@ const MountPleasant = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Body Shop
-              <span className="block" style={{ color: "#4A8A87" }}>Mount Pleasant, SC</span>
+              <span className="block" style={{ color: "#5A9E9B" }}>Mount Pleasant, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
               Mount Pleasant drivers trust us for collision repair, dent repair, and auto painting. We're just across the Ravenel Bridge with honest prices and quality work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#2D5F5D" }}>
+              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
                 Get Free Estimate
               </Link>
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white" style={{ border: "2px solid #fff" }}>
@@ -228,10 +228,10 @@ const MountPleasant = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#4A8A87" }}>Mount Pleasant</span>
+            Getting Here from <span style={{ color: "#5A9E9B" }}>Mount Pleasant</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
             From Mount Pleasant, take the Arthur Ravenel Jr. Bridge (US-17 West) into downtown Charleston. Continue on the Crosstown (US-17) toward West Ashley. Our shop is at 1949 Dulsey Road, Unit 202. The drive takes about 20 to 25 minutes.
@@ -240,7 +240,7 @@ const MountPleasant = () => {
             From Shem Creek or the Towne Centre area, head south on Coleman Boulevard to US-17 and cross the bridge. From the Isle of Palms or Sullivan's Island, take the IOP Connector to US-17 West.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#4A8A87" }} />
+            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
             <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
@@ -299,13 +299,13 @@ const MountPleasant = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Need a Body Shop Near <span style={{ color: "#242021" }}>Mount Pleasant?</span>
+            Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>Mount Pleasant?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate from Compass Collision. Just across the bridge. Honest pricing. Quality work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#242021" }}>Get Free Estimate</Link>
+            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline" style={{ border: "2px solid #fff" }}>
               <Phone className="w-4 h-4" />
               Call: {PHONE}

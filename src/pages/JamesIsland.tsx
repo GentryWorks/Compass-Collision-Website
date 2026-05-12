@@ -114,19 +114,19 @@ const JamesIsland = () => {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, ease: [0.2, 0.8, 0.2, 1] }} className="max-w-2xl">
             <div className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6" style={{ backgroundColor: "#2D5F5D" }}>Serving James Island</div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Body Shop
-              <span className="block" style={{ color: "#4A8A87" }}>James Island</span>
+              <span className="block" style={{ color: "#5A9E9B" }}>James Island</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
               James Island residents trust us for collision repair, dent repair, and auto painting. We're just 10 to 15 minutes away with honest prices and quality work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#2D5F5D" }}>Get Free Estimate</Link>
+              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white" style={{ border: "2px solid #fff" }}>
                 <Phone className="w-4 h-4" />
                 Call: {PHONE}
@@ -216,10 +216,10 @@ const JamesIsland = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#4A8A87" }}>James Island</span>
+            Getting Here from <span style={{ color: "#5A9E9B" }}>James Island</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
             Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From James Island, take Folly Road north toward downtown, then take the Crosstown (US-17) toward West Ashley. The drive takes about 10 to 15 minutes.
@@ -228,7 +228,7 @@ const JamesIsland = () => {
             From the Maybank Highway area, head north on Folly Road or take Harbor View Road to connect to US-17. Either route gets you to our door in about the same time.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#4A8A87" }} />
+            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
             <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
@@ -287,13 +287,13 @@ const JamesIsland = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Need a Body Shop Near <span style={{ color: "#242021" }}>James Island?</span>
+            Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>James Island?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate from Compass Collision. Just 10 to 15 minutes from James Island. Honest pricing. Quality work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#242021" }}>Get Free Estimate</Link>
+            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline" style={{ border: "2px solid #fff" }}>
               <Phone className="w-4 h-4" />
               Call: {PHONE}

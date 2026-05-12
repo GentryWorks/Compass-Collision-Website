@@ -21,23 +21,35 @@ const dentTypes = [
 const faqs = [
   {
     q: "What is paintless dent repair?",
-    a: "Paintless dent repair (PDR) is a technique that removes dents without sanding, filling, or repainting. We use specialized tools to gently push the metal back into its original shape from behind the panel. It preserves your factory paint and is faster and more cost-effective than traditional dent repair.",
+    a: "Paintless dent repair (PDR) is a technique that removes dents without sanding, filling, or repainting. We use specialized tools to gently push the metal back into its original shape from behind the panel. It preserves your factory paint and is faster than traditional dent repair.",
   },
   {
     q: "When does paintless dent repair work?",
-    a: "PDR works best on small to medium dents where the paint has not been cracked or chipped. Door dings, hail damage, and minor body dents are ideal candidates. If the dent has sharp creases, damaged paint, or is on a body line, traditional dent repair may be needed instead.",
+    a: "PDR works best on small to medium dents where the paint hasn't been cracked or chipped. Door dings, hail damage, and minor body dents are ideal candidates. If the dent has sharp creases, damaged paint, or sits on a body line, traditional dent repair may be needed instead.",
   },
   {
     q: "How long does dent repair take?",
-    a: "Small dents repaired with PDR can be done in as little as 1 to 2 hours. Traditional dent repair that requires filling and painting typically takes 2 to 5 business days depending on the size and location of the damage.",
+    a: "Most PDR jobs are done same day — often in two hours or less. Hail damage with multiple dents across a hood or roof typically takes a full day. Traditional dent repair that requires filling and painting usually takes two to five business days depending on the size and location of the damage.",
   },
   {
-    q: "Is paintless dent repair cheaper than traditional repair?",
-    a: "Yes, in most cases. PDR does not require paint or body filler, which cuts both material and labor costs. A single door ding typically costs significantly less to fix with PDR than a traditional repair. We will tell you which method makes the most sense for your specific dent.",
+    q: "Is paintless dent repair much less expensive than traditional repair?",
+    a: "Yes, significantly. PDR skips the paint, body filler, and sanding — which cuts both material and labor costs considerably. Most people come in expecting a big repair bill and are relieved by what PDR actually costs. We'll tell you upfront which method your dent needs and what it'll run.",
   },
   {
-    q: "Can you fix hail damage?",
-    a: "Yes. Hail damage is one of the most common reasons people come to us for dent repair. If the hail did not crack or chip the paint, we can usually fix most or all of the dents with paintless dent repair. For severe hail damage, we combine PDR with traditional methods to get your car back to factory condition.",
+    q: "Can I use my insurance for hail damage?",
+    a: "Yes. Hail damage is covered under comprehensive insurance — not collision. That means it doesn't count against you as an at-fault claim and your premium typically won't go up. We work with all major insurers and can help you navigate the claim process. Most customers are surprised by how smoothly hail claims go.",
+  },
+  {
+    q: "Can you fix hail damage on a BMW, Audi, or other luxury vehicle?",
+    a: "Absolutely. We regularly work on BMWs, Audis, Mercedes, Lexus vehicles, and newer trucks. These vehicles require careful technique because the panels and paint systems are more complex. PDR is actually ideal for luxury cars because it preserves the factory finish — no color matching needed.",
+  },
+  {
+    q: "Will the repair affect my car's paint warranty or resale value?",
+    a: "PDR preserves your factory paint completely, so there's no impact on your paint warranty and no evidence of repair that would affect resale. Traditional dent repair uses factory-matched paint, so the repaired area is indistinguishable from the original finish. Either way, the goal is a result that looks like nothing ever happened.",
+  },
+  {
+    q: "What if I'm not sure whether my dent needs PDR or traditional repair?",
+    a: "Don't worry about figuring that out yourself — that's our job. Bring the car in and we'll assess the dent, check the paint condition, and tell you exactly which method makes sense and what it'll cost. The estimate is free and there's no pressure.",
   },
 ];
 
@@ -97,7 +109,7 @@ const DentRepair = () => {
         <title>Dent Repair Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Dent repair in Charleston, SC. Paintless dent removal and traditional dent repair. Door dings, hail damage, and more. Free estimates. Call (843) 380-7055."
+          content="Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/dent-repair`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -106,7 +118,7 @@ const DentRepair = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative min-h-[60svh] flex items-center overflow-hidden" style={{ backgroundColor: "#242021" }}>
+      <section className="relative min-h-[60svh] flex items-center overflow-hidden" style={{ backgroundColor: "#1A2E2D" }}>
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
@@ -133,18 +145,18 @@ const DentRepair = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Dent Repair
-              <span className="block" style={{ color: "#4A8A87" }}>
+              <span className="block" style={{ color: "#5A9E9B" }}>
                 Charleston, SC
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Door dings. Hail damage. Parking lot dents. We remove dents with paintless dent repair when possible and traditional methods when needed. Your car leaves looking factory fresh.
+              Door dings. Hail damage. Parking lot dents. We remove dents with paintless dent repair when possible and traditional methods when needed. Most jobs are done same day. 272 five-star reviews.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#2D5F5D" }}
+                style={{ backgroundColor: "#E8833A" }}
               >
                 Get Free Estimate
               </Link>
@@ -166,16 +178,16 @@ const DentRepair = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Professional Dent Repair in <span style={{ color: "#2D5F5D" }}>Charleston</span>
+            Dent Repair in <span style={{ color: "#2D5F5D" }}>Charleston, SC</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            You walked out of the store and found a new dent in your door. Or a hailstorm rolled through and left your hood looking like a golf ball. Either way, you want it fixed. And you want it done right without paying more than you need to.
+            You walked out of a parking lot and found a new dent in your door. Or a spring storm rolled through the Lowcountry and left your hood looking like a golf ball. Either way, you want it fixed — and you're probably assuming it'll cost a fortune and take a week. It usually doesn't.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We offer both paintless dent repair (PDR) and traditional dent repair. PDR uses specialized tools to push the metal back into shape from behind the panel without sanding, filling, or painting. It preserves your factory finish and costs less than traditional methods.
+            We offer both paintless dent repair (PDR) and traditional dent repair in Charleston. PDR uses specialized tools to push the metal back into shape from behind the panel — no sanding, no filler, no repainting. It preserves your factory finish and most jobs are done same day. We regularly fix 10 or more hail dents on a single hood using PDR, and the car is ready before end of business.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            When a dent is too large, too sharp, or has damaged paint, we use traditional body repair techniques. That means filling, sanding, priming, and painting the panel to match your vehicle's exact factory color. Either way, the dent disappears.
+            When a dent is too large, too sharp, or has damaged paint, we use traditional repair — filling, sanding, priming, and painting the panel to match your vehicle's exact factory color. Our team has years of combined experience working on everything from F-150s to BMWs, Audis, and Range Rovers. The dent disappears. The paint matches. Your car looks like nothing happened.
           </p>
         </div>
       </section>
@@ -188,7 +200,7 @@ const DentRepair = () => {
               Types of Dents <span style={{ color: "#2D5F5D" }}>We Fix</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              If it's dented, we can fix it. Here are the most common dent repairs we do.
+              If it's dented, we can fix it. Here are the most common dent repairs we handle.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 max-w-[800px] mx-auto">
@@ -216,7 +228,7 @@ const DentRepair = () => {
             Paintless Dent Repair vs. <span style={{ color: "#2D5F5D" }}>Traditional Dent Repair</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Not every dent can be fixed the same way. We use the method that gives you the best result at the best price. A shopping cart ding in a flat panel is very different from a crease along a body line. Hail damage across your hood is different from a deep dent on your door. We look at the size, location, and paint condition before recommending the right approach.
+            Not every dent can be fixed the same way. A shopping cart ding on a flat door panel is very different from a crease along a body line. Hail damage across a hood is different from a deep impact dent on a quarter panel. We look at the size, location, and paint condition before recommending the right approach — and we'll explain exactly why.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mt-8">
@@ -232,12 +244,12 @@ const DentRepair = () => {
               </h3>
               <ul className="space-y-2">
                 {[
-                  "Preserves factory paint",
-                  "Faster turnaround (often same day)",
-                  "Lower cost than traditional repair",
+                  "Preserves factory paint — no color matching needed",
+                  "Most jobs done same day",
+                  "Significantly less than traditional repair",
                   "Best for small to medium dents",
                   "Ideal for hail damage",
-                  "No body filler or repainting needed",
+                  "No body filler or repainting",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-gray-500 text-sm">
                     <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
@@ -259,11 +271,11 @@ const DentRepair = () => {
               </h3>
               <ul className="space-y-2">
                 {[
-                  "Handles dents with damaged paint",
+                  "Handles dents with cracked or chipped paint",
                   "Repairs sharp creases and body lines",
-                  "Uses body filler for a smooth finish",
-                  "Panel is repainted to exact factory color",
-                  "Best for larger or more severe dents",
+                  "Uses body filler for a smooth surface",
+                  "Panel repainted to exact factory color",
+                  "Best for larger or more severe damage",
                   "Restores structural integrity when needed",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-gray-500 text-sm">
@@ -276,38 +288,56 @@ const DentRepair = () => {
           </div>
 
           <p className="text-gray-500 text-base leading-relaxed mt-8">
-            Not sure which method your dent needs? Bring your car in for a free estimate. We will look at the damage and tell you exactly which approach will give you the best result. No pressure. No upselling. Many customers come in expecting an expensive traditional repair and leave with a same-day PDR fix at a fraction of the cost.
+            Not sure which method your dent needs? Bring the car in. We'll assess the damage and tell you exactly which approach gives you the best result — and what it'll cost. No pressure. Many customers come in expecting a traditional repair and leave same day with a PDR fix at a fraction of what they expected to pay.
+          </p>
+        </div>
+      </section>
+
+      {/* Hail Damage + Insurance */}
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Hail Damage Repair <span style={{ color: "#2D5F5D" }}>and Insurance Claims</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            The Lowcountry gets hit with hail every spring. A single storm can leave dozens of dents across your hood, roof, and trunk lid. We see it every year — usually starting in March and running through June. If your vehicle got caught in one of those storms, PDR is almost always the right call.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Here's what most people don't realize: hail damage is covered under your comprehensive insurance, not collision. That means filing a claim won't count against you as an at-fault accident, and your rate typically won't go up. We work with all major insurers and can walk you through the claim process from estimate to pickup.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We've navigated hundreds of insurance claims for Charleston-area customers. If the adjuster's estimate doesn't cover the full repair, we'll push back. You shouldn't have to pay out of pocket because the insurance company underestimated the damage.
           </p>
         </div>
       </section>
 
       {/* Process */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center text-white">
-            Our Dent Repair <span style={{ color: "#4A8A87" }}>Process</span>
+            Our Dent Repair <span style={{ color: "#5A9E9B" }}>Process</span>
           </h2>
           <div className="space-y-8">
             {[
               {
                 step: "01",
                 title: "Assess the Damage",
-                text: "We look at the dent, check the paint, and determine whether PDR or traditional repair is the right approach. You get an honest answer and an accurate price.",
+                text: "We look at the dent, check the paint, and determine whether PDR or traditional repair is the right approach. You get an honest answer and an accurate price — no surprises.",
               },
               {
                 step: "02",
                 title: "Choose the Right Method",
-                text: "If the paint is intact and the dent is accessible from behind, we use PDR. If the dent has cracked paint or sharp creases, we go the traditional route. We explain why and let you decide.",
+                text: "If the paint is intact and the dent is accessible from behind, we use PDR. If the dent has cracked paint or sharp creases, we go the traditional route. We explain why and you decide.",
               },
               {
                 step: "03",
                 title: "Repair the Dent",
-                text: "Our technicians carefully restore the panel to its original shape. For PDR, this can take as little as an hour. For traditional repair, we fill, sand, prime, and paint to factory specs.",
+                text: "Our technicians restore the panel to its original shape. PDR jobs often take two hours or less. Traditional repairs — filling, sanding, priming, painting — typically run two to five business days.",
               },
               {
                 step: "04",
-                title: "Quality Check & Pickup",
-                text: "We inspect the repair under multiple lighting conditions to make sure it's invisible. You pick up your car looking the way it did before the dent happened.",
+                title: "Quality Check and Pickup",
+                text: "We inspect the repair under multiple lighting conditions before we hand the car back. The result should be invisible. If it's not right, we fix it. That's the standard we hold ourselves to across all 272 five-star reviews.",
               },
             ].map((item, i) => (
               <motion.div
@@ -333,6 +363,24 @@ const DentRepair = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Why Us */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Trust Us</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We have 272 five-star Google reviews — and that number isn't an accident. Customers come to us after getting nowhere with dealership body shops booked out for months or chain shops that won't return a call. We answer the phone. We give free estimates, usually same day. And we do the work right.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Our technicians have handled dent repair on every vehicle type that drives through Charleston — from daily drivers to BMWs, Audis, Lexus SUVs, and newer trucks. We know how each paint system behaves, and we won't rush a repair just to move the car out of the bay.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            You'll know the price before we touch the car. You'll know which method we're using and why. And when you pick up, the repair will be invisible — or we'll make it right. That's the standard we've held for every one of those 272 reviews.
+          </p>
         </div>
       </section>
 
@@ -411,16 +459,16 @@ const DentRepair = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Got a Dent? <span style={{ color: "#242021" }}>We'll Fix It.</span>
+            Got a Dent? <span style={{ color: "#1A2E2D" }}>We'll Fix It.</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. We'll tell you the best repair method, the honest price, and how long it takes.
+            Free estimates. Honest pricing. Most PDR jobs done same day. Call or stop by our West Ashley shop and we'll take a look.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               Get Free Estimate
             </Link>

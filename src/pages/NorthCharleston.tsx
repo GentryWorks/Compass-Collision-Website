@@ -115,7 +115,7 @@ const NorthCharleston = () => {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -131,7 +131,7 @@ const NorthCharleston = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Body Shop
-              <span className="block" style={{ color: "#4A8A87" }}>
+              <span className="block" style={{ color: "#5A9E9B" }}>
                 North Charleston, SC
               </span>
             </h1>
@@ -142,7 +142,7 @@ const NorthCharleston = () => {
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#2D5F5D" }}
+                style={{ backgroundColor: "#E8833A" }}
               >
                 Get Free Estimate
               </Link>
@@ -267,10 +267,10 @@ const NorthCharleston = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#242021" }} className="py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#4A8A87" }}>North Charleston</span>
+            Getting Here from <span style={{ color: "#5A9E9B" }}>North Charleston</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
             Our shop is located at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From North Charleston, the easiest route is to take I-26 South to the Savannah Highway exit, then head toward West Ashley. The drive is about 15 to 20 minutes depending on traffic.
@@ -279,7 +279,7 @@ const NorthCharleston = () => {
             If you're coming from the Park Circle area, you can take Rivers Avenue south to I-26 and follow the same route. From the Tanger Outlets area or the airport, take I-526 West to I-26 South.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#4A8A87" }} />
+            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
             <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
@@ -356,7 +356,7 @@ const NorthCharleston = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Need a Body Shop Near <span style={{ color: "#242021" }}>North Charleston?</span>
+            Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>North Charleston?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Get a free estimate from Compass Collision. Honest pricing. No pressure. Just 15 minutes from North Charleston.
@@ -365,7 +365,7 @@ const NorthCharleston = () => {
             <Link
               to="/contact"
               className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#242021" }}
+              style={{ backgroundColor: "#E8833A" }}
             >
               Get Free Estimate
             </Link>
