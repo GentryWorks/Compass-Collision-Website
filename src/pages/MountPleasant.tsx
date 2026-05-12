@@ -34,7 +34,15 @@ const faqs = [
   },
   {
     q: "Do you handle insurance claims for Mount Pleasant customers?",
-    a: "Yes. We work with every major insurance carrier. We handle the claims process, communicate with your adjuster, and file supplements if hidden damage is found. Your job is just to drop off the car.",
+    a: "Yes — and we handle the whole process, not just the paperwork. We communicate with your adjuster, write the estimate, and file supplements if we find hidden damage the insurance company missed. If your adjuster undershoots the estimate, we push back on your behalf. Your job is to drop off the car.",
+  },
+  {
+    q: "What kinds of vehicles do you work on?",
+    a: "We work on everything from F-150s and Silverados to BMWs, Audis, and Mercedes. We're BMW-certified and comfortable with European brands, luxury SUVs, and newer trucks. If you drive it, we can fix it.",
+  },
+  {
+    q: "How long will my repair take?",
+    a: "It depends on the extent of the damage. Minor dents and bumper repairs often take just a few days. Larger collision repairs with insurance involved typically run one to two weeks. We'll give you a realistic timeline upfront — not a number we can't hit.",
   },
   {
     q: "Can you fix hail damage?",
@@ -50,7 +58,7 @@ const faqs = [
   },
   {
     q: "Can I email photos of my damage for a quote?",
-    a: "Yes. Send photos to adam.compasscollision@gmail.com and we will give you a preliminary estimate. The final price is confirmed when we see the car in person, but photos help us give you a good starting number before you drive over.",
+    a: "Yes. Send photos to adam.compasscollision@gmail.com and we'll give you a preliminary estimate. The final price is confirmed when we see the car in person, but photos help us give you a good starting number before you make the drive.",
   },
 ];
 
@@ -131,7 +139,7 @@ const MountPleasant = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Mount Pleasant, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Mount Pleasant drivers trust us for collision repair, dent repair, and auto painting. We're just across the Ravenel Bridge with honest prices and quality work.
+              Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge — and we answer the phone. 272 five-star reviews. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -150,16 +158,16 @@ const MountPleasant = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Auto Body Repair for <span style={{ color: "#2D5F5D" }}>Mount Pleasant</span>
+            Auto Body Repair for <span style={{ color: "#2D5F5D" }}>Mount Pleasant Drivers</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Got in a fender bender on Coleman Boulevard? Found a new dent in the Towne Centre parking lot? Whether your vehicle needs major collision repair or a simple dent fix, we handle it all at our Charleston shop.
+            Getting in an accident is stressful enough. Then you call four shops and can't get anyone to answer. We hear this from Mount Pleasant customers all the time — and it's exactly why they make the drive across the Ravenel Bridge to us.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Every job is done in-house by our own technicians.
+            Our team handles <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> including paintless dent removal, and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with computerized color matching. Every repair stays in-house — we don't subcontract.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            With 95+ years of experience and 272 five-star Google reviews, we're the body shop Mount Pleasant residents trust for honest work and honest prices.
+            With 95+ years of combined experience and 272 five-star Google reviews, we're the body shop Mount Pleasant residents trust when they need it done right.
           </p>
         </div>
       </section>
@@ -185,38 +193,63 @@ const MountPleasant = () => {
         </div>
       </section>
 
-      {/* Local Content */}
+      {/* Why Mount Pleasant Drivers Make the Trip */}
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why Mount Pleasant Drivers <span style={{ color: "#2D5F5D" }}>Make the Trip</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Mount Pleasant is one of the fastest-growing suburbs in the Charleston metro. With more people on the roads around Coleman Boulevard, the Towne Centre, and US-17, fender benders and parking lot dents are part of daily life. When your car gets hit, you want it fixed by people who know what they're doing.
+            Mount Pleasant is one of the fastest-growing areas in the Charleston metro. With more cars on Coleman Boulevard, around Towne Centre, and on US-17, fender benders and parking lot dings are part of daily life. When it happens to you, you want a shop that actually picks up the phone.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            The drive from Mount Pleasant to our shop takes about 20 to 25 minutes. You'll cross the Arthur Ravenel Jr. Bridge, head through downtown Charleston, and continue toward West Ashley on the Crosstown. It's a straight shot with no complicated turns. Many Mount Pleasant customers tell us the drive is worth it for the honest pricing and quality of work.
+            We work on the vehicles Mount Pleasant drivers own — BMWs, Audis, F-150s, Silverados, Tahoes, and Range Rovers. We're BMW-certified and handle everything from a scraped bumper to a full collision repair with insurance. When we hand your car back, it looks like it never happened.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            The drive from Mount Pleasant takes about 20 to 25 minutes. Cross the Arthur Ravenel Jr. Bridge and head toward West Ashley on the Crosstown. Customers coming from Shem Creek or Belle Hall hop on Coleman Boulevard to US-17 and cross the bridge. From the Isle of Palms Connector, it's US-17 West from there.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            Whether you live near Shem Creek, Belle Hall, or the Isle of Palms Connector, we're easy to reach. Drop your car off in the morning and we'll call you when it's ready. Our team handles everything — the repair, the insurance, and the follow-up — so you don't have to.
+            Drop your car off in the morning and we'll call you when it's ready. Most of our Mount Pleasant customers tell us the drive was well worth it — and many come back every time they need work done.
+          </p>
+        </div>
+      </section>
+
+      {/* What to Expect */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            What to Expect <span style={{ color: "#2D5F5D" }}>From Start to Finish</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            You call or email us with your damage. We get you in for a free estimate — usually within a day or two, not the two-week wait other shops quote. The person who writes your estimate is the same person doing the repair. That means the price is accurate and there are no surprises.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            If you're going through insurance, we handle the adjuster for you. We file the claim, communicate with your carrier, and write supplements when hidden damage turns up. We push back if the insurance estimate comes in short. You shouldn't have to fight that battle yourself.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Minor repairs — door dings, scraped bumpers, small dents — often take just a few days. Larger collision jobs with insurance typically run one to two weeks. We'll give you a real timeline before we start. We keep you updated so your car never goes into a black hole.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            When your car comes back, it's clean inside and out. The paint matches. The panels line up. You won't be able to tell anything happened.
           </p>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why Mount Pleasant Trusts <span style={{ color: "#2D5F5D" }}>Our Shop</span>
           </h2>
           <ul className="space-y-3">
             {[
+              "272 five-star Google reviews — the highest-rated body shop in the Charleston area",
+              "95+ years of combined collision repair experience on our team",
+              "BMW-certified — we work on European brands, luxury SUVs, and trucks",
               "Estimators who do the work — your price is accurate because we know exactly what the job takes",
-              "All insurance companies accepted — we handle the entire process",
-              "95+ years of hands-on collision repair experience",
-              "272 five-star Google reviews from real customers",
-              "No subcontracting — every repair stays in our shop",
-              "Realistic timelines and no surprise charges",
+              "We fight the insurance company for you — including supplements when hidden damage is found",
+              "No subcontracting — every repair stays in our shop start to finish",
+              "We return your car clean, matched, and looking like nothing happened",
             ].map((item, i) => (
               <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
                 <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
@@ -237,7 +270,7 @@ const MountPleasant = () => {
             From Mount Pleasant, take the Arthur Ravenel Jr. Bridge (US-17 West) into downtown Charleston. Continue on the Crosstown (US-17) toward West Ashley. Our shop is at 1949 Dulsey Road, Unit 202. The drive takes about 20 to 25 minutes.
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            From Shem Creek or the Towne Centre area, head south on Coleman Boulevard to US-17 and cross the bridge. From the Isle of Palms or Sullivan's Island, take the IOP Connector to US-17 West.
+            From Shem Creek or the Towne Centre area, head south on Coleman Boulevard to US-17 and cross the bridge. From the Isle of Palms or Sullivan's Island, take the IOP Connector to US-17 West and follow the Crosstown into West Ashley.
           </p>
           <div className="flex items-center gap-2 mt-6">
             <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
@@ -302,7 +335,7 @@ const MountPleasant = () => {
             Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>Mount Pleasant?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. Just across the bridge. Honest pricing. Quality work.
+            Just across the Ravenel Bridge. Free estimates. Insurance handled. 272 five-star reviews. We answer the phone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>

@@ -30,15 +30,19 @@ const services = [
 const faqs = [
   {
     q: "How far is your shop from James Island?",
-    a: "Our shop is at 1949 Dulsey Road, Unit 202 in Charleston. From James Island, the drive takes about 10 to 15 minutes via Folly Road and the Crosstown. We're located in the West Ashley area near Savannah Highway.",
+    a: "Our shop is at 1949 Dulsey Road, Unit 202 in Charleston. From James Island, the drive takes about 10 to 15 minutes via Folly Road and the Crosstown. We're in the West Ashley area near Savannah Highway — a quick commute for most James Island residents.",
   },
   {
     q: "Do you work with insurance companies?",
-    a: "Yes. We work with all major insurance carriers. We handle the claims process, communicate with your adjuster, and file supplements if hidden damage is found during the repair.",
+    a: "Yes, and we handle the whole process for you. We communicate directly with your adjuster, submit all documentation, and file supplements if we find hidden damage during the repair. If the insurance company's estimate is too low — which happens often — we push back and get it corrected. You shouldn't have to fight that battle yourself.",
   },
   {
-    q: "Can you fix parking lot dents?",
-    a: "Yes. Parking lot door dings are one of the most common repairs we do. If the paint is intact, we use paintless dent repair to remove the dent without any sanding or repainting. It's fast and costs less than traditional repair.",
+    q: "Can you fix parking lot dents and door dings?",
+    a: "Yes. Parking lot damage is one of the most common repairs we do for James Island customers. If the paint is still intact, we use paintless dent repair to remove the dent without sanding or repainting. It's faster and costs less than traditional bodywork. We'll tell you upfront which method fits your car.",
+  },
+  {
+    q: "How long does a typical repair take?",
+    a: "Minor dent repairs can be done in a day or less. Collision repairs involving parts and painting typically run 3 to 7 business days, depending on parts availability and the extent of the damage. We'll give you a realistic timeline at your estimate — not a guess that changes later.",
   },
   {
     q: "Do I need an appointment?",
@@ -46,11 +50,15 @@ const faqs = [
   },
   {
     q: "Is your shop easy to reach from Folly Beach?",
-    a: "Yes. From Folly Beach, take Folly Road north through James Island. Continue to the Crosstown (US-17) and head toward West Ashley. Our shop on Dulsey Road is about 20 to 25 minutes from Folly Beach, depending on traffic.",
+    a: "Yes. From Folly Beach, take Folly Road north through James Island, then continue to the Crosstown (US-17) toward West Ashley. Our shop on Dulsey Road is about 20 to 25 minutes from Folly Beach, depending on traffic.",
   },
   {
     q: "Do you handle hail damage for James Island customers?",
-    a: "Yes. Hail storms hit the Charleston coast regularly and James Island is no exception. If your car has hail dents, bring it in for a free estimate. We use paintless dent repair when the paint is intact, which saves you time and money compared to traditional body work.",
+    a: "Yes. Hail storms hit the Charleston coast regularly and James Island is no exception. If your car has hail dents, bring it in for a free estimate. We use paintless dent repair when the paint is intact, which saves you time compared to traditional bodywork.",
+  },
+  {
+    q: "Can you work on my BMW, truck, or SUV?",
+    a: "Yes. We work on everything from F-150s and Tacomas to BMWs, Audis, and Mercedes. Our team has experience with luxury vehicles and newer trucks — the kind of vehicles where paint matching and panel fit really matter. If you drive it, we can fix it.",
   },
 ];
 
@@ -105,7 +113,7 @@ const JamesIsland = () => {
         <title>Body Shop James Island | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. Free estimates. Call (843) 380-7055."
+          content="Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/james-island`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -123,7 +131,7 @@ const JamesIsland = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>James Island</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              James Island residents trust us for collision repair, dent repair, and auto painting. We're just 10 to 15 minutes away with honest prices and quality work.
+              Just got in an accident and can't get a shop to call you back? We answer the phone. We're 10 to 15 minutes from James Island, and we handle everything — repairs, insurance, all of it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
@@ -143,13 +151,13 @@ const JamesIsland = () => {
             Auto Body Repair for <span style={{ color: "#2D5F5D" }}>James Island</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Whether you got a dent in the Publix parking lot on Folly Road or were in a collision on Maybank Highway, we handle it all. Our shop is a quick drive from James Island — just take the Crosstown toward West Ashley.
+            Getting in an accident is stressful enough. Then you call four shops and none of them answer. We hear this from James Island customers all the time. Our shop is a quick drive via Folly Road and the Crosstown — and when you call, we pick up.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Every repair is done in-house by our own team.
+            Whether you picked up a dent in the Publix parking lot on Folly Road, got rear-ended on Maybank Highway, or clipped something squeezing through a tight parking lot near the Terracina strip — we handle it. We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            The people writing your estimate actually do the repairs. That means your price is accurate and the work is done right the first time. No middlemen. No guessing. No surprises.
+            Every repair stays in our shop. The people who write your estimate are the same people doing the work. That means your price is accurate and nothing gets lost in translation.
           </p>
         </div>
       </section>
@@ -177,33 +185,53 @@ const JamesIsland = () => {
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            A Short Drive from <span style={{ color: "#2D5F5D" }}>James Island</span>
+            Why James Island Vehicles <span style={{ color: "#2D5F5D" }}>Take More Damage</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            James Island sits just south of downtown Charleston, surrounded by water and connected by a handful of key roads. Whether you're coming from Folly Road, Maybank Highway, or Harbor View Road, our shop is a quick 10 to 15-minute drive through the Crosstown toward West Ashley.
+            James Island is surrounded by water, and salt air is hard on paint and metal. A small door ding that might sit harmlessly for months inland can start to rust at the edges faster here. We see this regularly on trucks and SUVs that spend time near the water or park outside year-round.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Living on an island means narrow roads, tight turns, and crowded parking lots near restaurants and shops. Door dings, scraped bumpers, and fender benders happen often. When they do, you don't need to drive far to get quality repair work. Our shop on Dulsey Road is one of the closest body shops to James Island.
+            The island's roads add to it. Folly Road through the restaurant and shopping corridor is tight. Harbor View Road and Maybank Highway carry real traffic volume. The James Island Connector backs up at rush hour, which puts cars close together at highway speeds. We recently finished a repair on a Tacoma that got rear-ended on the Connector during the evening commute — the owner had called two other shops first and couldn't get a callback.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            Many James Island residents pass right by our area on their daily commute. Drop your car off on the way to work downtown and pick it up on the way home. We make the process easy so a car repair doesn't turn into a major disruption to your routine.
+            Folly Beach weekend traffic also spills back through the island from May through September. Packed parking lots near the beach mean door dings on BMWs, Audis, and newer trucks happen constantly. If your vehicle looks like something happened to it, it probably did — and we can fix it.
+          </p>
+        </div>
+      </section>
+
+      {/* Insurance Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            We Handle the <span style={{ color: "#2D5F5D" }}>Insurance Process</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Insurance claims are confusing, and the adjuster's first estimate is often too low. We deal with this every week. Our team communicates directly with your insurance company, submits all repair documentation, and files supplements when we find damage the adjuster missed.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            You don't need to be the go-between. We've had customers tell us we called their insurance so they didn't have to make a single call themselves. That's how we prefer to handle it.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We work with all major carriers — State Farm, USAA, Allstate, Geico, Progressive, and more. If the other driver's insurance is paying, we still represent your interests and make sure the repair is done right, not just done fast enough to close a claim.
           </p>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why James Island Trusts <span style={{ color: "#2D5F5D" }}>Our Shop</span>
           </h2>
           <ul className="space-y-3">
             {[
-              "Just 10 to 15 minutes from James Island",
-              "Estimators who do the work — accurate pricing from day one",
-              "All insurance companies accepted and claims handled for you",
-              "95+ years of collision repair experience",
-              "272 five-star Google reviews",
+              "272 five-star Google reviews — read them before you call",
+              "Just 10 to 15 minutes from James Island via the Crosstown",
+              "We answer the phone — no voicemail, no 2-week wait for an estimate",
+              "Estimators do the repairs — accurate pricing from day one",
+              "All insurance carriers accepted, claims handled for you",
+              "95+ years of combined collision repair experience on our team",
+              "BMW-certified work on luxury vehicles and trucks",
               "No subcontracting — every repair stays in our shop",
             ].map((item, i) => (
               <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
@@ -222,10 +250,10 @@ const JamesIsland = () => {
             Getting Here from <span style={{ color: "#5A9E9B" }}>James Island</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From James Island, take Folly Road north toward downtown, then take the Crosstown (US-17) toward West Ashley. The drive takes about 10 to 15 minutes.
+            Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From James Island, take Folly Road north toward downtown, then hop on the Crosstown (US-17) toward West Ashley. The drive takes about 10 to 15 minutes.
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            From the Maybank Highway area, head north on Folly Road or take Harbor View Road to connect to US-17. Either route gets you to our door in about the same time.
+            From the Maybank Highway or Harbor View Road area, head north to connect to US-17. Either way, you're at our door in about the same time. Many James Island residents drop off their car on the way to work downtown and pick it up on the way back.
           </p>
           <div className="flex items-center gap-2 mt-6">
             <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
@@ -290,7 +318,7 @@ const JamesIsland = () => {
             Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>James Island?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. Just 10 to 15 minutes from James Island. Honest pricing. Quality work.
+            272 five-star reviews. Free estimates. We answer the phone. Just 10 to 15 minutes from James Island — and your car comes back looking like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>

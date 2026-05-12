@@ -30,23 +30,31 @@ const services = [
 const faqs = [
   {
     q: "How far is your shop from Summerville?",
-    a: "Our shop is at 1949 Dulsey Road, Unit 202 in Charleston. From Summerville, the drive takes about 25 to 30 minutes via I-26 South. Take I-26 to the Savannah Highway exit and head toward West Ashley.",
+    a: "Our shop is at 1949 Dulsey Road, Unit 202 in Charleston. From Summerville, the drive takes about 25 to 30 minutes via I-26 South. Take I-26 to the Savannah Highway exit and head toward West Ashley. It's a straight highway run — no complicated turns.",
   },
   {
     q: "Do you work with insurance for Summerville drivers?",
-    a: "Yes. We work with all insurance companies. We handle the claims paperwork, talk to your adjuster, and file supplements if we find hidden damage. The process is the same whether you live in Summerville or Charleston.",
+    a: "Yes. We work with every insurance company — State Farm, Geico, Allstate, USAA, and all others. We handle the claims paperwork, communicate directly with your adjuster, and file supplements if we find hidden damage after teardown. You don't have to fight the insurance company. We do that for you.",
+  },
+  {
+    q: "How long does collision repair take?",
+    a: "It depends on the extent of the damage and parts availability. Minor collision repairs often take three to five days. More extensive structural work can take one to two weeks. We give you a realistic timeline upfront and keep you updated throughout — your car won't go into a black hole.",
   },
   {
     q: "What vehicles do you work on?",
-    a: "We repair all makes and models. Cars, trucks, and SUVs. Foreign and domestic. If it has collision damage, we can fix it.",
+    a: "We repair all makes and models — BMWs, Audis, Mercedes, F-150s, Silverados, Tahoes, Subarus, Hondas, and everything in between. We're BMW-certified, so if you drive a luxury or European vehicle, you're in the right place. If it has collision damage, we can fix it.",
   },
   {
-    q: "Is the drive from Summerville to your shop easy?",
-    a: "Yes. Take I-26 South for about 20 miles and exit at Savannah Highway. Head toward West Ashley and our shop is on Dulsey Road. The whole drive takes about 25 to 30 minutes with normal traffic. It's a straight highway run with no tricky turns.",
+    q: "Is the drive worth it when there are body shops closer to Summerville?",
+    a: "That's a fair question. Most Summerville drivers call the closer shops first and find they're booked for months — or they can't even get someone to answer the phone. We answer, we give free estimates fast, and we do the work right the first time. Customers who make the 25-minute drive tell us they wish they'd called us first.",
   },
   {
     q: "Do you do free estimates for Summerville residents?",
-    a: "Yes. Every estimate is free no matter where you live. Drive down from Summerville, let us look at the damage, and we will give you an honest price. You can also email us photos first if you want a rough number before making the trip.",
+    a: "Yes. Every estimate is free no matter where you live. Drive down from Summerville, let us look at the damage, and we'll give you a straight answer on what it costs. You can also email us photos first if you want a rough idea before making the trip.",
+  },
+  {
+    q: "Will my car look the same as before the accident?",
+    a: "That's our goal on every job. We use factory color matching on all paint repairs — our customers regularly tell us they can't find the spot we fixed. We don't cut corners on paint or panel alignment. If it doesn't look right, we make it right.",
   },
 ];
 
@@ -102,7 +110,7 @@ const Summerville = () => {
         <title>Collision Repair Summerville SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Collision repair near Summerville, SC. Honest estimates from techs who do the work. All insurance accepted. Free estimates. Call (843) 380-7055."
+          content="Collision repair near Summerville, SC. 272 five-star reviews. Estimators who do the repairs. All insurance accepted. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/summerville`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -120,7 +128,7 @@ const Summerville = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Summerville, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Summerville drivers come to us for honest collision repair, dent repair, and auto painting. We're about 25 minutes down I-26 with quality work and no surprises.
+              You've been in an accident. The closer shops aren't answering. We're about 25 minutes down I-26 — and we pick up the phone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
@@ -140,13 +148,13 @@ const Summerville = () => {
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Summerville Drivers</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Summerville is one of the fastest-growing areas in the Charleston region. More people on the road means more fender benders, parking lot dings, and collision damage. When it happens to you, we're here to fix it.
+            Getting into an accident is stressful enough. Then you call three shops and none of them answer. The one that does is booked for months. We hear this from Summerville drivers every week.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Every repair is done in-house by our own team.
+            Our shop is in West Ashley — about 25 minutes from Summerville via I-26. We have 272 five-star Google reviews and we've been fixing cars in the Charleston area for decades. We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            The people writing your estimate have done the repair themselves. That means your price is accurate from day one and there are no hidden charges after the work is done.
+            Here's something that matters: the people who write your estimate are the same people who do the repair. That means your price is honest from day one — no surprise charges after we've already taken your car apart.
           </p>
         </div>
       </section>
@@ -170,6 +178,24 @@ const Summerville = () => {
         </div>
       </section>
 
+      {/* Insurance Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            We Handle Your <span style={{ color: "#2D5F5D" }}>Insurance Claim</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Dealing with insurance after an accident is confusing and time-consuming. Most people don't know if the adjuster's estimate is fair. We do.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We work with every insurance company — State Farm, Allstate, Geico, USAA, Progressive, and all others. We talk to your adjuster directly. If we find hidden damage after we start the repair, we file the supplement and fight for what your car needs. You won't get a surprise bill.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            We've navigated hundreds of claims for Charleston-area drivers. If the insurance company sends a low estimate, we push back. If the other driver's insurance is giving you trouble, we help you handle it. You shouldn't have to do this alone.
+          </p>
+        </div>
+      </section>
+
       {/* Local Content */}
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-[800px] mx-auto px-6">
@@ -177,13 +203,13 @@ const Summerville = () => {
             Serving Summerville and the <span style={{ color: "#2D5F5D" }}>I-26 Corridor</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Summerville has grown from a quiet historic town into one of the most popular suburbs in the Charleston area. Neighborhoods like Nexton, Cane Bay, and Oakbrook keep expanding, and so does the traffic. More cars on Dorchester Road and I-26 means more accidents and more dents.
+            Summerville has grown from a quiet historic town into one of the most active suburbs in the Charleston area. Neighborhoods like Nexton, Cane Bay, and Oakbrook keep expanding — and so does the traffic on Dorchester Road and I-26. More cars means more accidents and more dents.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Our shop is about 25 minutes from downtown Summerville via I-26 South. It's a straight highway drive with no complicated exits. Take I-26 to the Savannah Highway exit, head toward West Ashley, and you're at our door on Dulsey Road. Customers from the Nexton and Cane Bay areas can take US-17A to I-26 for an easy connection.
+            Our shop is about 25 minutes from downtown Summerville via I-26 South. It's a straight highway run. Take I-26 to the Savannah Highway exit, head toward West Ashley, and you're at our door on Dulsey Road. Customers from Nexton and Cane Bay can take US-17A to I-26 for an easy connection.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We've repaired cars for Summerville families, commuters, and business owners. Whether you backed into a pole at the Azalea Square shopping center or got rear-ended on your way down I-26, we fix the damage right. And we handle your insurance claim from start to finish.
+            We've repaired cars for Summerville families, daily commuters, and business owners. Whether you got rear-ended on your way down I-26 or backed into a pole at the Azalea Square shopping center, we fix the damage right. And we handle your insurance claim from start to finish.
           </p>
         </div>
       </section>
@@ -192,16 +218,20 @@ const Summerville = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Why Summerville Drivers <span style={{ color: "#2D5F5D" }}>Trust Us</span>
+            Why Summerville Drivers <span style={{ color: "#2D5F5D" }}>Make the Drive</span>
           </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-6">
+            There are closer shops. But Summerville drivers come to us anyway — and most say they wish they'd called us first instead of wasting a week chasing shops that never called back.
+          </p>
           <ul className="space-y-3">
             {[
-              "Estimators who actually do the work — honest prices from real experience",
-              "We handle all insurance companies and claims paperwork",
-              "95+ years of collision repair experience in the industry",
-              "272 five-star Google reviews from Charleston area customers",
-              "No subcontracting — your car stays in our shop from start to finish",
-              "On-time delivery with realistic timelines",
+              "Estimators who do the repairs — the price you get is the price you pay",
+              "BMW-certified and experienced on all makes: trucks, SUVs, European and domestic vehicles",
+              "272 five-star Google reviews from drivers across the Charleston area",
+              "We handle every insurance company — you don't spend hours on hold",
+              "95+ years of combined collision repair experience on our team",
+              "No subcontracting — your car stays in our shop from drop-off to pickup",
+              "Boutique shop feel — you talk to the person doing the work, not a front-desk gatekeeper",
             ].map((item, i) => (
               <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
                 <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
@@ -212,6 +242,24 @@ const Summerville = () => {
         </div>
       </section>
 
+      {/* What to Expect */}
+      <section className="bg-gray-50 border-t border-gray-200 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            What to Expect When <span style={{ color: "#2D5F5D" }}>You Come In</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            You make the drive down from Summerville, drop the car, and we take it from there. We look at the damage in person — not just from photos — and give you a real estimate the same day.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Once your repair is scheduled, we keep you updated. You won't be left wondering what's happening. If we find additional damage after teardown, we call you before doing anything extra. No surprises.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            When your car is ready, it comes back clean. We vacuum and wipe it down before you pick it up. You'll leave feeling like the accident never happened — because that's the only result we're satisfied with.
+          </p>
+        </div>
+      </section>
+
       {/* Directions */}
       <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
@@ -219,7 +267,7 @@ const Summerville = () => {
             Getting Here from <span style={{ color: "#5A9E9B" }}>Summerville</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From Summerville, take I-26 South for about 20 miles. Exit onto Savannah Highway and head toward West Ashley. The drive takes about 25 to 30 minutes.
+            Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From Summerville, take I-26 South for about 20 miles. Exit onto Savannah Highway and head toward West Ashley. The drive takes about 25 to 30 minutes with normal traffic.
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
             If you're coming from the Nexton area or Cane Bay, take US-17A to I-26 South. From downtown Summerville, take Main Street to I-26 South.
@@ -284,10 +332,10 @@ const Summerville = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Need Collision Repair Near <span style={{ color: "#1A2E2D" }}>Summerville?</span>
+            Done Waiting on Shops That <span style={{ color: "#1A2E2D" }}>Don't Call Back?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. About 25 minutes from Summerville. Honest pricing. Quality work.
+            We're 25 minutes from Summerville. Free estimates. 272 five-star reviews. We handle your insurance so you don't have to.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>

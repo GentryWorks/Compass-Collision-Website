@@ -10,19 +10,19 @@ const services = [
   {
     icon: <Wrench className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
     title: "Collision Repair",
-    description: "Minor fender benders to major accident damage. We restore your vehicle and handle insurance for you.",
+    description: "From rear-end damage to major accident repairs. We handle the insurance process and restore your vehicle — so it looks like it never happened.",
     link: "/collision-repair",
   },
   {
     icon: <CircleDot className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
     title: "Dent Repair",
-    description: "Paintless dent removal and traditional repair. Parking lot dings, hail damage, and door dents.",
+    description: "Paintless dent removal and traditional repair for parking lot dings, hail damage, and door dents. Most jobs are done the same day.",
     link: "/dent-repair",
   },
   {
     icon: <Paintbrush className="w-7 h-7" style={{ color: "#2D5F5D" }} />,
     title: "Auto Painting",
-    description: "Panel painting, bumper refinishing, and factory color matching. Invisible repairs every time.",
+    description: "Panel painting, bumper refinishing, and factory color matching. We blend every repair so you can't tell where the damage was.",
     link: "/auto-painting",
   },
 ];
@@ -30,27 +30,35 @@ const services = [
 const faqs = [
   {
     q: "Where exactly is your shop in West Ashley?",
-    a: "We're at 1949 Dulsey Road, Unit 202, Charleston, SC 29407. That's right in the West Ashley area, near Savannah Highway. For most West Ashley residents, we're less than 10 minutes away.",
+    a: "We're at 1949 Dulsey Road, Unit 202, Charleston, SC 29407 — right off Savannah Highway in the 29407 zip code. For most West Ashley residents, we're less than 10 minutes away. No bridge, no I-26.",
   },
   {
     q: "Do you handle insurance claims?",
-    a: "Yes. We work with all insurance companies. We handle the entire claims process — paperwork, adjuster communication, and supplement filing. You drop off your car and pick it up when it's ready.",
+    a: "Yes — all of it. We contact your insurance company, work with the adjuster, file the paperwork, and push back when their estimate is too low. You drop off your car and pick it up when it's done. We've navigated hundreds of claims for customers who had no idea where to start.",
+  },
+  {
+    q: "What if the other driver's insurance is handling the claim?",
+    a: "We deal with that too. We work with all insurance companies — yours or theirs. If their adjuster lowballs the estimate, we fight it. Our job is to make sure your car gets fixed right, not to accept whatever the insurance company offers.",
   },
   {
     q: "How long does a typical repair take?",
-    a: "It depends on the damage. Small dents can be done in a few hours. Most collision repairs take 3 to 10 business days. We give you a realistic timeline before we start and stick to it.",
+    a: "Small dents are often done the same day or in a few hours. Most collision repairs take 3 to 10 business days depending on the damage and parts availability. We give you a realistic timeline upfront and stick to it — you won't be calling us wondering where your car is.",
   },
   {
-    q: "Do I need an appointment?",
-    a: "We prefer appointments so we can give you proper attention. Call us at (843) 380-7055 to schedule. Walk-ins are welcome when our schedule allows.",
+    q: "Do you work on BMWs, Audis, trucks, and SUVs?",
+    a: "Yes. We're BMW-certified and work on everything from F-150s and Tahoes to Audis, Lexuses, and Mercedes. If you drive it, we can fix it. We've repaired Porsches, Range Rovers, and daily drivers alike — all to the same standard.",
   },
   {
-    q: "Can I walk to your shop from nearby West Ashley neighborhoods?",
-    a: "If you live near Savannah Highway and Dulsey Road, you could. But most customers drive since they're bringing in a damaged vehicle. The good news is that from any West Ashley neighborhood — Avondale, Shadowmoss, Bees Ferry, or St. Andrews — you're less than 10 minutes away by car.",
+    q: "Do I need an appointment for a free estimate?",
+    a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 to schedule. Walk-ins are welcome when our schedule allows, but calling ahead means we're ready for you when you arrive.",
   },
   {
-    q: "Do you give free estimates to walk-ins?",
-    a: "Yes. As your neighborhood body shop, we're happy to take a look anytime. Appointments are preferred so we can give you our full attention, but if you're in the area and want to stop by, we'll do our best to help you on the spot.",
+    q: "What neighborhoods in West Ashley do you serve?",
+    a: "All of them. Avondale, Shadowmoss, the Bees Ferry corridor, St. Andrews, Willow Walk, and everywhere in between. If you're in the 29407 zip code, you're less than 10 minutes from our shop.",
+  },
+  {
+    q: "What if I've never dealt with a body shop or insurance claim before?",
+    a: "That's most of our customers. We walk you through every step — what to tell your insurance company, what the repair involves, and what to expect when. You don't need to know how any of this works. That's our job.",
   },
 ];
 
@@ -105,7 +113,7 @@ const WestAshley = () => {
         <title>Body Shop West Ashley | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. Free estimates. Call (843) 380-7055."
+          content="Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/west-ashley`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -123,7 +131,7 @@ const WestAshley = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>West Ashley</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              We're located right in West Ashley. Collision repair, dent repair, and auto painting from the neighborhood body shop with 272 five-star reviews.
+              We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. 272 five-star reviews. We answer the phone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
@@ -140,16 +148,16 @@ const WestAshley = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            West Ashley's <span style={{ color: "#2D5F5D" }}>Local Body Shop</span>
+            West Ashley's <span style={{ color: "#2D5F5D" }}>Neighborhood Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We're right here in your neighborhood. Our shop is on Dulsey Road near Savannah Highway, which means most West Ashley residents are less than 10 minutes from our door. No long drives across town. No fighting traffic on I-26.
+            Getting in an accident is stressful enough. Then you call three shops and get voicemail. You wait for a callback that never comes. You hear "we're booked out two months." That's the reality for most people in Charleston — and it's exactly why our customers are so relieved when they find us.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. All done in-house by our own team.
+            We're a body shop in West Ashley that actually answers the phone. Our shop is on Dulsey Road off Savannah Highway, which puts us right in the 29407 zip code. For most West Ashley residents, we're a short drive down local roads — no bridge crossing, no I-26 traffic.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            The people writing your estimate are the same people doing the repair. They know what the job takes because they have done it with their own hands. That's why your price is accurate from the start and your car is ready when we say it will be.
+            We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> including paintless dent removal, and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. All work is done in-house by our own team — no subcontracting, no surprises.
           </p>
         </div>
       </section>
@@ -177,34 +185,54 @@ const WestAshley = () => {
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Right in Your <span style={{ color: "#2D5F5D" }}>Backyard</span>
+            We Know the Roads <span style={{ color: "#2D5F5D" }}>You Drive</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Our shop is in the 29407 zip code, right in the heart of West Ashley. If you live in Avondale, Shadowmoss, the Bees Ferry corridor, or anywhere near Savannah Highway, you're minutes from our door. No crossing the bridge. No sitting in I-26 traffic. Just a short drive down local roads.
+            We see West Ashley damage patterns every week. Rear-end collisions on Sam Rittenberg Boulevard during rush hour. Parking lot door dings and scraped bumpers from the Citadel Mall lot. Side-swipes on Glenn McConnell Parkway. Deer strikes on the back roads out toward Bees Ferry. We've repaired all of it — on F-150s, Tahoes, BMWs, Audis, and everything in between.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            That convenience matters when your car is in the shop. You can drop it off before work and pick it up on your way home. You can swing by on your lunch break to check on the progress. Being close to home means less hassle during an already stressful time.
+            Our shop is in the 29407 zip code. If you're in Avondale, Shadowmoss, the Bees Ferry corridor, or anywhere near Savannah Highway, you're minutes from our door. That proximity matters when your car is in the shop. You can drop it off before work and pick it up on your way home.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We've been fixing cars for West Ashley neighbors since 2021. Fender benders on Sam Rittenberg Boulevard. Parking lot dings at Citadel Mall. Side-swipes on Glenn McConnell Parkway. We know the roads you drive and the damage that happens on them. When your car needs repair, your neighborhood body shop is ready.
+            We've been working on West Ashley vehicles since 2021. In that time, we've built 272 five-star Google reviews — mostly from neighbors who found us after other shops stopped returning their calls. We'd like to earn that same trust from you.
+          </p>
+        </div>
+      </section>
+
+      {/* Insurance Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            We Handle <span style={{ color: "#2D5F5D" }}>Your Insurance Claim</span>
+          </h2>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Dealing with insurance after an accident is confusing. Most people don't know what the adjuster's estimate should cover, whether the parts being used are correct, or how to push back when the number is too low. We do.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We work with all insurance companies — yours or the other driver's. We contact the adjuster, review the estimate, file supplements when the work requires it, and fight for every dollar your repair deserves. Our customers tell us this is the part they were most worried about. It turns out to be the part we handle for them completely.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            You drop off your car. We handle the rest. You pick it up when it's done looking like nothing ever happened.
           </p>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why West Ashley Chooses <span style={{ color: "#2D5F5D" }}>Our Shop</span>
           </h2>
           <ul className="space-y-3">
             {[
-              "Located right in West Ashley — most neighbors are less than 10 minutes away",
-              "Estimators who do the repairs — your price is honest from the start",
-              "All insurance companies accepted and claims handled for you",
-              "95+ years of collision repair experience",
-              "272 five-star Google reviews",
+              "Located right in West Ashley — 29407 zip code, less than 10 minutes from most neighborhoods",
+              "We answer the phone — no voicemail loop, no weeks-long wait just for an estimate",
+              "BMW-certified with 95+ years of combined collision repair experience on our team",
+              "All insurance companies accepted — we handle the entire claims process for you",
+              "The people writing your estimate are the same people doing the repair",
+              "272 five-star Google reviews — the most of any independent shop in the area",
               "All work done in-house — no subcontracting",
+              "We work on everything from F-150s and Tahoes to BMWs, Audis, and Porsches",
             ].map((item, i) => (
               <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
                 <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
@@ -222,10 +250,10 @@ const WestAshley = () => {
             Finding Us in <span style={{ color: "#5A9E9B" }}>West Ashley</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            We're at 1949 Dulsey Road, Unit 202, right off Savannah Highway in the 29407 zip code. If you live in Avondale, Shadowmoss, Bees Ferry, or any West Ashley neighborhood, you're just a few minutes away.
+            We're at 1949 Dulsey Road, Unit 202 — right off Savannah Highway in the 29407 zip code. From Avondale, Shadowmoss, Bees Ferry, or anywhere else in West Ashley, you're just a few minutes away.
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            From Savannah Highway (US-17), turn onto Dulsey Road. We're in Unit 202. Open Monday through Thursday 8am to 4pm, and Friday 8am to 12pm.
+            From Savannah Highway (US-17), turn onto Dulsey Road. We're in Unit 202. We're open Monday through Thursday 8am to 4pm, and Friday 8am to 12pm.
           </p>
           <div className="flex items-center gap-2 mt-6">
             <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
@@ -290,7 +318,7 @@ const WestAshley = () => {
             Your West Ashley <span style={{ color: "#1A2E2D" }}>Body Shop</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. Right here in your neighborhood. Honest pricing. Quality work.
+            We're right in your neighborhood. Free estimates. No surprises. Your car back looking like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>

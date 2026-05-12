@@ -30,27 +30,35 @@ const services = [
 const faqs = [
   {
     q: "How far is your shop from Goose Creek?",
-    a: "Our shop is at 1949 Dulsey Road, Unit 202 in Charleston. From Goose Creek, the drive takes about 20 to 25 minutes via US-52 South to I-26 South, then exit toward Savannah Highway.",
-  },
-  {
-    q: "Do you work with all insurance companies?",
-    a: "Yes. We work with every major insurance carrier. We handle the claims process, communicate with your adjuster, and file supplements if we find additional damage during the repair. You don't have to deal with any of it.",
-  },
-  {
-    q: "What types of vehicles do you repair?",
-    a: "We repair all makes and models. Cars, trucks, and SUVs. Foreign and domestic. If it has collision damage, we fix it.",
-  },
-  {
-    q: "Can you fix hail damage?",
-    a: "Yes. We use paintless dent repair for hail damage when the paint is intact. For more severe hail damage, we combine PDR with traditional repair methods. Either way, the dents are gone when we're done.",
+    a: "Our shop is at 1949 Dulsey Road, Unit 202 in Charleston. From Goose Creek, take US-52 South to I-26 South, then exit toward Savannah Highway. The drive is about 20 to 25 minutes.",
   },
   {
     q: "Do you work with USAA and military insurance?",
-    a: "Yes. We work with USAA and every other insurance company. Many of our Goose Creek customers are military families with USAA coverage. We handle the entire claims process so you can focus on your schedule at the base.",
+    a: "Yes. We work with USAA and every other insurance carrier. We handle the entire claims process for you — contacting your adjuster, filing supplements if we find hidden damage, and pushing back when an estimate comes in low. Many of our Goose Creek customers are military families and we understand how USAA works.",
   },
   {
     q: "Can I drop off my car early in the morning on my way to base?",
-    a: "Yes. We open at 8am Monday through Thursday and 8am on Friday. Many Goose Creek and Joint Base Charleston customers drop their car off first thing in the morning. Call ahead at (843) 380-7055 and we will have everything ready for a quick drop-off.",
+    a: "Yes. We open at 8am Monday through Friday. Many of our Joint Base Charleston customers drop their vehicle off first thing and pick it up on their way home. Call ahead at (843) 380-7055 and we'll have everything ready for a quick drop-off.",
+  },
+  {
+    q: "How long does a typical repair take?",
+    a: "It depends on the damage. A dent or minor panel repair can be done in one to three days. A full collision repair with insurance involved usually takes one to two weeks. We give you a realistic timeline upfront — and we stick to it. We won't park your car for weeks and then scramble.",
+  },
+  {
+    q: "Do you work with all insurance companies?",
+    a: "Yes. We work with every major insurance carrier. We communicate directly with your adjuster, file supplements when additional damage shows up during the repair, and we won't let your insurer shortchange your car. You don't have to deal with any of it.",
+  },
+  {
+    q: "We're PCSing soon. Can you still fix my car in time?",
+    a: "Yes. We've handled plenty of repairs for families on a PCS timeline. Let us know your move date when you call and we'll plan around it. We pre-order parts ahead of time and won't let the schedule drift. Call us at (843) 380-7055 and we'll figure it out together.",
+  },
+  {
+    q: "What types of vehicles do you repair?",
+    a: "We repair all makes and models — cars, trucks, and SUVs, foreign and domestic. We're BMW-certified and work on everything from F-150s and Tacomas to Audis, BMWs, and family SUVs. If it has collision damage, we fix it.",
+  },
+  {
+    q: "Can you fix hail damage?",
+    a: "Yes. We use paintless dent repair for hail damage when the paint is intact. For more severe hail damage, we combine PDR with traditional repair. Either way, the dents are gone when we're done.",
   },
 ];
 
@@ -106,7 +114,7 @@ const GooseCreek = () => {
         <title>Collision Repair Goose Creek | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Collision repair near Goose Creek, SC. Honest estimates from techs who do the work. All insurance accepted. Free estimates. Call (843) 380-7055."
+          content="Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/goose-creek`} />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
@@ -124,7 +132,7 @@ const GooseCreek = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Goose Creek</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Goose Creek drivers trust us for collision repair, dent repair, and auto painting. Honest estimates from technicians who actually do the work.
+              Just got in an accident and can't get another shop to call you back? We pick up the phone, give you a free estimate fast, and handle every step with your insurance. 272 five-star reviews. About 20 minutes from Goose Creek.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
@@ -144,13 +152,13 @@ const GooseCreek = () => {
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Goose Creek</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Goose Creek sits just north of Charleston along the US-52 corridor. Whether you were in an accident on Red Bank Road, got a door ding at a parking lot on St. James Avenue, or need paint repair after a fender bender, we handle it all.
+            We hear it all the time — you've called three shops and none of them called back. Or the first appointment they can offer is in six weeks. An accident is stressful enough on its own. We answer the phone, get you a same-day estimate, and take the repair from there.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Every repair is done in-house by our own team.
+            Our team handles <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Everything is done in-house by our own technicians.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            The people writing your estimate have done the repair themselves. Your price is accurate because there is no gap between the person quoting the job and the person doing the work.
+            The person writing your estimate is the same person doing the repair. That's why our prices are accurate and there are no surprises when it's time to pick up your car.
           </p>
         </div>
       </section>
@@ -174,20 +182,23 @@ const GooseCreek = () => {
         </div>
       </section>
 
-      {/* Local Content */}
+      {/* Military / Local Content */}
       <section className="bg-gray-50 border-t border-gray-200 py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Serving the Goose Creek and <span style={{ color: "#2D5F5D" }}>Military Community</span>
+            We Know the <span style={{ color: "#2D5F5D" }}>Military Community</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Goose Creek sits just north of North Charleston and is home to many military families stationed at Joint Base Charleston. Between the base traffic on US-52, the busy roads through Crowfield Plantation, and daily commutes down I-26, vehicles in this area take a beating.
+            Goose Creek is home to a lot of military families stationed at Joint Base Charleston. Life near a joint base moves fast — early mornings, unpredictable schedules, and PCS moves that don't wait for anything. We've worked with enough of those families to understand what that pace feels like.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Our shop is about 20 to 25 minutes from Goose Creek. Take US-52 South to I-26, then exit at Savannah Highway toward West Ashley. From the Crowfield area, you can hop on I-26 South directly. The highway drive is easy and our shop is simple to find once you exit.
+            We work directly with USAA and know how their claims process runs. We contact the adjuster, handle supplements when we find hidden damage, and push back if the estimate doesn't cover what the car actually needs. You don't have to manage any of that. If you've got a move date coming up, tell us when you call — we'll plan the repair around your timeline.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            We see a lot of trucks, SUVs, and family vehicles from this area — F-150s, Tacomas, Silverados, and larger SUVs that take hard use on the roads through Crowfield Plantation and along US-52. Whether you caught a fender bender on Red Bank Road or took a harder hit on I-26, we've fixed the same damage on the same vehicles many times.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We work with military families regularly and understand the pace of life near a joint base. Whether you need a quick dent repair before a PCS move or full collision repair after a highway accident, we get the job done on time. We also work with USAA and all other military-affiliated insurance providers.
+            We're about 20 to 25 minutes from Goose Creek — take US-52 South to I-26 South, then exit toward Savannah Highway in West Ashley. Many of our Goose Creek customers drop off their vehicle on the way to base and pick it up on the way home. Call ahead and we'll have everything ready.
           </p>
         </div>
       </section>
@@ -200,12 +211,13 @@ const GooseCreek = () => {
           </h2>
           <ul className="space-y-3">
             {[
-              "Estimators who do the work — honest prices from hands-on experience",
-              "All insurance companies accepted and claims handled for you",
-              "95+ years of collision repair experience in the industry",
-              "272 five-star Google reviews from Charleston area customers",
-              "All work done in-house — no subcontracting",
-              "Realistic timelines and on-time delivery",
+              "272 five-star Google reviews — the highest-rated body shop in the Charleston area",
+              "We answer the phone and return calls the same day — unlike most shops",
+              "BMW-certified technicians who work on everything from F-150s to Audis",
+              "USAA and all major insurance carriers accepted — we handle the claim for you",
+              "95+ years of combined collision repair experience across our team",
+              "All work done in-house — no subcontracting, no surprises",
+              "Realistic timelines given upfront and honored — we won't sit on your car",
             ].map((item, i) => (
               <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
                 <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
@@ -223,10 +235,10 @@ const GooseCreek = () => {
             Getting Here from <span style={{ color: "#5A9E9B" }}>Goose Creek</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From Goose Creek, take US-52 South to I-26 South. Exit onto Savannah Highway and head toward West Ashley. The drive takes about 20 to 25 minutes.
+            Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From Goose Creek, take US-52 South to I-26 South. Exit onto Savannah Highway toward West Ashley. The drive takes about 20 to 25 minutes depending on traffic.
           </p>
           <p className="text-gray-400 text-base leading-relaxed mb-4">
-            If you're coming from the Crowfield area or near Joint Base Charleston, take I-26 South directly. From downtown Goose Creek near St. James Avenue, take US-52 South.
+            Coming from near Joint Base Charleston or the Crowfield Plantation area? Take I-26 South directly. From downtown Goose Creek near St. James Avenue, US-52 South is your quickest route.
           </p>
           <div className="flex items-center gap-2 mt-6">
             <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
@@ -291,7 +303,7 @@ const GooseCreek = () => {
             Need Collision Repair Near <span style={{ color: "#1A2E2D" }}>Goose Creek?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate from Compass Collision. About 20 minutes from Goose Creek. Honest pricing. Quality work.
+            We'll answer the phone, get you a free estimate, and handle the insurance from start to finish. About 20 minutes from Goose Creek. USAA accepted.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
