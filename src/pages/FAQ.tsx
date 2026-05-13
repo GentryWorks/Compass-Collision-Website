@@ -6,7 +6,7 @@ import { Phone, ChevronDown } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
-const faqs = [
+const faqs: { q: string; a: string; jsx?: React.ReactNode }[] = [
   {
     q: "Do you work with insurance companies?",
     a: "Yes. We work with every major carrier — State Farm, GEICO, Progressive, Allstate, USAA, and all others. We handle the paperwork and communicate directly with your adjuster. If we find hidden damage once the repair is underway, we document it with photos and file a supplement on your behalf. We've seen adjusters send low initial estimates, and we push back when the number doesn't cover what the repair actually requires. You don't have to manage any of it.",
@@ -14,10 +14,20 @@ const faqs = [
   {
     q: "How long does a typical repair take?",
     a: "It depends on the damage. Minor dent repairs can be done in a few hours. Most collision repairs take 3 to 10 business days. Jobs with structural damage or special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.",
+    jsx: (
+      <>
+        It depends on the damage. Minor <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repairs</Link> can be done in a few hours. Most <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repairs</Link> take 3 to 10 business days. Jobs with structural damage or special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.
+      </>
+    ),
   },
   {
     q: "How much does collision repair cost?",
     a: "Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of structural damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the repair.",
+    jsx: (
+      <>
+        Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of structural damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>.
+      </>
+    ),
   },
   {
     q: "What types of vehicles do you repair?",
@@ -30,10 +40,20 @@ const faqs = [
   {
     q: "What is paintless dent repair?",
     a: "Paintless dent repair (PDR) removes dents without sanding, filling, or repainting. We use specialized tools to push the metal back to its original shape from behind the panel. It preserves your factory paint finish, costs less, and is faster than traditional dent repair. It works best on small to medium dents where the paint is still intact and undamaged.",
+    jsx: (
+      <>
+        Paintless dent repair (PDR) removes dents without sanding, filling, or repainting. We use specialized tools to push the metal back to its original shape from behind the panel. It preserves your factory paint finish, costs less, and is faster than traditional dent repair. Learn more on our <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair page</Link>. It works best on small to medium dents where the paint is still intact and undamaged.
+      </>
+    ),
   },
   {
     q: "How do you match my car's paint color?",
     a: "Every vehicle has a factory paint code. We locate that code and use a computerized mixing system to build an exact match. Then we spray a test panel first and check it under multiple lighting conditions before touching your car. Some colors are harder than others — red oxidizes and shifts over time, pearl and tri-coat finishes require layered application, and two-tone trucks demand precise blending at every panel edge. We blend the new paint into the surrounding panels so the repair disappears. The goal is that you can't find it when you pick the car up.",
+    jsx: (
+      <>
+        Every vehicle has a factory paint code. We locate that code and use a computerized mixing system to build an exact match. Then we spray a test panel first and check it under multiple lighting conditions before touching your car. Some colors are harder than others — red oxidizes and shifts over time, pearl and tri-coat finishes require layered application, and two-tone trucks demand precise blending at every panel edge. We blend the new paint into the surrounding panels so the repair disappears. See our full <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting process</Link> for more detail. The goal is that you can't find it when you pick the car up.
+      </>
+    ),
   },
   {
     q: "Do I have to use the body shop my insurance recommends?",
@@ -66,10 +86,20 @@ const faqs = [
   {
     q: "How do I know if I need collision repair or just dent repair?",
     a: "It comes down to the paint and the structure. If the paint is cracked or the metal is torn, you need collision repair. If there's structural damage underneath — bent frame rails, crumpled supports — that's also collision territory. If the paint is still intact and the dent is shallow, paintless dent repair may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.",
+    jsx: (
+      <>
+        It comes down to the paint and the structure. If the paint is cracked or the metal is torn, you need <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>. If there's structural damage underneath — bent frame rails, crumpled supports — that's also collision territory. If the paint is still intact and the dent is shallow, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>paintless dent repair</Link> may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.
+      </>
+    ),
   },
   {
     q: "What brands of paint do you use?",
     a: "We use professional-grade automotive refinishing systems designed for collision repair. The specific product depends on what best matches your vehicle. What matters most is the process: we use your car's factory paint code, a computerized mixing system for an exact match, and a spray test before we paint your vehicle. The brand is secondary to the result.",
+    jsx: (
+      <>
+        We use professional-grade automotive refinishing systems designed for collision repair. The specific product depends on what best matches your vehicle. What matters most is the process: we use your car's factory paint code, a computerized mixing system for an exact match, and a spray test before we paint your vehicle. See how we approach <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>color matching</Link> on every job. The brand is secondary to the result.
+      </>
+    ),
   },
   {
     q: "Do you repair all makes and models?",
@@ -94,6 +124,11 @@ const faqs = [
   {
     q: "Does my car need ADAS recalibration after a collision repair?",
     a: "Possibly, yes — and this matters more than most people realize. ADAS stands for Advanced Driver Assistance Systems: the cameras, radar sensors, and lane-keeping hardware built into newer vehicles. These sensors sit behind bumpers, grilles, and windshields. If any of those panels were replaced or adjusted during the repair, the sensors that rely on them may need to be recalibrated to work correctly. Driving with an uncalibrated sensor can cause your automatic braking, lane departure warning, or adaptive cruise control to behave incorrectly. We check whether your vehicle's systems need recalibration as part of the repair process.",
+    jsx: (
+      <>
+        Possibly, yes — and this matters more than most people realize. ADAS stands for Advanced Driver Assistance Systems: the cameras, radar sensors, and lane-keeping hardware built into newer vehicles. These sensors sit behind bumpers, grilles, and windshields. If any of those panels were replaced or adjusted during the <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, the sensors that rely on them may need to be recalibrated to work correctly. Driving with an uncalibrated sensor can cause your automatic braking, lane departure warning, or adaptive cruise control to behave incorrectly. We check whether your vehicle's systems need recalibration as part of the repair process.
+      </>
+    ),
   },
 ];
 
@@ -198,7 +233,7 @@ const FAQ = () => {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <p className="px-6 pb-5 text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+                      <p className="px-6 pb-5 text-gray-500 text-sm leading-relaxed">{faq.jsx ?? faq.a}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>

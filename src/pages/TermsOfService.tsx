@@ -18,7 +18,7 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service | {BUSINESS_NAME}</title>
         <meta name="description" content="Terms of service for Compass Collision. Review the terms and conditions of using our website and services." />
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href={`${DOMAIN}/terms-of-service`} />
         <meta property="og:title" content={`Terms of Service | ${BUSINESS_NAME}`} />
         <meta property="og:description" content="Terms of service for Compass Collision. Review the terms and conditions of using our website and services." />

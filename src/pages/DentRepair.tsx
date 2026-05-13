@@ -112,6 +112,7 @@ const DentRepair = () => {
           content="Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/dent-repair`} />
+        <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <meta property="og:title" content={`Dent Repair Charleston SC | ${BUSINESS_NAME}`} />
         <meta property="og:description" content="Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />

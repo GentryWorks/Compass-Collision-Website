@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy | {BUSINESS_NAME}</title>
         <meta name="description" content="Privacy policy for Compass Collision. Learn how we collect, use, and protect your personal information." />
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href={`${DOMAIN}/privacy-policy`} />
         <meta property="og:title" content={`Privacy Policy | ${BUSINESS_NAME}`} />
         <meta property="og:description" content="Privacy policy for Compass Collision. Learn how we collect, use, and protect your personal information." />

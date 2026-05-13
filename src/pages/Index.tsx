@@ -427,6 +427,15 @@ const Index = () => {
               </motion.div>
             ))}
           </div>
+          <div className="text-center mt-10">
+            <Link
+              to="/about"
+              className="text-sm font-bold uppercase tracking-wide no-underline hover:opacity-80 transition-opacity"
+              style={{ color: "#5A9E9B" }}
+            >
+              Meet the Team Behind the Reviews →
+            </Link>
+          </div>
         </div>
       </section>
 

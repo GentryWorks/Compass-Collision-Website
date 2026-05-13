@@ -146,6 +146,7 @@ const CollisionRepair = () => {
           content="Collision repair in Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/collision-repair`} />
+        <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <meta property="og:title" content={`Collision Repair Charleston SC | ${BUSINESS_NAME}`} />
         <meta property="og:description" content="Collision repair in Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055." />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
