@@ -82,8 +82,9 @@ const WestAshley = () => {
       },
     },
     areaServed: {
-      "@type": "Place",
+      "@type": "City",
       name: "West Ashley, Charleston, SC",
+      sameAs: "https://en.wikipedia.org/wiki/Charleston,_South_Carolina",
     },
     serviceType: "Auto Body Repair",
   };
@@ -116,6 +117,9 @@ const WestAshley = () => {
           content="Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/west-ashley`} />
+        <meta property="og:title" content={`Body Shop West Ashley | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -244,20 +248,20 @@ const WestAshley = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Finding Us in <span style={{ color: "#5A9E9B" }}>West Ashley</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Finding Us in <span style={{ color: "#2D5F5D" }}>West Ashley</span>
           </h2>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             We're at 1949 Dulsey Road, Unit 202 — right off Savannah Highway in the 29407 zip code. From Avondale, Shadowmoss, Bees Ferry, or anywhere else in West Ashley, you're just a few minutes away.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             From Savannah Highway (US-17), turn onto Dulsey Road. We're in Unit 202. We're open Monday through Thursday 8am to 4pm, and Friday 8am to 12pm.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
-            <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
+            <MapPin className="w-5 h-5" style={{ color: "#2D5F5D" }} />
+            <span className="text-sm font-semibold" style={{ color: "#111" }}>1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
       </section>

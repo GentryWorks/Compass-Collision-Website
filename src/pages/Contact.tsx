@@ -24,6 +24,9 @@ const Contact = () => {
           content="Contact our Charleston SC auto body shop for a free collision repair estimate. We answer the phone. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202."
         />
         <link rel="canonical" href={`${DOMAIN}/contact`} />
+        <meta property="og:title" content="Contact Compass Collision | Charleston SC Auto Body Shop" />
+        <meta property="og:description" content="Contact our Charleston SC auto body shop for a free collision repair estimate. We answer the phone. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
 
@@ -271,26 +274,26 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Form Placeholder */}
+      {/* Request Estimate CTA */}
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "#111" }}>
             Request a Free <span style={{ color: "#5A9E9B" }}>Estimate</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            Fill out the form below and we'll get back to you the same business day. Or call us directly for the fastest response.
+            Ready to get your car fixed? Reach out and we'll respond the same business day.
           </p>
-          {/* GHL Form Placeholder */}
           <div className="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-10">
-            <p className="text-gray-400 text-sm italic">
-              Contact form coming soon. In the meantime, call us at{" "}
+            <p className="text-gray-700 text-base leading-relaxed">
+              Give us a call at{" "}
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("contact")} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
-                {PHONE}
+                (843) 380-7055
               </a>{" "}
               or email{" "}
               <a href={`mailto:${EMAIL}`} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
-                {EMAIL}
-              </a>.
+                adam.compasscollision@gmail.com
+              </a>
+              . We respond the same business day.
             </p>
           </div>
         </div>

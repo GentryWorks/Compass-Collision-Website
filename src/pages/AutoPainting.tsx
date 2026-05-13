@@ -116,6 +116,9 @@ const AutoPainting = () => {
           content="Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/auto-painting`} />
+        <meta property="og:title" content={`Auto Painting Charleston SC | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>

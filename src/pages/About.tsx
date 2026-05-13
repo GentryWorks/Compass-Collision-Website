@@ -83,12 +83,15 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Compass Collision | Charleston SC Auto Body Shop</title>
+        <title>About Us | Auto Body Shop Charleston SC | Compass Collision</title>
         <meta
           name="description"
           content="Family-owned auto body shop in Charleston, SC. 95+ years experience, BMW certified. Honest estimates from techs who do the work. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/about`} />
+        <meta property="og:title" content="About Us | Auto Body Shop Charleston SC | Compass Collision" />
+        <meta property="og:description" content="Family-owned auto body shop in Charleston, SC. 95+ years experience, BMW certified. Honest estimates from techs who do the work. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>

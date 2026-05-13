@@ -204,6 +204,9 @@ const Gallery = () => {
           content="Real collision repair work from Compass Collision in Charleston, SC. Before and after photos of actual vehicles we've repaired — BMWs, trucks, SUVs, and more."
         />
         <link rel="canonical" href={`${DOMAIN}/gallery`} />
+        <meta property="og:title" content={`Collision Repair Gallery | ${BUSINESS_NAME} Charleston SC`} />
+        <meta property="og:description" content="Real collision repair work from Compass Collision in Charleston, SC. Before and after photos of actual vehicles we've repaired — BMWs, trucks, SUVs, and more." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
 
@@ -225,10 +228,19 @@ const Gallery = () => {
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Collision Repair <span style={{ color: "#5A9E9B" }}>Gallery</span>
             </h1>
-            <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
               These are real vehicles we've repaired right here in Charleston, SC. If you just got in an accident and
               you're wondering what "fixed right" actually looks like — this is it.
             </p>
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("gallery")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
+              style={{ backgroundColor: "#E8833A" }}
+            >
+              <Phone className="w-4 h-4" />
+              Call for a Free Estimate
+            </a>
           </motion.div>
         </div>
       </section>

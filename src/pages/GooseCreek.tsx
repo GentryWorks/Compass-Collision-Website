@@ -117,6 +117,9 @@ const GooseCreek = () => {
           content="Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/goose-creek`} />
+        <meta property="og:title" content={`Collision Repair Goose Creek | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -229,20 +232,20 @@ const GooseCreek = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#5A9E9B" }}>Goose Creek</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Getting Here from <span style={{ color: "#2D5F5D" }}>Goose Creek</span>
           </h2>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From Goose Creek, take US-52 South to I-26 South. Exit onto Savannah Highway toward West Ashley. The drive takes about 20 to 25 minutes depending on traffic.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             Coming from near Joint Base Charleston or the Crowfield Plantation area? Take I-26 South directly. From downtown Goose Creek near St. James Avenue, US-52 South is your quickest route.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
-            <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
+            <MapPin className="w-5 h-5" style={{ color: "#2D5F5D" }} />
+            <span className="text-sm font-semibold" style={{ color: "#111" }}>1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
       </section>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://compasscollisionsc.com/sitemap.xml

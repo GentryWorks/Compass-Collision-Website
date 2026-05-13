@@ -165,7 +165,21 @@ const Index = () => {
           name="description"
           content="Charleston's trusted auto body shop. 272 five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055."
         />
-        <link rel="canonical" href={`${DOMAIN}/`} />
+        <link rel="canonical" href={`${DOMAIN}`} />
+        <meta property="og:title" content="Auto Body Shop Charleston SC | Compass Collision" />
+        <meta property="og:description" content="Charleston's trusted auto body shop. 272 five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: { "@type": "Answer", text: faq.a },
+            })),
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -173,12 +187,24 @@ const Index = () => {
             name: "Compass Collision",
             url: DOMAIN,
             telephone: "843-380-7055",
+            image: "https://compasscollisionsc.com/og-image.jpg",
             address: {
               "@type": "PostalAddress",
               streetAddress: "1949 Dulsey Road, Unit 202",
               addressLocality: "Charleston",
               addressRegion: "SC",
               postalCode: "29407",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "32.7876",
+              longitude: "-79.9918",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "5.0",
+              reviewCount: "272",
+              bestRating: "5",
             },
             areaServed: [
               "Charleston", "North Charleston", "Mount Pleasant", "Summerville",
@@ -201,6 +227,7 @@ const Index = () => {
             ],
             priceRange: "$$",
             description: "Charleston's trusted auto body and collision repair shop. Honest estimates from technicians who do the work.",
+            sameAs: [],
           })}
         </script>
       </Helmet>

@@ -117,6 +117,9 @@ const MountPleasant = () => {
           content="Trusted body shop near Mount Pleasant, SC. Collision repair, dent repair, and auto painting. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/mount-pleasant`} />
+        <meta property="og:title" content={`Body Shop Mount Pleasant SC | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Trusted body shop near Mount Pleasant, SC. Collision repair, dent repair, and auto painting. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -261,20 +264,20 @@ const MountPleasant = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#5A9E9B" }}>Mount Pleasant</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Getting Here from <span style={{ color: "#2D5F5D" }}>Mount Pleasant</span>
           </h2>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             From Mount Pleasant, take the Arthur Ravenel Jr. Bridge (US-17 West) into downtown Charleston. Continue on the Crosstown (US-17) toward West Ashley. Our shop is at 1949 Dulsey Road, Unit 202. The drive takes about 20 to 25 minutes.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             From Shem Creek or the Towne Centre area, head south on Coleman Boulevard to US-17 and cross the bridge. From the Isle of Palms or Sullivan's Island, take the IOP Connector to US-17 West and follow the Crosstown into West Ashley.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
-            <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
+            <MapPin className="w-5 h-5" style={{ color: "#2D5F5D" }} />
+            <span className="text-sm font-semibold" style={{ color: "#111" }}>1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
       </section>

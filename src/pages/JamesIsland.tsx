@@ -82,8 +82,9 @@ const JamesIsland = () => {
       },
     },
     areaServed: {
-      "@type": "Place",
+      "@type": "City",
       name: "James Island, Charleston, SC",
+      sameAs: "https://en.wikipedia.org/wiki/James_Island,_South_Carolina",
     },
     serviceType: "Auto Body Repair",
   };
@@ -116,6 +117,9 @@ const JamesIsland = () => {
           content="Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. 272 five-star reviews. Free estimates. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/james-island`} />
+        <meta property="og:title" content={`Body Shop James Island | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -244,20 +248,20 @@ const JamesIsland = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#5A9E9B" }}>James Island</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Getting Here from <span style={{ color: "#2D5F5D" }}>James Island</span>
           </h2>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From James Island, take Folly Road north toward downtown, then hop on the Crosstown (US-17) toward West Ashley. The drive takes about 10 to 15 minutes.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             From the Maybank Highway or Harbor View Road area, head north to connect to US-17. Either way, you're at our door in about the same time. Many James Island residents drop off their car on the way to work downtown and pick it up on the way back.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
-            <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
+            <MapPin className="w-5 h-5" style={{ color: "#2D5F5D" }} />
+            <span className="text-sm font-semibold" style={{ color: "#111" }}>1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
       </section>

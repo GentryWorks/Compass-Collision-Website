@@ -117,6 +117,9 @@ const NorthCharleston = () => {
           content="Body shop serving North Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/north-charleston`} />
+        <meta property="og:title" content={`Body Shop North Charleston SC | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Body shop serving North Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -286,20 +289,20 @@ const NorthCharleston = () => {
       </section>
 
       {/* Directions */}
-      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
-            Getting Here from <span style={{ color: "#5A9E9B" }}>North Charleston</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
+            Getting Here from <span style={{ color: "#2D5F5D" }}>North Charleston</span>
           </h2>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our shop is at 1949 Dulsey Road, Unit 202 in Charleston, SC 29407. From North Charleston, take I-26 South to the Savannah Highway exit, then head toward West Ashley. The drive is about 15 to 20 minutes depending on traffic.
           </p>
-          <p className="text-gray-400 text-base leading-relaxed mb-4">
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
             From the Park Circle area, take Rivers Avenue south to I-26 and follow the same route. From the Tanger Outlets area or near the airport, take I-526 West to I-26 South. We've got parking on-site and a clean waiting area with coffee when you arrive.
           </p>
           <div className="flex items-center gap-2 mt-6">
-            <MapPin className="w-5 h-5" style={{ color: "#5A9E9B" }} />
-            <span className="text-gray-300 text-sm font-semibold">1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
+            <MapPin className="w-5 h-5" style={{ color: "#2D5F5D" }} />
+            <span className="text-sm font-semibold" style={{ color: "#111" }}>1949 Dulsey Road, Unit 202, Charleston, SC 29407</span>
           </div>
         </div>
       </section>

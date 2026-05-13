@@ -19,6 +19,9 @@ const PrivacyPolicy = () => {
         <meta name="description" content="Privacy policy for Compass Collision. Learn how we collect, use, and protect your personal information." />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href={`${DOMAIN}/privacy-policy`} />
+        <meta property="og:title" content={`Privacy Policy | ${BUSINESS_NAME}`} />
+        <meta property="og:description" content="Privacy policy for Compass Collision. Learn how we collect, use, and protect your personal information." />
+        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
 
