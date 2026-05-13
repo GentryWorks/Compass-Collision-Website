@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Do I need an appointment for an estimate?",
-    a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 or fill out our contact form and we'll get back to you the same business day. Walk-ins are welcome when the schedule allows.",
+    a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 and we'll get you scheduled the same business day. Walk-ins are welcome when the schedule allows.",
   },
   {
     q: "What is paintless dent repair?",
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "Do you offer free estimates?",
-    a: "Yes. Every estimate is free with no obligation. Bring the car in and we'll look at the damage, explain what needs to be done, and give you an honest price. You can also email us photos for a preliminary estimate before you come in. The in-person estimate is always more accurate since we can check for damage that photos don't show.",
+    a: "Yes. Every estimate is free with no obligation. Bring the car in and we'll look at the damage, explain what needs to be done, and give you an honest price. You can also call us and describe the damage for a rough idea before coming in. The in-person estimate is always more accurate since we can check for damage that a description alone won't reveal.",
   },
   {
     q: "Do you help with rental car arrangements?",
@@ -239,13 +239,15 @@ const FAQ = () => {
             Get a free estimate from Compass Collision. No pressure. No obligation. Just an honest price.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("faq")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#E8833A" }}
             >
-              Get Free Estimate
-            </Link>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a
               href={PHONE_HREF}
               onClick={() => trackPhoneClick("faq")}

@@ -160,13 +160,15 @@ const AutoPainting = () => {
               Panel painting. Bumper refinishing. Color matching down to the exact factory code. 272 five-star reviews. When we paint a panel, you can't tell where the repair ends and the original begins.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              <a
+                href={PHONE_HREF}
+                onClick={() => trackPhoneClick("auto-painting")}
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                 style={{ backgroundColor: "#E8833A" }}
               >
-                Get Free Estimate
-              </Link>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("auto-painting")}
@@ -428,16 +430,18 @@ const AutoPainting = () => {
             Free estimates. Factory color matching. 272 five-star reviews. We'll make it look like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A" }}
-            >
-              Get Free Estimate
-            </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("auto-painting")}
+              onClick={() => trackPhoneClick("auto-painting")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              style={{ backgroundColor: "#E8833A" }}
+            >
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("auto-painting")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

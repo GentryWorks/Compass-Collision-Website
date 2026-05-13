@@ -269,13 +269,15 @@ const Index = () => {
               Other shops won't call you back. We answer the phone, give free estimates, and get your car in within days — not months. 272 five-star reviews. BMW certified. All insurance accepted.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              <a
+                href={PHONE_HREF}
+                onClick={() => trackPhoneClick("homepage")}
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                 style={{ backgroundColor: "#E8833A" }}
               >
-                Get Free Estimate
-              </Link>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("homepage")}
@@ -513,8 +515,8 @@ const Index = () => {
             {[
               {
                 step: "01",
-                title: "Call or Request Your Free Estimate",
-                text: "Call us at (843) 380-7055 or fill out our online form. We'll look at the damage and give you an honest price — usually within 24 hours. Free. Always. We never charge just to tell you what's wrong.",
+                title: "Call for Your Free Estimate",
+                text: "Call us at (843) 380-7055. We'll talk through the damage and give you an honest price — usually within 24 hours. Free. Always. We never charge just to tell you what's wrong.",
               },
               {
                 step: "02",
@@ -648,16 +650,18 @@ const Index = () => {
             Free estimates. We answer the phone. We get your car in within days. 272 five-star reviews from people who felt the same relief you're about to feel.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A", color: "#fff" }}
-            >
-              Get Free Estimate
-            </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("homepage")}
+              onClick={() => trackPhoneClick("homepage")}
+              className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              style={{ backgroundColor: "#E8833A", color: "#fff" }}
+            >
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("homepage")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

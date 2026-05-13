@@ -138,7 +138,10 @@ const JamesIsland = () => {
               Just got in an accident and can't get a shop to call you back? We answer the phone. We're 10 to 15 minutes from James Island, and we handle everything — repairs, insurance, all of it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white" style={{ border: "2px solid #fff" }}>
                 <Phone className="w-4 h-4" />
                 Call: {PHONE}
@@ -325,7 +328,10 @@ const JamesIsland = () => {
             272 five-star reviews. Free estimates. We answer the phone. Just 10 to 15 minutes from James Island — and your car comes back looking like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline" style={{ border: "2px solid #fff" }}>
               <Phone className="w-4 h-4" />
               Call: {PHONE}

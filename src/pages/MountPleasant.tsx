@@ -57,8 +57,8 @@ const faqs = [
     a: "Our customers from Mount Pleasant think so. The drive takes about 20 to 25 minutes and gets you honest estimates from the people who actually do the repairs. With 272 five-star reviews, the quality speaks for itself. Many Mount Pleasant drivers have been coming back to us for years.",
   },
   {
-    q: "Can I email photos of my damage for a quote?",
-    a: "Yes. Send photos to adam.compasscollision@gmail.com and we'll give you a preliminary estimate. The final price is confirmed when we see the car in person, but photos help us give you a good starting number before you make the drive.",
+    q: "Can I call for a rough estimate before making the drive?",
+    a: "Yes. Call us at (843) 380-7055 and describe the damage — we can give you a rough idea over the phone. The final price is confirmed when we see the car in person, but a quick call can help you decide whether to make the drive.",
   },
 ];
 
@@ -145,9 +145,10 @@ const MountPleasant = () => {
               Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge — and we answer the phone. 272 five-star reviews. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
-                Get Free Estimate
-              </Link>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white" style={{ border: "2px solid #fff" }}>
                 <Phone className="w-4 h-4" />
                 Call: {PHONE}
@@ -224,7 +225,7 @@ const MountPleasant = () => {
             What to Expect <span style={{ color: "#5A9E9B" }}>From Start to Finish</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            You call or email us with your damage. We get you in for a free estimate — usually within a day or two, not the two-week wait other shops quote. The person who writes your estimate is the same person doing the repair. That means the price is accurate and there are no surprises.
+            You call us and describe the damage. We get you in for a free estimate — usually within a day or two, not the two-week wait other shops quote. The person who writes your estimate is the same person doing the repair. That means the price is accurate and there are no surprises.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             If you're going through insurance, we handle the adjuster for you. We file the claim, communicate with your carrier, and write supplements when hidden damage turns up. We push back if the insurance estimate comes in short. You shouldn't have to fight that battle yourself.
@@ -341,7 +342,10 @@ const MountPleasant = () => {
             Just across the Ravenel Bridge. Free estimates. Insurance handled. 272 five-star reviews. We answer the phone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline" style={{ border: "2px solid #fff" }}>
               <Phone className="w-4 h-4" />
               Call: {PHONE}

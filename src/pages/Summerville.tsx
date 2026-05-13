@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Do you do free estimates for Summerville residents?",
-    a: "Yes. Every estimate is free no matter where you live. Drive down from Summerville, let us look at the damage, and we'll give you a straight answer on what it costs. You can also email us photos first if you want a rough idea before making the trip.",
+    a: "Yes. Every estimate is free no matter where you live. Drive down from Summerville, let us look at the damage, and we'll give you a straight answer on what it costs. You can also call us to describe the damage if you want a rough idea before making the trip.",
   },
   {
     q: "Will my car look the same as before the accident?",
@@ -134,7 +134,10 @@ const Summerville = () => {
               You've been in an accident. The closer shops aren't answering. We're about 25 minutes down I-26 — and we pick up the phone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white" style={{ border: "2px solid #fff" }}>
                 <Phone className="w-4 h-4" />
                 Call: {PHONE}
@@ -341,7 +344,10 @@ const Summerville = () => {
             We're 25 minutes from Summerville. Free estimates. 272 five-star reviews. We handle your insurance so you don't have to.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline" style={{ border: "2px solid #fff" }}>
               <Phone className="w-4 h-4" />
               Call: {PHONE}

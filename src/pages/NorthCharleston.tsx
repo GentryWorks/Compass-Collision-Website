@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "Do you offer free estimates for North Charleston residents?",
-    a: "Yes. Every estimate is free no matter where you live. Drive in from North Charleston, show us the damage, and we'll give you a straight answer on the spot. You can also email us photos for a preliminary look before making the trip.",
+    a: "Yes. Every estimate is free no matter where you live. Drive in from North Charleston, show us the damage, and we'll give you a straight answer on the spot. You can also call us to describe the damage for a rough idea before making the trip.",
   },
 ];
 
@@ -150,13 +150,15 @@ const NorthCharleston = () => {
               Just been in an accident? We know you've probably already called two other shops and got voicemails. We answer. Free estimates same day. We're 15 minutes down I-26.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              <a
+                href={PHONE_HREF}
+                onClick={() => trackPhoneClick("north-charleston")}
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                 style={{ backgroundColor: "#E8833A" }}
               >
-                Get Free Estimate
-              </Link>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("north-charleston")}
@@ -384,16 +386,18 @@ const NorthCharleston = () => {
             We answer the phone, give you a free estimate the same day, and handle your insurance from start to finish. Just 15 minutes from North Charleston.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A" }}
-            >
-              Get Free Estimate
-            </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("north-charleston")}
+              onClick={() => trackPhoneClick("north-charleston")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              style={{ backgroundColor: "#E8833A" }}
+            >
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("north-charleston")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

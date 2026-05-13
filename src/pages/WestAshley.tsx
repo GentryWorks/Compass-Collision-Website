@@ -138,7 +138,10 @@ const WestAshley = () => {
               We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. 272 five-star reviews. We answer the phone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline text-white" style={{ border: "2px solid #fff" }}>
                 <Phone className="w-4 h-4" />
                 Call: {PHONE}
@@ -325,7 +328,10 @@ const WestAshley = () => {
             We're right in your neighborhood. Free estimates. No surprises. Your car back looking like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>Get Free Estimate</Link>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline" style={{ border: "2px solid #fff" }}>
               <Phone className="w-4 h-4" />
               Call: {PHONE}

@@ -190,13 +190,15 @@ const CollisionRepair = () => {
               Your car got hit. Now you need it fixed right. We handle everything from minor fender benders to major structural damage — and we deal with your insurance company so you don't have to.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              <a
+                href={PHONE_HREF}
+                onClick={() => trackPhoneClick("collision-repair")}
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                 style={{ backgroundColor: "#E8833A" }}
               >
-                Get Free Estimate
-              </Link>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("collision-repair")}
@@ -444,19 +446,21 @@ const CollisionRepair = () => {
             Need Collision Repair in <span style={{ color: "#1A2E2D" }}>Charleston?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Free estimates. No runaround. We answer the phone. Call us or request an estimate online and we'll get back to you the same day.
+            Free estimates. No runaround. We answer the phone. Call us and we'll get you an estimate the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A" }}
-            >
-              Get Free Estimate
-            </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("collision-repair")}
+              onClick={() => trackPhoneClick("collision-repair")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              style={{ backgroundColor: "#E8833A" }}
+            >
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("collision-repair")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

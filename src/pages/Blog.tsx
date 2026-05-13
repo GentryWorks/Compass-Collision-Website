@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen } from "lucide-react";
-import { BUSINESS_NAME, DOMAIN } from "@/data/constants";
+import { BookOpen, Phone } from "lucide-react";
+import { BUSINESS_NAME, DOMAIN, PHONE, PHONE_HREF } from "@/data/constants";
+import { trackPhoneClick } from "@/utils/tracking";
 
 const Blog = () => {
   const schemaBreadcrumb = {
@@ -81,14 +82,15 @@ const Blog = () => {
               care. Whether you've just been in an accident or want to know what to expect during
               the repair process, we'll have answers here. Check back soon.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("blog")}
               className="inline-flex items-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#E8833A" }}
             >
-              Have a Question? Contact Us
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+              <Phone className="w-4 h-4" />
+              Have a Question? Call Us
+            </a>
           </motion.div>
         </div>
       </section>
@@ -100,17 +102,18 @@ const Blog = () => {
             Need a Repair <span style={{ color: "#1A2E2D" }}>Right Now?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Don't wait for a blog post. Call us or request a free estimate and get a straight
-            answer from a technician who does the work.
+            Don't wait for a blog post. Call us and get a straight answer from a technician who does the work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("blog")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#E8833A" }}
             >
-              Get Free Estimate
-            </Link>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <Link
               to="/collision-repair"
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"

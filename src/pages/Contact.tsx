@@ -274,26 +274,30 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Request Estimate CTA */}
+      {/* Call CTA */}
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "#111" }}>
-            Request a Free <span style={{ color: "#5A9E9B" }}>Estimate</span>
+            Call for a Free <span style={{ color: "#5A9E9B" }}>Estimate</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            Ready to get your car fixed? Reach out and we'll respond the same business day.
+            Ready to get your car fixed? Give us a call — a real person picks up and you'll have an answer the same day.
           </p>
           <div className="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-10">
-            <p className="text-gray-700 text-base leading-relaxed">
-              Give us a call at{" "}
-              <a href={PHONE_HREF} onClick={() => trackPhoneClick("contact")} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
-                (843) 380-7055
-              </a>{" "}
-              or email{" "}
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("contact")}
+              className="inline-flex items-center justify-center gap-3 text-white font-extrabold uppercase tracking-wide px-10 py-5 rounded-full text-base hover:opacity-90 transition-opacity no-underline mb-4"
+              style={{ backgroundColor: "#2D5F5D" }}
+            >
+              <Phone className="w-5 h-5" />
+              Call Now: (843) 380-7055
+            </a>
+            <p className="text-gray-500 text-sm mt-4">
+              Prefer email for non-urgent questions?{" "}
               <a href={`mailto:${EMAIL}`} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
-                adam.compasscollision@gmail.com
+                {EMAIL}
               </a>
-              . We respond the same business day.
             </p>
           </div>
         </div>

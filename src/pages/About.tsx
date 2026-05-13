@@ -270,16 +270,18 @@ const About = () => {
             Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Free estimates. Honest pricing from people who do the work. Call us or request an estimate online.
+            Free estimates. Honest pricing from people who do the work. Give us a call and we'll get you an answer the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("about")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#E8833A" }}
             >
-              Get Free Estimate
-            </Link>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a
               href={PHONE_HREF}
               onClick={() => trackPhoneClick("about")}

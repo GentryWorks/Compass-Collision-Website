@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
@@ -326,16 +325,18 @@ const Gallery = () => {
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Every vehicle in this gallery came in damaged and left looking like it never happened. Yours can too.
-            Estimates are free and we'll get back to you the same day.
+            Estimates are free — call us and get an answer the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("gallery")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#E8833A" }}
             >
-              Get Free Estimate
-            </Link>
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
             <a
               href={PHONE_HREF}
               onClick={() => trackPhoneClick("gallery")}

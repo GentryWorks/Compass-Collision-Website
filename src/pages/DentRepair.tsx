@@ -156,13 +156,15 @@ const DentRepair = () => {
               Door dings. Hail damage. Parking lot dents. We remove dents with paintless dent repair when possible and traditional methods when needed. Most jobs are done same day. 272 five-star reviews.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              <a
+                href={PHONE_HREF}
+                onClick={() => trackPhoneClick("dent-repair")}
+                className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                 style={{ backgroundColor: "#E8833A" }}
               >
-                Get Free Estimate
-              </Link>
+                <Phone className="w-4 h-4" />
+                Call for Free Estimate
+              </a>
               <a
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("dent-repair")}
@@ -468,16 +470,18 @@ const DentRepair = () => {
             Free estimates. Honest pricing. Most PDR jobs done same day. Call or stop by our West Ashley shop and we'll take a look.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A" }}
-            >
-              Get Free Estimate
-            </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("dent-repair")}
+              onClick={() => trackPhoneClick("dent-repair")}
+              className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
+              style={{ backgroundColor: "#E8833A" }}
+            >
+              <Phone className="w-4 h-4" />
+              Call for Free Estimate
+            </a>
+            <a
+              href={PHONE_HREF}
+              onClick={() => trackPhoneClick("dent-repair")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >
