@@ -34,7 +34,7 @@ const services = [
   {
     icon: <Paintbrush className="w-7 h-7" style={{ color: "#E8833A" }} />,
     title: "Auto Painting & Color Matching",
-    description: "Perfect color match down to your exact factory code. Bumper refinishing. Panel painting. Your repair will be invisible — even on hard-to-match colors.",
+    description: "Perfect color match down to your exact factory code. Bumper refinishing. Panel painting. Your repair will be invisible — even on hard-to-match colors like red, pearl white, or tri-coat silver.",
     link: "/auto-painting",
   },
 ];
@@ -50,22 +50,22 @@ const reasons = [
   {
     icon: <Phone className="w-6 h-6" />,
     title: "We Actually Answer the Phone",
-    description: "Call us and a real person picks up. We respond to emails the same day. No voicemails. No waiting weeks just to get an estimate.",
+    description: "Call us and a real person picks up. We respond to emails the same day. No voicemails, no waiting weeks just to get a response. Most Charleston shops can't say the same.",
   },
   {
     icon: <Shield className="w-6 h-6" />,
     title: "Free Estimates, Honest Prices",
-    description: "Other shops charge $100 just to look at your car. We never charge for an estimate. The price we quote is the price you pay.",
+    description: "Other shops charge $100 just to look at your car. We never charge for an estimate. The price we quote is the price you pay — no surprise charges when you pick up.",
   },
   {
     icon: <Users className="w-6 h-6" />,
     title: "We Handle Your Insurance",
-    description: "We work with all insurance companies. We deal with your adjuster, fight lowball estimates, and handle the paperwork so you don't have to.",
+    description: "We work with all insurance companies. We deal with your adjuster directly, fight lowball estimates, and handle the paperwork so you don't have to make a single call.",
   },
   {
     icon: <Star className="w-6 h-6" />,
-    title: "Technicians Write the Estimates",
-    description: "The person writing your estimate has done the repair hundreds of times. No middleman. No surprises. You get an accurate price because we know exactly what the job takes.",
+    title: "Estimators Who Do the Work",
+    description: "The person writing your estimate has done this repair hundreds of times with their own hands. No middleman. No surprises. You get an accurate price because we know exactly what the job takes.",
   },
 ];
 
@@ -85,15 +85,27 @@ const faqs = [
   },
   {
     q: "How long will my repair take?",
-    a: "Most collision repairs take 3 to 10 business days. We give you an honest timeline before we start and keep you updated the entire time. Unlike other shops, we don't sit on your car for weeks. We start when we say we will.",
+    a: "Most collision repairs take 3 to 10 business days. We give you an honest timeline before we start and keep you updated the entire time. We don't sit on your car for weeks. We start when we say we will and tell you if anything changes.",
   },
   {
     q: "Do you work with my insurance company?",
-    a: "Yes. We work with all insurance companies — State Farm, GEICO, Progressive, USAA, Allstate, and every other carrier. We deal with your adjuster directly, handle the paperwork, and fight lowball estimates when needed.",
+    a: "Yes. We work with all insurance companies — State Farm, GEICO, Progressive, USAA, Allstate, and every other carrier. We deal with your adjuster directly, handle the paperwork, and fight lowball estimates when needed. You shouldn't have to call the insurance company once.",
+  },
+  {
+    q: "What if the insurance estimate seems too low?",
+    a: "This happens regularly. Insurance adjusters write estimates that don't cover the full scope of the repair. We know what proper repairs actually cost, and we go to bat for you. We document the damage, push back on insufficient estimates, and make sure the job is done right — not just done to the insurance company's minimum. One of our customers had a $4,992 insurance check and we charged them only what the repair actually cost.",
   },
   {
     q: "Can't get another shop to answer or fit you in?",
-    a: "This is the most common thing we hear. Customers call us after trying four or five other body shops in Charleston that are booked for months or won't return calls. We answer the phone, we respond to emails the same day, and we get your car in within days — not months.",
+    a: "This is the most common thing we hear. Customers call us after trying four or five other body shops in Charleston that are booked for months or won't return calls. Most shops in the area are running 6 to 10 week backlogs just for an estimate appointment. We answer the phone, respond to emails the same day, and get your car in within days — not months.",
+  },
+  {
+    q: "What should I expect after I drop my car off?",
+    a: "We'll keep you updated throughout the repair — no black holes, no wondering what's happening with your car. Most customers get updates every few days. When your car is ready, we'll call you to schedule pickup. We clean the car before you take it home. You'll pick it up looking like the accident never happened.",
+  },
+  {
+    q: "Can you match my car's exact paint color?",
+    a: "Yes. We match to your vehicle's exact factory paint code — the same code the manufacturer used the day your car was built. We see a lot of challenging colors in our shop: red, pearl white, tri-coat silver, deep blue metallic. Difficult colors are not a problem. We don't stop until the panel blends perfectly with the rest of the car.",
   },
 ];
 
@@ -273,7 +285,7 @@ const Index = () => {
               Your Car Will Look Like It <span style={{ color: "#5A9E9B" }}>Never Happened</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Drag to compare. BMWs, trucks, SUVs — our color matching is so precise you can't tell where the repair was.
+              Drag to compare. BMWs, F-150s, Audis, SUVs — our color matching is so precise you can't tell where the repair was.
             </p>
           </div>
           <BeforeAfterSlider
@@ -327,7 +339,7 @@ const Index = () => {
               What We <span style={{ color: "#2D5F5D" }}>Fix</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              Collision damage. Dents. Paint. All done in-house by our own technicians — never farmed out.
+              Collision damage. Dents. Paint. All done in-house by our own technicians — never farmed out to another shop.
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -366,7 +378,7 @@ const Index = () => {
               Why Charleston Trusts <span style={{ color: "#5A9E9B" }}>Us</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Other body shops in Charleston are booked for months. We get you in within days. Here's why 272 customers gave us five stars.
+              Most body shops in Charleston are booked 6 to 10 weeks out. We get you in within days. Here's why 272 customers gave us five stars.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -401,11 +413,11 @@ const Index = () => {
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               {
-                text: "Fantastic experience all around. Adam and his crew made the repair process seamless. From initial assessment — communication along the way — and interfacing with the insurance company — everything was handled flawlessly. They did what was best for my vehicle to bring it back to 100% after being damaged, not just what was quick and easy.",
+                text: "Fantastic experience all around. The crew made the repair process seamless. From initial assessment — communication along the way — and interfacing with the insurance company — everything was handled flawlessly. They did what was best for my vehicle to bring it back to 100% after being damaged, not just what was quick and easy.",
                 name: "Stephen H.",
               },
               {
-                text: "Adam saw how the fender was pulled out. He offered to put the fender back into position until a permanent repair could be done. He did not want any money. I'm thoroughly impressed by his skill and wanting to help a stranger passing through. I cannot say enough good things about Adam.",
+                text: "The fender was pulled out. They offered to put it back into position until a permanent repair could be done — and didn't want any money for it. I'm thoroughly impressed by their skill and wanting to help a stranger passing through. I cannot say enough good things about this shop.",
                 name: "Philip A.",
               },
               {
@@ -444,16 +456,22 @@ const Index = () => {
             Charleston's Honest <span style={{ color: "#2D5F5D" }}>Auto Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            You just got in an accident. Your car is damaged. You're calling body shops in Charleston and nobody answers. The one shop that does pick up says they can't even look at your car for two months. Sound familiar? You're not alone. This is the number one thing our customers tell us before they find our auto body shop in Charleston, SC.
+            You just got in an accident. Your car is damaged. You're calling body shops in Charleston and nobody answers. The one shop that picks up says they can't even look at your car for two months. Sound familiar? We hear this from nearly every customer who finds us. It's the number one reason people drive past closer shops to bring their car to our auto body shop in Charleston, SC.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We do things differently. We answer the phone. We give free estimates — we never charge you just to look at the damage. And we get your car in within days, not months. Our team has 95+ years of combined experience in collision repair, dent repair, and auto painting. We're BMW certified and we work on everything from F-150s to Porsches. If you drive it, we can fix it.
+            We do things differently here. We answer the phone — a real person, not a voicemail. We give free estimates, usually the same day you call. And we get your car in within days, not months. Our team has 95+ years of combined experience in collision repair, dent repair, and auto painting. We've built 272 five-star reviews on Google because we treat your car like it's our own.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            What makes us different from other body shops in Charleston, SC? Honesty. The people writing your estimate have done the repair with their own hands. That means no inflated quotes and no surprise charges after the work is done. We tell you what it costs, how long it takes, and we keep you updated the entire time. When you pick up your car, it looks like the accident never happened.
+            We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. We're BMW certified, which means we follow the manufacturer's exact repair procedures for BMW vehicles. That matters if you drive a 3 Series, an X5, or any other BMW — proper certification means your car is repaired to factory spec, not just cosmetically patched. Most shops in Charleston can't say that.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Here's what makes us genuinely different: the person who writes your estimate is the same person who has done this repair dozens — sometimes hundreds — of times. There's no separate estimator who has never touched a car handing you a quote. We know what's behind the damaged panel because we've opened it up before. That means no inflated estimates and no surprise charges when you come to pick up.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            If you're filing an insurance claim, we take that off your plate entirely. We talk to your adjuster directly. We push back when the insurance company's estimate doesn't cover the full repair — and in our experience, that happens more often than it should. We've seen insurance companies send estimates that are thousands short of what a proper repair actually costs. We document the damage, submit supplements, and fight for every dollar your repair deserves.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            If you're dealing with insurance, we handle that too. We work with all insurance companies — State Farm, GEICO, Progressive, USAA, all of them. We talk to your adjuster directly, fight lowball estimates when needed, and take care of the paperwork. You have enough to deal with after an accident. Let us take the stress off your plate.
+            When you pick up your car, it comes back clean. We wash and vacuum every vehicle before it leaves the shop. We've had customers tell us their car looked better than it did before the accident. That's the standard we hold ourselves to — not "good enough for a body shop," but good enough that you can't find the repair even if you're looking for it.
           </p>
         </div>
       </section>
@@ -469,12 +487,12 @@ const Index = () => {
               {
                 step: "01",
                 title: "Call or Request Your Free Estimate",
-                text: "Call us at (843) 380-7055 or fill out our online form. We'll look at the damage and give you an honest price — usually within 24 hours. Free. Always.",
+                text: "Call us at (843) 380-7055 or fill out our online form. We'll look at the damage and give you an honest price — usually within 24 hours. Free. Always. We never charge just to tell you what's wrong.",
               },
               {
                 step: "02",
                 title: "We Deal With Insurance",
-                text: "Going through insurance? We handle it. We talk to your adjuster, submit the paperwork, and make sure nothing falls through the cracks. You don't have to call the insurance company once.",
+                text: "Going through insurance? We handle it. We talk to your adjuster, submit the paperwork, and push back if the estimate comes in short. You don't have to call the insurance company once.",
               },
               {
                 step: "03",
@@ -484,7 +502,7 @@ const Index = () => {
               {
                 step: "04",
                 title: "Pick Up Like New",
-                text: "Your car comes back looking like the accident never happened. Paint matched to your exact factory code. Panels aligned. We even clean it before you pick it up.",
+                text: "Your car comes back looking like the accident never happened. Paint matched to your exact factory code. Panels aligned. We wash and vacuum it before you pick it up.",
               },
             ].map((item, i) => (
               <motion.div

@@ -9,91 +9,91 @@ import { trackPhoneClick } from "@/utils/tracking";
 const faqs = [
   {
     q: "Do you work with insurance companies?",
-    a: "Yes. We work with every major insurance carrier including State Farm, GEICO, Progressive, Allstate, USAA, and all others. We handle the claims paperwork, communicate directly with your adjuster, and file supplements if we find hidden damage during the repair. You don't have to deal with any of it.",
+    a: "Yes. We work with every major carrier — State Farm, GEICO, Progressive, Allstate, USAA, and all others. We handle the paperwork and communicate directly with your adjuster. If we find hidden damage once the repair is underway, we document it with photos and file a supplement on your behalf. We've seen adjusters send low initial estimates, and we push back when the number doesn't cover what the repair actually requires. You don't have to manage any of it.",
   },
   {
     q: "How long does a typical repair take?",
-    a: "It depends on the damage. Minor dent repairs can be done in a few hours. Most collision repairs take 3 to 10 business days. Major structural repairs or jobs requiring special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout.",
+    a: "It depends on the damage. Minor dent repairs can be done in a few hours. Most collision repairs take 3 to 10 business days. Jobs with structural damage or special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.",
   },
   {
     q: "How much does collision repair cost?",
-    a: "Every repair is different. A small dent might cost a few hundred dollars. A major collision repair can run into the thousands. We give you a free, detailed estimate before any work begins. If you're going through insurance, your out-of-pocket cost is typically just your deductible.",
+    a: "Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of structural damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the repair.",
   },
   {
     q: "What types of vehicles do you repair?",
-    a: "We repair all makes and models. Cars, trucks, and SUVs. Foreign and domestic. From Honda Civics to BMW M-series. If it has collision damage, we can fix it.",
+    a: "We repair all makes and models — cars, trucks, and SUVs, foreign and domestic. From Honda Civics to BMW M-Series to F-150s to Range Rovers. Our team has 95+ years of combined experience across every major manufacturer. If it has collision damage, we can fix it.",
   },
   {
     q: "Do I need an appointment for an estimate?",
-    a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 or fill out our contact form and we'll get back to you the same business day. Walk-ins are welcome when our schedule allows.",
+    a: "We prefer appointments so we can give you our full attention. Call us at (843) 380-7055 or fill out our contact form and we'll get back to you the same business day. Walk-ins are welcome when the schedule allows.",
   },
   {
     q: "What is paintless dent repair?",
-    a: "Paintless dent repair (PDR) is a method that removes dents without sanding, filling, or repainting. We use specialized tools to push the metal back into its original shape from behind the panel. It preserves your factory paint, costs less, and is faster than traditional dent repair. It works best on small to medium dents where the paint is still intact.",
+    a: "Paintless dent repair (PDR) removes dents without sanding, filling, or repainting. We use specialized tools to push the metal back to its original shape from behind the panel. It preserves your factory paint finish, costs less, and is faster than traditional dent repair. It works best on small to medium dents where the paint is still intact and undamaged.",
   },
   {
     q: "How do you match my car's paint color?",
-    a: "Every vehicle has a factory paint code. We locate that code and use a computerized color matching system to mix an exact match. We spray a test panel first to verify the color under multiple lighting conditions before painting your car. Then we blend the new paint into the surrounding panels so the repair is invisible.",
+    a: "Every vehicle has a factory paint code. We locate that code and use a computerized mixing system to build an exact match. Then we spray a test panel first and check it under multiple lighting conditions before touching your car. Some colors are harder than others — red oxidizes and shifts over time, pearl and tri-coat finishes require layered application, and two-tone trucks demand precise blending at every panel edge. We blend the new paint into the surrounding panels so the repair disappears. The goal is that you can't find it when you pick the car up.",
   },
   {
     q: "Do I have to use the body shop my insurance recommends?",
-    a: "No. South Carolina law gives you the right to choose any body shop you want for your repair. Your insurance company cannot require you to go to a specific shop. You choose where your car gets fixed, and we work with your insurance either way.",
+    a: "No. South Carolina law gives you the right to choose any body shop you want. Your insurance company cannot require you to go to their preferred shop. You pick where your car gets fixed. We work with your insurance either way.",
   },
   {
     q: "What if hidden damage is found during the repair?",
-    a: "Hidden damage is common in collisions. If we find additional damage once we start the repair, we document it with photos and send a supplement to your insurance company. We don't proceed with extra work without your approval. This is standard practice and your insurance covers the supplement in most cases.",
+    a: "Hidden damage is common in collisions. Metal bends behind panels where it's not visible until we start disassembly. When we find it, we stop, photograph everything, and file a supplement with your insurance company. A supplement is simply an updated damage report — it's standard practice and insurers process them regularly. We don't do any extra work without your approval first, and your insurance typically covers the supplement. We've filed hundreds of these and know how to document them so they don't get kicked back.",
   },
   {
     q: "What areas do you serve?",
-    a: "We're located in Charleston, SC at 1949 Dulsey Road, Unit 202. We serve the entire Charleston metro area including North Charleston, Mount Pleasant, Summerville, West Ashley, James Island, and Goose Creek. Customers come to our shop from across the Lowcountry.",
+    a: "We're located in Charleston, SC at 1949 Dulsey Road, Unit 202. We serve the entire Charleston metro area including North Charleston, Mount Pleasant, Summerville, West Ashley, James Island, and Goose Creek. Customers come to us from across the Lowcountry — some drive from Kiawah and Edisto because they can't find quality work closer.",
   },
   {
     q: "What are your hours?",
-    a: "We're open Monday through Thursday from 8am to 4pm, and Friday from 8am to 12pm. We're closed on weekends. Call us at (843) 380-7055 or email us anytime and we'll respond the next business day.",
+    a: "We're open Monday through Thursday 8am to 4pm, and Friday 8am to 12pm. We're closed on weekends. Call us at (843) 380-7055 or email us anytime — we'll respond the next business day.",
   },
   {
     q: "Do you offer any warranty on repairs?",
-    a: "Yes. We stand behind every repair we do. If something isn't right, bring it back and we will make it right. We use quality materials and factory-spec processes because we want your repair to last — not just look good when you pick it up.",
+    a: "Yes. We stand behind every repair we do. If something isn't right after you get the car back — the paint doesn't look right in sunlight, a panel doesn't sit flush, anything — bring it back and we'll make it right at no charge. We use factory-spec processes and quality materials because we want the repair to last for the life of the vehicle. A repair that looks good for three months and then fades or lifts isn't a repair — it's a headache.",
   },
   {
     q: "Do you offer free estimates?",
-    a: "Yes. Every estimate is free with no obligation. Bring your car in and we will look at the damage, explain what needs to be done, and give you an honest price. You can also send us photos by email for a preliminary quote. The in-person estimate is always more accurate since we can check for hidden damage.",
-  },
-  {
-    q: "Can I choose my own body shop for insurance claims?",
-    a: "Yes. South Carolina law gives you the right to take your car to any body shop you choose. Your insurance company may suggest a preferred shop, but they cannot force you to go there. You pick the shop. We handle the rest.",
-  },
-  {
-    q: "What happens if there is hidden damage?",
-    a: "Hidden damage is common in collisions. Metal can bend behind the panels where it is not visible until we start the repair. If we find extra damage, we stop, take photos, and send a supplement to your insurance company. We do not do any extra work without your approval first. Your insurance typically covers the supplement.",
+    a: "Yes. Every estimate is free with no obligation. Bring the car in and we'll look at the damage, explain what needs to be done, and give you an honest price. You can also email us photos for a preliminary estimate before you come in. The in-person estimate is always more accurate since we can check for damage that photos don't show.",
   },
   {
     q: "Do you help with rental car arrangements?",
-    a: "We don't provide rental cars directly, but we can help you coordinate with your insurance company. Most collision policies include rental coverage while your car is in the shop. We will give your insurance an accurate repair timeline so they can set up the rental for the right number of days.",
+    a: "We don't provide rentals directly, but we help you coordinate with your insurance. Most collision policies include rental coverage while your car is being repaired. We give your insurer an accurate repair timeline so the rental is set up for the right number of days. We've also given customers a ride to the rental counter when they needed it.",
   },
   {
-    q: "How do I know if my car needs collision repair or just dent repair?",
-    a: "It depends on the damage. If the paint is cracked, the metal is torn, or there is structural damage underneath, you need collision repair. If the paint is still intact and the dent is shallow, paintless dent repair may be enough. Bring your car in and we will tell you exactly which service you need. There is no charge for us to look at it.",
+    q: "How do I know if I need collision repair or just dent repair?",
+    a: "It comes down to the paint and the structure. If the paint is cracked or the metal is torn, you need collision repair. If there's structural damage underneath — bent frame rails, crumpled supports — that's also collision territory. If the paint is still intact and the dent is shallow, paintless dent repair may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.",
   },
   {
     q: "What brands of paint do you use?",
-    a: "We use professional-grade automotive paint systems designed for collision repair. The specific brand depends on what matches your vehicle best. What matters most is that we use your car's factory paint code and a computerized mixing system to get an exact color match. We test the color on a spray panel before painting your vehicle.",
+    a: "We use professional-grade automotive refinishing systems designed for collision repair. The specific product depends on what best matches your vehicle. What matters most is the process: we use your car's factory paint code, a computerized mixing system for an exact match, and a spray test before we paint your vehicle. The brand is secondary to the result.",
   },
   {
     q: "Do you repair all makes and models?",
-    a: "Yes. We work on cars, trucks, and SUVs. Foreign and domestic. Honda, Toyota, Ford, Chevrolet, BMW, Mercedes, and everything in between. Our team has 95+ years of combined experience across every major manufacturer. If your vehicle has collision damage, we can fix it.",
+    a: "Yes. Cars, trucks, and SUVs — foreign and domestic. Honda, Toyota, Ford, Chevrolet, BMW, Audi, Mercedes, Lexus, and everything in between. Our team has 95+ years of combined experience across every major manufacturer. If your vehicle has collision damage, we can fix it.",
   },
   {
     q: "Can I get a quote over the phone?",
-    a: "We can give you a rough estimate over the phone based on your description, but the most accurate quote comes from seeing the car in person. Photos by email can also help us give you a better number before you come in. Call us at (843) 380-7055 and we will walk you through it.",
+    a: "We can give you a rough ballpark based on what you describe, but the most accurate number comes from seeing the car. Photos by email can help us get closer before you come in. Call us at (843) 380-7055 and we'll walk you through it.",
   },
   {
     q: "What should I do right after a car accident?",
-    a: "First, make sure everyone is safe and call 911 if anyone is hurt. Exchange insurance information with the other driver. Take photos of all the damage to every vehicle involved. File a police report if the damage is significant. Then call your insurance company to start a claim. When you're ready, bring the car to us for a free estimate.",
+    a: "First, make sure everyone is safe — call 911 if anyone is hurt. Exchange insurance information with the other driver. Take photos of every vehicle involved, the scene, and any visible damage. File a police report if the damage is significant. Then call your insurance company to start a claim. When you're ready, bring the car to us for a free estimate and we'll handle the rest.",
   },
   {
     q: "What is the difference between OEM and aftermarket parts?",
-    a: "OEM parts are made by your vehicle's original manufacturer. They fit and perform exactly like the parts your car came with. Aftermarket parts are made by third-party companies. They are usually less expensive but the fit and quality can vary. We discuss part options with you before we order anything so you can make the best decision for your repair and your budget.",
+    a: "OEM parts are made by your vehicle's original manufacturer. They fit and perform exactly like the parts your car came with. Aftermarket parts are made by third-party companies — usually less expensive, but fit and quality can vary. We go over part options with you before we order anything so you can make the right call for your repair and your situation.",
+  },
+  {
+    q: "What does 'supplement' mean in an insurance claim?",
+    a: "A supplement is an updated estimate sent to your insurance company when we find damage during the repair that wasn't visible in the original inspection. This is normal — especially on collision repairs where the full extent of the damage isn't visible until panels are removed. We document the additional damage with photos, write up what it takes to fix it correctly, and submit it to the adjuster. Your insurance typically covers supplements. We handle the entire process so you don't have to.",
+  },
+  {
+    q: "Does my car need ADAS recalibration after a collision repair?",
+    a: "Possibly, yes — and this matters more than most people realize. ADAS stands for Advanced Driver Assistance Systems: the cameras, radar sensors, and lane-keeping hardware built into newer vehicles. These sensors sit behind bumpers, grilles, and windshields. If any of those panels were replaced or adjusted during the repair, the sensors that rely on them may need to be recalibrated to work correctly. Driving with an uncalibrated sensor can cause your automatic braking, lane departure warning, or adaptive cruise control to behave incorrectly. We check whether your vehicle's systems need recalibration as part of the repair process.",
   },
 ];
 
@@ -125,10 +125,10 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ | {BUSINESS_NAME} Charleston SC</title>
+        <title>Collision Repair FAQ | {BUSINESS_NAME} Charleston SC</title>
         <meta
           name="description"
-          content="Common questions about collision repair, dent repair, and auto painting at Compass Collision in Charleston, SC. Insurance, cost, timeline, and more."
+          content="Collision repair questions answered by Compass Collision in Charleston, SC. Insurance claims, cost factors, paint matching, ADAS, and more. Free estimates."
         />
         <link rel="canonical" href={`${DOMAIN}/faq`} />
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -151,10 +151,11 @@ const FAQ = () => {
               Common Questions
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
-              Frequently Asked <span style={{ color: "#5A9E9B" }}>Questions</span>
+              Collision Repair FAQ —{" "}
+              <span style={{ color: "#5A9E9B" }}>Charleston, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-              Everything you need to know about collision repair, dent repair, and auto painting. If your question isn't here, give us a call.
+              Real answers to the questions we hear most about collision repair in Charleston. Insurance, cost, paint matching, timelines, and more. If your question isn't here, give us a call.
             </p>
           </motion.div>
         </div>
@@ -211,11 +212,11 @@ const FAQ = () => {
             Still Have <span style={{ color: "#2D5F5D" }}>Questions?</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            We're happy to answer anything about your repair. Call us or visit our <Link to="/contact" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>contact page</Link> to send us a message.
+            We're happy to walk you through anything about your repair. Call us or visit our <Link to="/contact" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>contact page</Link> to send us a message.
           </p>
           <a
             href={PHONE_HREF}
-                onClick={() => trackPhoneClick("faq")}
+            onClick={() => trackPhoneClick("faq")}
             className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
             style={{ backgroundColor: "#2D5F5D" }}
           >
@@ -244,7 +245,7 @@ const FAQ = () => {
             </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("faq")}
+              onClick={() => trackPhoneClick("faq")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >

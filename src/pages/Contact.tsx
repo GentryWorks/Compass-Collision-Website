@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, EMAIL, DOMAIN } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
@@ -18,10 +18,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Compass Collision | Get a Free Estimate</title>
+        <title>Contact Compass Collision | Charleston SC Auto Body Shop</title>
         <meta
           name="description"
-          content="Contact Compass Collision in Charleston, SC. Get a free collision repair estimate. Call (843) 380-7055 or visit us at 1949 Dulsey Road, Unit 202."
+          content="Contact our Charleston SC auto body shop for a free collision repair estimate. We answer the phone. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202."
         />
         <link rel="canonical" href={`${DOMAIN}/contact`} />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -40,16 +40,16 @@ const Contact = () => {
               className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6"
               style={{ backgroundColor: "#2D5F5D" }}
             >
-              Free Estimates
+              272 Five-Star Reviews
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
-              Contact <span style={{ color: "#5A9E9B" }}>Us</span>
+              Contact Our <span style={{ color: "#5A9E9B" }}>Charleston Auto Body Shop</span>
             </h1>
-            <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-4">
-              Need a repair estimate? Have a question? Call us, email us, or stop by the shop. We're happy to help.
+            <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-4">
+              Tired of calling shops and getting voicemail? We answer the phone. Call us during business hours and you'll talk to a real person — not a recording, not a form, not a two-week wait for a callback.
             </p>
             <p className="text-gray-400 text-base max-w-xl mx-auto leading-relaxed">
-              When you reach out, you'll talk to the same people who do the repairs. We'll ask about the damage, give you an honest answer, and schedule a time to see your car. Most calls take less than five minutes. No sales pitch. No pressure.
+              Our Charleston collision repair shop offers free estimates, usually same business day. Most calls take less than five minutes. No pressure, no sales pitch — just honest answers.
             </p>
           </motion.div>
         </div>
@@ -140,7 +140,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
                 <a
                   href={PHONE_HREF}
-                onClick={() => trackPhoneClick("contact")}
+                  onClick={() => trackPhoneClick("contact")}
                   className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
                   style={{ backgroundColor: "#2D5F5D" }}
                 >
@@ -182,8 +182,97 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Form Placeholder */}
+      {/* What Happens When You Call */}
       <section className="bg-gray-50 py-20">
+        <div className="max-w-[800px] mx-auto px-6">
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-center" style={{ color: "#111" }}>
+              What Happens When You <span style={{ color: "#2D5F5D" }}>Call</span>
+            </h2>
+            <p className="text-gray-500 text-base leading-relaxed mb-8 text-center max-w-xl mx-auto">
+              First time dealing with collision repair? Here's exactly what to expect from your first call to our Charleston auto body shop.
+            </p>
+
+            <div className="space-y-5">
+              {[
+                {
+                  step: "We answer the phone.",
+                  detail:
+                    "During business hours, a real person picks up. No voicemail maze, no callback request form.",
+                },
+                {
+                  step: "We ask about the damage.",
+                  detail:
+                    "Tell us what happened and what your car looks like. We'll give you an honest read on the repair — including whether insurance makes sense to use.",
+                },
+                {
+                  step: "We schedule your free estimate.",
+                  detail:
+                    "Most estimates are same or next business day. We don't charge for estimates and we don't make you wait two weeks just to find out what it costs.",
+                },
+                {
+                  step: "You get a straight answer.",
+                  detail:
+                    "We'll tell you what needs to be fixed, what it will cost, and how long it will take. No surprises, no hidden fees.",
+                },
+              ].map(({ step, detail }) => (
+                <div key={step} className="flex items-start gap-4">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <CheckCircle className="w-6 h-6" style={{ color: "#2D5F5D" }} />
+                  </div>
+                  <div>
+                    <p className="font-extrabold text-sm" style={{ color: "#111" }}>
+                      {step}
+                    </p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* What to have ready */}
+            <div
+              className="mt-10 rounded-xl p-6 border"
+              style={{ backgroundColor: "#f0f7f7", borderColor: "#2D5F5D" }}
+            >
+              <h3 className="font-extrabold text-base mb-3" style={{ color: "#111" }}>
+                What to Have Ready When You Call
+              </h3>
+              <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside">
+                <li>A description of the damage (photos help if you have them)</li>
+                <li>Your insurance info, if you plan to file a claim</li>
+                <li>The other driver's insurance info, if someone else was at fault</li>
+                <li>Your vehicle make, model, and year</li>
+              </ul>
+              <p className="text-gray-500 text-sm mt-3">
+                Don't have all of this yet? Call anyway. We can walk you through it.
+              </p>
+            </div>
+
+            {/* Insurance note */}
+            <div className="mt-8 text-center">
+              <p className="text-gray-500 text-sm leading-relaxed max-w-lg mx-auto">
+                We work directly with your insurance company on collision repair claims. We've handled hundreds of claims and will make sure the repair is covered correctly — so you're not left covering costs that should have been paid.
+              </p>
+            </div>
+
+            {/* Service area */}
+            <div className="mt-8 text-center">
+              <p className="text-gray-500 text-sm leading-relaxed">
+                <span className="font-bold" style={{ color: "#111" }}>Service area:</span> We serve Charleston, West Ashley, James Island, North Charleston, Mount Pleasant, Summerville, and Goose Creek.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Form Placeholder */}
+      <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "#111" }}>
             Request a Free <span style={{ color: "#2D5F5D" }}>Estimate</span>
@@ -192,7 +281,7 @@ const Contact = () => {
             Fill out the form below and we'll get back to you the same business day. Or call us directly for the fastest response.
           </p>
           {/* GHL Form Placeholder */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-10">
+          <div className="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-10">
             <p className="text-gray-400 text-sm italic">
               Contact form coming soon. In the meantime, call us at{" "}
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("contact")} className="font-bold no-underline" style={{ color: "#2D5F5D" }}>
@@ -214,12 +303,12 @@ const Contact = () => {
             Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Free estimates. Honest pricing. No pressure. Just real answers from people who do the work.
+            272 five-star reviews. Free estimates. Honest answers. We pick up the phone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("contact")}
+              onClick={() => trackPhoneClick("contact")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
               style={{ backgroundColor: "#E8833A" }}
             >

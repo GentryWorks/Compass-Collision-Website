@@ -30,6 +30,24 @@ const values = [
   },
 ];
 
+const testimonials = [
+  {
+    quote:
+      "When someone t-boned me back in November, I was at a loss as to where to take my car. After talking with other trusted automotive professionals in the area, it became apparent there was no one else to go to but Compass Collision.",
+    name: "Sandra Floyd",
+  },
+  {
+    quote:
+      "Originally I was told I could not even get an estimate for two months by another auto body shop. Adam not only had the estimate done within 24 hours — the repairs were complete in less than 2 weeks.",
+    name: "Austin Amos",
+  },
+  {
+    quote:
+      "Adam and his team went above and beyond. The initial adjuster for the insurance was inexperienced and they realized it. They informed me and helped me navigate the process of fighting the initial quote.",
+    name: "Melissa Rose",
+  },
+];
+
 const About = () => {
   const schemaOrg = {
     "@context": "https://schema.org",
@@ -80,7 +98,7 @@ const About = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={shopImg}
-            alt="Compass Collision shop exterior with service bays in Charleston SC"
+            alt="Compass Collision auto body shop exterior with service bays in Charleston SC"
             className="w-full h-full object-cover opacity-30"
             loading="eager"
             fetchPriority="high"
@@ -102,13 +120,13 @@ const About = () => {
               Family-Owned Since 2021
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
-              About
+              Charleston's Auto Body Shop
               <span className="block" style={{ color: "#5A9E9B" }}>
-                Compass Collision
+                That Actually Answers the Phone
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed">
-              A Charleston body shop built on honest work and real expertise. The people writing your estimate are the same people fixing your car.
+              Getting in an accident is stressful enough. You shouldn't have to fight to find a shop that picks up, gives you a straight answer, and does the work right. That's exactly why we opened this shop.
             </p>
           </motion.div>
         </div>
@@ -118,21 +136,24 @@ const About = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Our <span style={{ color: "#2D5F5D" }}>Story</span>
+            Why We Built This <span style={{ color: "#2D5F5D" }}>Charleston Auto Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Compass Collision opened in March 2021. But the experience behind it goes back more than 95 combined years in the collision repair industry. We opened our doors in Charleston because we saw too many body shops where the person writing the estimate had never actually done the repair.
+            We opened Compass Collision in March 2021 — but the experience behind it goes back more than 95 combined years in the collision repair industry. We had watched too many auto body shops where the person writing the estimate had never actually done the repair.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            That gap between the estimator and the technician is where surprises happen. Inaccurate quotes. Unexpected delays. Repairs that don't hold up. We built this shop to fix that problem.
+            That gap between the estimator and the technician is where problems start. Inaccurate quotes. Unexpected delays. Repairs that don't hold up. We built this shop to close that gap for good.
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed mb-4">
+            Here, the people writing your estimate have done the repair hundreds of times with their own hands. They know exactly what the job takes because they've actually done it. That means your price is accurate from day one — and the repair is done right the first time.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            Here, the people writing your estimate have done the repair hundreds of times with their own hands. They know what the job takes because they have actually done the work. That means your price is accurate from day one, and the repair is done right the first time.
+            We also know the insurance process is a nightmare for most people. When an adjuster sends over a lowball estimate, we don't just accept it. We push back, document the correct scope, and fight to make sure your car gets fixed properly — not just cheaply.
           </p>
         </div>
       </section>
 
-      {/* Team Photo */}
+      {/* Team Photo + Experience */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -144,7 +165,7 @@ const About = () => {
             >
               <img
                 src={teamImg}
-                alt="Compass Collision team in Charleston SC"
+                alt="Compass Collision auto body repair team in Charleston SC"
                 className="w-full rounded-xl shadow-lg"
                 loading="lazy"
                 width={1200}
@@ -158,16 +179,19 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h2 className="text-3xl font-extrabold mb-4" style={{ color: "#111" }}>
-                95+ Years of <span style={{ color: "#2D5F5D" }}>Experience</span>
+                95+ Years of Experience. <span style={{ color: "#2D5F5D" }}>BMW Certified.</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
-                Our team brings a combined 95+ years of hands-on collision repair experience. We repair all makes and models — cars, trucks, and SUVs. Foreign and domestic.
+                Our team brings 95+ years of hands-on collision repair experience. We're BMW certified, and we work on all makes and models — from F-150s and Tacomas to BMW X5s, Audi Q5s, and Range Rovers.
               </p>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
                 We handle everything in-house. <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Collision repair</Link>. <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Dent repair</Link>. <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Auto painting</Link> and color matching. No subcontracting. No outsourcing. Your car stays in our shop from start to finish.
               </p>
+              <p className="text-gray-500 text-base leading-relaxed mb-4">
+                When your car comes back to you, it's clean. We vacuum the interior and wipe everything down before we hand you the keys. Most shops don't do that. We think it's the least we can do.
+              </p>
               <p className="text-gray-500 text-base leading-relaxed">
-                With 272 five-star Google reviews, Charleston trusts us to get the job done right.
+                272 five-star Google reviews. Charleston trusts us to get the job done right.
               </p>
             </motion.div>
           </div>
@@ -202,6 +226,41 @@ const About = () => {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="bg-white py-20">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
+              What Charleston Customers <span style={{ color: "#2D5F5D" }}>Say About Us</span>
+            </h2>
+            <p className="text-gray-500 text-base max-w-xl mx-auto">
+              272 Google reviews at 5.0 stars. Here are a few of our favorites.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((t, i) => (
+              <motion.div
+                key={i}
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="rounded-xl p-8"
+                style={{ backgroundColor: "#f8f8f8" }}
+              >
+                <div className="flex gap-0.5 mb-4">
+                  {[...Array(5)].map((_, s) => (
+                    <Star key={s} className="w-4 h-4 fill-current" style={{ color: "#E8833A" }} />
+                  ))}
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 italic">"{t.quote}"</p>
+                <p className="text-sm font-bold" style={{ color: "#2D5F5D" }}>— {t.name}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
@@ -209,7 +268,7 @@ const About = () => {
             Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Get a free estimate. Honest pricing from people who do the work.
+            Free estimates. Honest pricing from people who do the work. Call us or request an estimate online.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -221,7 +280,7 @@ const About = () => {
             </Link>
             <a
               href={PHONE_HREF}
-                onClick={() => trackPhoneClick("about")}
+              onClick={() => trackPhoneClick("about")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm transition-colors no-underline"
               style={{ border: "2px solid #fff" }}
             >
