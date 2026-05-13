@@ -5,4 +5,4 @@ export const ADDRESS = "1949 Dulsey Road, Unit 202, Charleston, SC 29407";
 export const EMAIL = "adam.compasscollision@gmail.com";
 export const REVIEW_COUNT = 272;
 export const REVIEW_COUNT_DISPLAY = "272+";
-export const DOMAIN = "https://compasscollisionsc.com"; // Update with actual domain
+export const DOMAIN = "https://www.compasscollisioncharleston.com";

@@ -1,5 +1,5 @@
 ## Client: Compass Collision
-Site: TBD (compasscollisionsc.com placeholder)
+Site: https://www.compasscollisioncharleston.com
 Business: Auto body / collision repair shop in Charleston, SC
 Address: 1949 Dulsey Road, Unit 202, Charleston, SC 29407
 Phone: 843-380-7055

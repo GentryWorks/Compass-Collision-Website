@@ -119,7 +119,7 @@ const GooseCreek = () => {
         <link rel="canonical" href={`${DOMAIN}/goose-creek`} />
         <meta property="og:title" content={`Collision Repair Goose Creek | ${BUSINESS_NAME}`} />
         <meta property="og:description" content={`Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>

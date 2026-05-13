@@ -168,7 +168,7 @@ const Index = () => {
         <link rel="canonical" href={`${DOMAIN}`} />
         <meta property="og:title" content="Auto Body Shop Charleston SC | Compass Collision" />
         <meta property="og:description" content={`Charleston's trusted auto body shop. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. We do our best to return every call the same day. Call (843) 380-7055.`} />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -187,7 +187,7 @@ const Index = () => {
             name: "Compass Collision",
             url: DOMAIN,
             telephone: "843-380-7055",
-            image: "https://compasscollisionsc.com/og-image.jpg",
+            image: "https://www.compasscollisioncharleston.com/og-image.jpg",
             address: {
               "@type": "PostalAddress",
               streetAddress: "1949 Dulsey Road, Unit 202",

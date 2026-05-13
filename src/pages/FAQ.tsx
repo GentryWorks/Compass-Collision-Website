@@ -172,7 +172,7 @@ const FAQ = () => {
         <link rel="canonical" href={`${DOMAIN}/faq`} />
         <meta property="og:title" content={`Collision Repair FAQ | ${BUSINESS_NAME} Charleston SC`} />
         <meta property="og:description" content="Collision repair questions answered by Compass Collision in Charleston, SC. Insurance claims, cost factors, paint matching, ADAS, and more. Free estimates." />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>

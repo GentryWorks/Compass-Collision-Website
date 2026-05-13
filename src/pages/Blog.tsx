@@ -27,7 +27,7 @@ const Blog = () => {
         <meta name="robots" content="noindex, follow" />
         <meta property="og:title" content="Blog | Compass Collision Charleston SC" />
         <meta property="og:description" content="Helpful guides on collision repair, insurance claims, and vehicle care from Compass Collision in Charleston, SC. Tips from experienced technicians." />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
 

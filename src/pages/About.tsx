@@ -91,7 +91,7 @@ const About = () => {
         <link rel="canonical" href={`${DOMAIN}/about`} />
         <meta property="og:title" content="Auto Body Shop Charleston SC | About Compass Collision" />
         <meta property="og:description" content="Family-owned auto body shop in Charleston, SC. 95+ years experience, factory-trained technicians. Honest estimates from techs who do the work. Call (843) 380-7055." />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>

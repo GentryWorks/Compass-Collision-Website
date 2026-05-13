@@ -119,7 +119,7 @@ const NorthCharleston = () => {
         <link rel="canonical" href={`${DOMAIN}/north-charleston`} />
         <meta property="og:title" content={`Body Shop North Charleston SC | ${BUSINESS_NAME}`} />
         <meta property="og:description" content={`Body shop serving North Charleston, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055.`} />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>

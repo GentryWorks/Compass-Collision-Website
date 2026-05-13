@@ -115,7 +115,7 @@ const Summerville = () => {
         <link rel="canonical" href={`${DOMAIN}/summerville`} />
         <meta property="og:title" content={`Collision Repair Summerville SC | ${BUSINESS_NAME}`} />
         <meta property="og:description" content={`Collision repair near Summerville, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Estimators who do the repairs. All insurance accepted. Free estimates. Call (843) 380-7055.`} />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>

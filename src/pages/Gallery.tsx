@@ -205,7 +205,7 @@ const Gallery = () => {
         <link rel="canonical" href={`${DOMAIN}/gallery`} />
         <meta property="og:title" content={`Collision Repair Gallery | ${BUSINESS_NAME} Charleston SC`} />
         <meta property="og:description" content="Real collision repair work from Compass Collision in Charleston, SC. Before and after photos of actual vehicles we've repaired — BMWs, trucks, SUVs, and more." />
-        <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
 
