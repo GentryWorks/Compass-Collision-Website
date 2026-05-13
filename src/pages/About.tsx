@@ -261,7 +261,7 @@ const About = () => {
               >
                 <div className="flex gap-0.5 mb-4">
                   {[...Array(5)].map((_, s) => (
-                    <Star key={s} className="w-4 h-4 fill-current" style={{ color: "#E8833A" }} />
+                    <Star key={s} className="w-4 h-4 fill-current" style={{ color: "#B85B15" }} />
                   ))}
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4 italic">"{t.quote}"</p>
@@ -286,7 +286,7 @@ const About = () => {
               href={PHONE_HREF}
               onClick={() => trackPhoneClick("about")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A" }}
+              style={{ backgroundColor: "#B85B15" }}
             >
               <Phone className="w-4 h-4" />
               Call for Free Estimate

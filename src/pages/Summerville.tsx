@@ -134,7 +134,7 @@ const Summerville = () => {
               You've been in an accident. We're about 25 minutes down I-26 — and we do our best to answer every call, same-day callbacks if we miss you. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#B85B15" }}>
                 <Phone className="w-4 h-4" />
                 Call for Free Estimate
               </a>
@@ -344,7 +344,7 @@ const Summerville = () => {
             We're 25 minutes from Summerville. Free estimates. {REVIEW_COUNT_DISPLAY} five-star reviews. We handle your insurance so you don't have to.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#B85B15" }}>
               <Phone className="w-4 h-4" />
               Call for Free Estimate
             </a>

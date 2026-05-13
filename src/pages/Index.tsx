@@ -20,19 +20,19 @@ import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
   {
-    icon: <Wrench className="w-7 h-7" style={{ color: "#E8833A" }} />,
+    icon: <Wrench className="w-7 h-7" style={{ color: "#B85B15" }} />,
     title: "Collision Repair",
     description: "Rear-ended. Side-swiped. Hit a deer. We fix it all — from fender benders to major wrecks. We work with every insurance company and handle the paperwork for you.",
     link: "/collision-repair",
   },
   {
-    icon: <CircleDot className="w-7 h-7" style={{ color: "#E8833A" }} />,
+    icon: <CircleDot className="w-7 h-7" style={{ color: "#B85B15" }} />,
     title: "Dent Repair",
     description: "Parking lot dings. Door dents. Hail damage. We'll give you a free estimate and fix it fast. Most people can't tell the dent was ever there.",
     link: "/dent-repair",
   },
   {
-    icon: <Paintbrush className="w-7 h-7" style={{ color: "#E8833A" }} />,
+    icon: <Paintbrush className="w-7 h-7" style={{ color: "#B85B15" }} />,
     title: "Auto Painting & Color Matching",
     description: "Perfect color match down to your exact factory code. Bumper refinishing. Panel painting. Your repair will be invisible — even on hard-to-match colors like red, pearl white, or tri-coat silver.",
     link: "/auto-painting",
@@ -276,7 +276,7 @@ const Index = () => {
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("homepage")}
                 className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#E8833A" }}
+                style={{ backgroundColor: "#B85B15" }}
               >
                 <Phone className="w-4 h-4" />
                 Call for Free Estimate
@@ -392,7 +392,7 @@ const Index = () => {
                 <Link
                   to={s.link}
                   className="text-sm font-bold uppercase tracking-wide no-underline hover:opacity-80 transition-opacity"
-                  style={{ color: "#E8833A" }}
+                  style={{ color: "#B85B15" }}
                 >
                   Learn More →
                 </Link>
@@ -556,7 +556,7 @@ const Index = () => {
               >
                 <div
                   className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-extrabold text-sm"
-                  style={{ backgroundColor: "#E8833A" }}
+                  style={{ backgroundColor: "#B85B15" }}
                 >
                   {item.step}
                 </div>
@@ -666,7 +666,7 @@ const Index = () => {
               href={PHONE_HREF}
               onClick={() => trackPhoneClick("homepage")}
               className="inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A", color: "#fff" }}
+              style={{ backgroundColor: "#B85B15", color: "#fff" }}
             >
               <Phone className="w-4 h-4" />
               Call for Free Estimate

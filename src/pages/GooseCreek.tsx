@@ -138,7 +138,7 @@ const GooseCreek = () => {
               Just got in an accident? We do our best to answer every call — same-day callbacks if we miss you. Free estimates fast, every step with your insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. About 20 minutes from Goose Creek.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#B85B15" }}>
                 <Phone className="w-4 h-4" />
                 Call for Free Estimate
               </a>
@@ -312,7 +312,7 @@ const GooseCreek = () => {
             We'll do our best to answer every call — same-day callbacks if we miss you. Free estimates, insurance handled start to finish. About 20 minutes from Goose Creek. USAA accepted.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#B85B15" }}>
               <Phone className="w-4 h-4" />
               Call for Free Estimate
             </a>

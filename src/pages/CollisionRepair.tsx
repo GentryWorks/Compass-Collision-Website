@@ -195,7 +195,7 @@ const CollisionRepair = () => {
                 href={PHONE_HREF}
                 onClick={() => trackPhoneClick("collision-repair")}
                 className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-                style={{ backgroundColor: "#E8833A" }}
+                style={{ backgroundColor: "#B85B15" }}
               >
                 <Phone className="w-4 h-4" />
                 Call for Free Estimate
@@ -454,7 +454,7 @@ const CollisionRepair = () => {
               href={PHONE_HREF}
               onClick={() => trackPhoneClick("collision-repair")}
               className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-              style={{ backgroundColor: "#E8833A" }}
+              style={{ backgroundColor: "#B85B15" }}
             >
               <Phone className="w-4 h-4" />
               Call for Free Estimate

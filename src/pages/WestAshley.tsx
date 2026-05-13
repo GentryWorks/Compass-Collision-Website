@@ -138,7 +138,7 @@ const WestAshley = () => {
               We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. {REVIEW_COUNT_DISPLAY} five-star reviews. We do our best to answer every call.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+              <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#B85B15" }}>
                 <Phone className="w-4 h-4" />
                 Call for Free Estimate
               </a>
@@ -328,7 +328,7 @@ const WestAshley = () => {
             We're right in your neighborhood. Free estimates. No surprises. Your car back looking like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
+            <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#B85B15" }}>
               <Phone className="w-4 h-4" />
               Call for Free Estimate
             </a>
