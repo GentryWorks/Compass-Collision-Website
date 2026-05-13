@@ -120,14 +120,6 @@ const Footer = () => {
           <p className="text-gray-500 text-xs">
             &copy; {new Date().getFullYear()} Compass Collision. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <Link to="/privacy-policy" className="text-gray-500 text-xs no-underline hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/terms-of-service" className="text-gray-500 text-xs no-underline hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
