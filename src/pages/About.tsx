@@ -200,7 +200,7 @@ const About = () => {
                 We handle everything in-house. <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Collision repair</Link>. <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Dent repair</Link>. <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Auto painting</Link> and color matching. No subcontracting. No outsourcing. Your car stays in our shop from start to finish.
               </p>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
-                When your car comes back to you, it's clean. We vacuum the interior and wipe everything down before we hand you the keys. Most shops don't do that. We think it's the least we can do.
+                When your car comes back to you, it's clean. We vacuum the interior and wipe everything down before we hand you the keys. We think it's the least we can do.
               </p>
               <p className="text-gray-500 text-base leading-relaxed">
                 {REVIEW_COUNT_DISPLAY} five-star Google reviews. Charleston trusts us to get the job done right.

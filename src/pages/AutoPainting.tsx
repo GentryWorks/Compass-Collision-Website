@@ -241,7 +241,7 @@ const AutoPainting = () => {
             Our Color Matching <span style={{ color: "#2D5F5D" }}>Process</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Color matching is where most shops cut corners. Two cars with the same paint code can look slightly different after years of sun and salt air exposure. We don't just mix by code and spray — we test, compare, and adjust until the match holds under every lighting condition.
+            Color matching is something we take seriously on every job. Two cars with the same paint code can look slightly different after years of sun and salt air exposure. We don't just mix by code and spray — we test, compare, and adjust until the match holds under every lighting condition.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-8">
             Charleston's coastal humidity also affects how paint cures. We use a climate-controlled spray booth and adjust our prep timing to account for the conditions outside. Rushing cure time in humid air causes adhesion failure down the road. We've seen what that looks like, and we don't let it leave our shop.

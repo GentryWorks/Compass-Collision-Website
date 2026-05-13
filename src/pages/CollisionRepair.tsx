@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Will my car look the same after the repair?",
-    a: "That's the goal of every repair we do. We use factory-spec parts and match your paint to the exact color code. Paint matching is something we take seriously — we see it go wrong at other shops all the time, especially on harder colors like red, pearl white, and two-tone finishes. When we're done, you shouldn't be able to tell where the damage was. If you can, we're not done yet.",
+    a: "That's the goal of every repair we do. We use factory-spec parts and match your paint to the exact color code. Paint matching is something we take seriously — especially on harder colors like red, pearl white, and two-tone finishes. When we're done, you shouldn't be able to tell where the damage was. If you can, we're not done yet.",
   },
   {
     q: "Do I need to get multiple estimates?",
@@ -221,10 +221,10 @@ const CollisionRepair = () => {
             Collision Repair in Charleston Done <span style={{ color: "#2D5F5D" }}>Right</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            If you've been in an accident, you already know the frustration. You call four shops. You get three voicemails and one person who says the earliest estimate appointment is two months out. That's the reality for most collision repair customers in the Charleston area right now.
+            If you've been in an accident, you need a collision repair shop that takes your call, gives you an honest estimate, and gets your car fixed right. That's what we do at Compass Collision.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We do our best to answer every call — and if we miss you, we'll call back the same day. We offer free same-day estimates. And we have {REVIEW_COUNT_DISPLAY} five-star Google reviews from Charleston drivers who were in the exact same situation you're in.
+            We do our best to answer every call — and if we miss you, we'll call back the same day. We offer free same-day estimates. And we have {REVIEW_COUNT_DISPLAY} five-star Google reviews from Charleston drivers who trusted us to get the job done.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our team brings 95+ years of combined experience in the collision repair industry. That experience shows in how we write estimates, how we handle your insurance claim, and how your car looks when you pick it up.
@@ -280,7 +280,7 @@ const CollisionRepair = () => {
             We use OEM (original equipment manufacturer) parts whenever possible. These are the same parts your vehicle was built with — not aftermarket substitutes. If your insurance company pushes for cheaper parts, we'll flag it and explain the difference before anything is ordered.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Paint matching is something we take seriously. We match your vehicle's exact factory color code. For difficult finishes — two-tone paint, pearl white, dark red — we take extra time to get it right. We see bad paint matches at other shops regularly. It's one of the most common complaints we hear from customers who tried somewhere else first.
+            Paint matching is something we take seriously. We match your vehicle's exact factory color code. For difficult finishes — two-tone paint, pearl white, dark red — we take extra time to get it right. Color matching done properly is what makes a repair truly invisible.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             The shop is clean. We keep you updated throughout the repair. And when you pick up your car, it's been cleaned and vacuumed. Small things — but they tell you a lot about how a shop operates.

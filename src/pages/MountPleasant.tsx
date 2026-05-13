@@ -142,7 +142,7 @@ const MountPleasant = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Mount Pleasant, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge. We do our best to answer every call — same-day callbacks if we miss you. {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Insurance handled.
+              Just had an accident? We're just across the Ravenel Bridge. We do our best to answer every call — same-day callbacks if we miss you. {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -165,7 +165,7 @@ const MountPleasant = () => {
             Auto Body Repair for <span style={{ color: "#2D5F5D" }}>Mount Pleasant Drivers</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Getting in an accident is stressful enough. Then you call four shops and can't get anyone to answer. We hear this from Mount Pleasant customers all the time — and it's exactly why they make the drive across the Ravenel Bridge to us.
+            Getting in an accident is stressful enough. You need a shop that answers, gives you a straight answer on the estimate, and gets your car fixed right. That's why Mount Pleasant customers make the drive across the Ravenel Bridge to us.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our team handles <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> including paintless dent removal, and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with computerized color matching. Every repair stays in-house — we don't subcontract.
@@ -225,7 +225,7 @@ const MountPleasant = () => {
             What to Expect <span style={{ color: "#5A9E9B" }}>From Start to Finish</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            You call us and describe the damage. We get you in for a free estimate — usually within a day or two, not the two-week wait other shops quote. The person who writes your estimate is the same person doing the repair. That means the price is accurate and there are no surprises.
+            You call us and describe the damage. We get you in for a free estimate — usually within a day or two. The person who writes your estimate is the same person doing the repair. That means the price is accurate and there are no surprises.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             If you're going through insurance, we handle the adjuster for you. We file the claim, communicate with your carrier, and write supplements when hidden damage turns up. We push back if the insurance estimate comes in short. You shouldn't have to fight that battle yourself.

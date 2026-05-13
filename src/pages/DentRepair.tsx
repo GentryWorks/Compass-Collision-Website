@@ -379,7 +379,7 @@ const DentRepair = () => {
             Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Trust Us</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We have {REVIEW_COUNT_DISPLAY} five-star Google reviews — and that number isn't an accident. Customers come to us after getting nowhere with dealership body shops booked out for months or chain shops that won't return a call. We do our best to answer every call, and if we miss you, we call back the same day. We give free estimates, usually same day. And we do the work right.
+            We have {REVIEW_COUNT_DISPLAY} five-star Google reviews — and that number isn't an accident. We do our best to answer every call, and if we miss you, we call back the same day. We give free estimates, usually same day. And we do the work right.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our technicians have handled dent repair on every vehicle type that drives through Charleston — from daily drivers to BMWs, Audis, Lexus SUVs, and newer trucks. We know how each paint system behaves, and we won't rush a repair just to move the car out of the bay.

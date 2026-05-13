@@ -135,7 +135,7 @@ const GooseCreek = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Goose Creek</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just got in an accident and can't get another shop to call you back? We do our best to answer every call — same-day callbacks if we miss you. Free estimates fast, every step with your insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. About 20 minutes from Goose Creek.
+              Just got in an accident? We do our best to answer every call — same-day callbacks if we miss you. Free estimates fast, every step with your insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. About 20 minutes from Goose Creek.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -158,7 +158,7 @@ const GooseCreek = () => {
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Goose Creek</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We hear it all the time — you've called three shops and none of them called back. Or the first appointment they can offer is in six weeks. An accident is stressful enough on its own. We do our best to answer every call and get you a same-day estimate — then we take the repair from there.
+            An accident is stressful enough on its own. We do our best to answer every call and get you a same-day estimate — then we take the repair from there.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our team handles <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Everything is done in-house by our own technicians.
@@ -218,7 +218,7 @@ const GooseCreek = () => {
           <ul className="space-y-3">
             {[
               `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the highest-rated body shop in the Charleston area`,
-              "We do our best to answer every call and return messages the same day — unlike most shops",
+              "We do our best to answer every call and return messages the same day",
               "Factory-trained with 15+ years on BMWs, Audis, and European vehicles",
               "USAA and all major insurance carriers accepted — we handle the claim for you",
               "95+ years of combined collision repair experience across our team",

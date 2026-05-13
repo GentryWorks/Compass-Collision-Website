@@ -158,10 +158,10 @@ const WestAshley = () => {
             West Ashley's <span style={{ color: "#2D5F5D" }}>Neighborhood Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Getting in an accident is stressful enough. Then you call three shops and get voicemail. You wait for a callback that never comes. You hear "we're booked out two months." That's the reality for most people in Charleston — and it's exactly why our customers are so relieved when they find us.
+            Getting in an accident is stressful enough. You need a body shop that answers your call, gives you a straight estimate, and gets your car back in good shape. That's what we do — and our customers are genuinely relieved when the repair is done right.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We're a body shop in West Ashley that actually calls you back. Our shop is on Dulsey Road off Savannah Highway, which puts us right in the 29407 zip code. For most West Ashley residents, we're a short drive down local roads — no bridge crossing, no I-26 traffic.
+            Our shop is on Dulsey Road off Savannah Highway, which puts us right in the 29407 zip code. For most West Ashley residents, we're a short drive down local roads — no bridge crossing, no I-26 traffic.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> including paintless dent removal, and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. All work is done in-house by our own team — no subcontracting, no surprises.
@@ -201,7 +201,7 @@ const WestAshley = () => {
             Our shop is in the 29407 zip code. If you're in Avondale, Shadowmoss, the Bees Ferry corridor, or anywhere near Savannah Highway, you're minutes from our door. That proximity matters when your car is in the shop. You can drop it off before work and pick it up on your way home.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We've been working on West Ashley vehicles since 2021. In that time, we've built {REVIEW_COUNT_DISPLAY} five-star Google reviews — mostly from neighbors who found us after other shops stopped returning their calls. We'd like to earn that same trust from you.
+            We've been working on West Ashley vehicles since 2021. In that time, we've built {REVIEW_COUNT_DISPLAY} five-star Google reviews from neighbors who trusted us with their vehicles. We'd like to earn that same trust from you.
           </p>
         </div>
       </section>

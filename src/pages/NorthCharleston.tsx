@@ -147,7 +147,7 @@ const NorthCharleston = () => {
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just been in an accident? We know you've probably already called two other shops and got voicemails. We answer. Free estimates same day. We're 15 minutes down I-26.
+              Just been in an accident? We do our best to answer every call — same-day callbacks if we miss you. Free estimates same day. We're 15 minutes down I-26.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -177,10 +177,10 @@ const NorthCharleston = () => {
       <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            A Body Shop Near North Charleston <span style={{ color: "#2D5F5D" }}>That Actually Answers</span>
+            A Body Shop Near North Charleston <span style={{ color: "#2D5F5D" }}>That Picks Up the Phone</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            After an accident, the last thing you need is to spend two hours calling shops that won't call you back or tell you the wait is two months for even an estimate. We hear that story every week. We do our best to answer every call — same-day callbacks if we miss you — and we'll have a free written estimate ready the same day you come in.
+            After an accident, the last thing you need is more stress. We do our best to answer every call — same-day callbacks if we miss you — and we'll have a free written estimate ready the same day you come in.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             We handle <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Everything is done in-house — no subcontracting.
@@ -261,7 +261,7 @@ const NorthCharleston = () => {
             Why North Charleston Drivers <span style={{ color: "#5A9E9B" }}>Choose Us</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-6">
-            The estimators who write your quote are the same technicians who do the repair. That means the price you're given on day one is the price you pay — no surprises when you come to pick up your car. We see shops get this wrong all the time, and it's the complaint we hear most often from customers who tried somewhere else first.
+            The estimators who write your quote are the same technicians who do the repair. That means the price you're given on day one is the price you pay — no surprises when you come to pick up your car.
           </p>
           <ul className="space-y-3">
             {[

@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Is the drive worth it when there are body shops closer to Summerville?",
-    a: "That's a fair question. Most Summerville drivers call the closer shops first and find they're booked for months — or they can't even get someone to call them back. We do our best to answer every call, give free estimates fast, and do the work right. Customers who make the 25-minute drive tell us they wish they'd called us first.",
+    a: "We think so — and so do the Summerville customers who keep coming back. We do our best to answer every call, give free estimates fast, and do the work right. The drive is about 25 minutes on I-26, and customers tell us the experience made it worth every mile.",
   },
   {
     q: "Do you do free estimates for Summerville residents?",
@@ -131,7 +131,7 @@ const Summerville = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Summerville, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              You've been in an accident. The closer shops aren't calling back. We're about 25 minutes down I-26 — and we do our best to answer every call.
+              You've been in an accident. We're about 25 minutes down I-26 — and we do our best to answer every call, same-day callbacks if we miss you. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -154,7 +154,7 @@ const Summerville = () => {
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Summerville Drivers</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Getting into an accident is stressful enough. Then you call three shops and none of them answer. The one that does is booked for months. We hear this from Summerville drivers every week.
+            Getting into an accident is stressful enough. You need a body shop that answers, gives you a free estimate fast, and gets your car back on the road. That's what we do for Summerville drivers every week.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our shop is in West Ashley — about 25 minutes from Summerville via I-26. We have {REVIEW_COUNT_DISPLAY} five-star Google reviews and we've been fixing cars in the Charleston area for decades. We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching.
@@ -227,7 +227,7 @@ const Summerville = () => {
             Why Summerville Drivers <span style={{ color: "#5A9E9B" }}>Make the Drive</span>
           </h2>
           <p className="text-gray-400 text-base leading-relaxed mb-6">
-            There are closer shops. But Summerville drivers come to us anyway — and most say they wish they'd called us first instead of wasting a week chasing shops that never called back.
+            Summerville drivers come to us for honest pricing, fast estimates, and work that's done right. Many come back every time they need a repair.
           </p>
           <ul className="space-y-3">
             {[
@@ -338,7 +338,7 @@ const Summerville = () => {
       <section style={{ backgroundColor: "#2D5F5D" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Done Waiting on Shops That <span style={{ color: "#1A2E2D" }}>Don't Call Back?</span>
+            Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             We're 25 minutes from Summerville. Free estimates. {REVIEW_COUNT_DISPLAY} five-star reviews. We handle your insurance so you don't have to.

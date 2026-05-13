@@ -135,7 +135,7 @@ const JamesIsland = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>James Island</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just got in an accident and can't get a shop to call you back? We do our best to answer every call — same-day callbacks if we miss you. We're 10 to 15 minutes from James Island, and we handle everything — repairs, insurance, all of it.
+              Just got in an accident? We do our best to answer every call — same-day callbacks if we miss you. We're 10 to 15 minutes from James Island, and we handle everything — repairs, insurance, all of it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -158,7 +158,7 @@ const JamesIsland = () => {
             Auto Body Repair for <span style={{ color: "#2D5F5D" }}>James Island</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Getting in an accident is stressful enough. Then you call four shops and none of them call back. We hear this from James Island customers all the time. Our shop is a quick drive via Folly Road and the Crosstown — and we do our best to answer every call.
+            Getting in an accident is stressful enough. You need a shop that answers, gives you an honest estimate, and fixes it right. Our shop is a quick drive from James Island via Folly Road and the Crosstown — and we do our best to answer every call.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Whether you picked up a dent in the Publix parking lot on Folly Road, got rear-ended on Maybank Highway, or clipped something squeezing through a tight parking lot near the Terracina strip — we handle it. We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching.
@@ -198,7 +198,7 @@ const JamesIsland = () => {
             James Island is surrounded by water, and salt air is hard on paint and metal. A small door ding that might sit harmlessly for months inland can start to rust at the edges faster here. We see this regularly on trucks and SUVs that spend time near the water or park outside year-round.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            The island's roads add to it. Folly Road through the restaurant and shopping corridor is tight. Harbor View Road and Maybank Highway carry real traffic volume. The James Island Connector backs up at rush hour, which puts cars close together at highway speeds. We recently finished a repair on a Tacoma that got rear-ended on the Connector during the evening commute — the owner had called two other shops first and couldn't get a callback.
+            The island's roads add to it. Folly Road through the restaurant and shopping corridor is tight. Harbor View Road and Maybank Highway carry real traffic volume. The James Island Connector backs up at rush hour, which puts cars close together at highway speeds. We recently finished a repair on a Tacoma that got rear-ended on the Connector during the evening commute — we got the owner in quickly, handled the insurance, and had the truck back looking like nothing happened.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             Folly Beach weekend traffic also spills back through the island from May through September. Packed parking lots near the beach mean door dings on BMWs, Audis, and newer trucks happen constantly. If your vehicle looks like something happened to it, it probably did — and we can fix it.

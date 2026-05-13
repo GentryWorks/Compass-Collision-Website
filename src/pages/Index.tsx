@@ -55,7 +55,7 @@ const reasons = [
   {
     icon: <Shield className="w-6 h-6" />,
     title: "Free Estimates, Honest Prices",
-    description: "Other shops charge $100 just to look at your car. We never charge for an estimate. The price we quote is the price you pay — no surprise charges when you pick up.",
+    description: "Every estimate is free — always. The price we quote is the price you pay — no surprise charges when you pick up.",
   },
   {
     icon: <Users className="w-6 h-6" />,
@@ -81,7 +81,7 @@ const serviceAreas = [
 const faqs = [
   {
     q: "Do you charge for estimates?",
-    a: "Never. Every estimate is free. Other shops in Charleston charge $100 or more just to look at your car. We believe you shouldn't have to pay someone to tell you what's wrong. Call us or stop by — no cost and no obligation.",
+    a: "Never. Every estimate is free. We believe you shouldn't have to pay someone to tell you what's wrong with your car. Call us or stop by — no cost and no obligation.",
   },
   {
     q: "How long will my repair take?",
@@ -96,8 +96,8 @@ const faqs = [
     a: "This happens regularly. Insurance adjusters write estimates that don't cover the full scope of the repair. We know what proper repairs actually cost, and we go to bat for you. We document the damage, push back on insufficient estimates, and make sure the job is done right — not just done to the insurance company's minimum. One of our customers had a $4,992 insurance check and we charged them only what the repair actually cost.",
   },
   {
-    q: "Can't get another shop to answer or fit you in?",
-    a: "This is the most common thing we hear. Customers call us after trying four or five other body shops in Charleston that are booked for months or won't return calls. Most shops in the area are running 6 to 10 week backlogs just for an estimate appointment. We do our best to answer every call — and if we miss you, we call back the same day. We respond to emails the same day and get your car in within days — not months.",
+    q: "How quickly can you get me in for an estimate?",
+    a: "We do our best to answer every call — and if we miss you, we call back the same day. We respond to emails the same day too. Most customers can get a free written estimate the same day they call. We get your car in within days, not months.",
   },
   {
     q: "What should I expect after I drop my car off?",
@@ -269,7 +269,7 @@ const Index = () => {
               Collision repair that's personal, honest, and local — the way it should be.
             </p>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Other shops won't call you back. We do our best to answer every call — and if we miss you, we call back the same day. Free estimates, cars in within days. {REVIEW_COUNT_DISPLAY} five-star reviews. All insurance accepted.
+              We do our best to answer every call — and if we miss you, we call back the same day. Free estimates, cars in within days. {REVIEW_COUNT_DISPLAY} five-star reviews. All insurance accepted.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -410,7 +410,7 @@ const Index = () => {
               Why Charleston Trusts <span style={{ color: "#5A9E9B" }}>Us</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Most body shops in Charleston are booked 6 to 10 weeks out. We get you in within days. Here's why {REVIEW_COUNT_DISPLAY} customers gave us five stars.
+              We get you in within days for a free estimate. Here's why {REVIEW_COUNT_DISPLAY} customers gave us five stars.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -497,13 +497,13 @@ const Index = () => {
             Charleston's Honest <span style={{ color: "#2D5F5D" }}>Auto Body Shop</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            You just got in an accident. Your car is damaged. You're calling body shops in Charleston and nobody answers. The one shop that calls back says they can't even look at your car for two months. Sound familiar? We hear this from nearly every customer who finds us. It's the number one reason people drive past closer shops to bring their car to our auto body shop in Charleston, SC.
+            You just got in an accident. Your car is damaged. You need a body shop in Charleston you can actually reach — one that answers, gives you a straight answer, and gets your car in fast. That's exactly what we set out to build at Compass Collision.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             We do things differently here. We do our best to answer every call — and if we miss you, we'll call back the same day. We give free estimates, usually the same day you call. And we get your car in within days, not months. Our team has 95+ years of combined experience in collision repair, dent repair, and auto painting. We've built {REVIEW_COUNT_DISPLAY} five-star reviews on Google because we treat your car like it's our own.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles — so even high-end repairs are handled with the precision your vehicle requires. Most shops in Charleston can't say that.
+            We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles — so even high-end repairs are handled with the precision your vehicle requires.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Here's what makes us genuinely different: the person who writes your estimate is the same person who has done this repair dozens — sometimes hundreds — of times. There's no separate estimator who has never touched a car handing you a quote. We know what's behind the damaged panel because we've opened it up before. That means no inflated estimates and no surprise charges when you come to pick up.
@@ -630,7 +630,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
               Serving the <span style={{ color: "#2D5F5D" }}>Charleston Area</span>
             </h2>
-            <p className="text-gray-500 text-base">Customers drive to us from across the Lowcountry because they can't find this level of service anywhere else.</p>
+            <p className="text-gray-500 text-base">Customers drive to us from across the Lowcountry for honest estimates and quality work.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceAreas.map((area, i) => {
