@@ -339,10 +339,10 @@ const AutoPainting = () => {
             We have {REVIEW_COUNT_DISPLAY} five-star reviews on Google. Not because we ask people to leave reviews — because customers are genuinely relieved when the car comes back looking right. "My BMW looks brand new and the paint is a perfect match" is something we hear regularly, and it doesn't happen by accident.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We work on everything from F-150s and Silverados to BMWs, Audis, Mercedes, and Lexus vehicles. BMW-certified repair means we understand how the factory finishes on these vehicles are built — and what it takes to match them correctly.
+            We work on everything from F-150s and Silverados to BMWs, Audis, Mercedes, and Lexus vehicles. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles — so we understand how the factory finishes on these cars are built and what it takes to match them correctly.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We're a small shop with hands-on involvement on every job. The person who writes your estimate is the same person overseeing the repair. You won't drop your car into a black hole and wait for a phone call that doesn't come. We keep you updated, we answer the phone, and we give you a straight answer on timing.
+            We're a small shop with hands-on involvement on every job. The person who writes your estimate is the same person overseeing the repair. You won't drop your car into a black hole and wait for a phone call that doesn't come. We keep you updated and we do our best to answer every call — same-day callbacks if we miss you.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             Our paint work is backed by a workmanship guarantee. If the match or finish isn't right, bring it back and we'll make it right. That's not a policy — it's just how we do business.

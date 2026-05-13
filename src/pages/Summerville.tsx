@@ -42,11 +42,11 @@ const faqs = [
   },
   {
     q: "What vehicles do you work on?",
-    a: "We repair all makes and models — BMWs, Audis, Mercedes, F-150s, Silverados, Tahoes, Subarus, Hondas, and everything in between. We're BMW-certified, so if you drive a luxury or European vehicle, you're in the right place. If it has collision damage, we can fix it.",
+    a: "We repair all makes and models — BMWs, Audis, Mercedes, F-150s, Silverados, Tahoes, Subarus, Hondas, and everything in between. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles, so if you drive a luxury or European vehicle, you're in the right place. If it has collision damage, we can fix it.",
   },
   {
     q: "Is the drive worth it when there are body shops closer to Summerville?",
-    a: "That's a fair question. Most Summerville drivers call the closer shops first and find they're booked for months — or they can't even get someone to answer the phone. We answer, we give free estimates fast, and we do the work right the first time. Customers who make the 25-minute drive tell us they wish they'd called us first.",
+    a: "That's a fair question. Most Summerville drivers call the closer shops first and find they're booked for months — or they can't even get someone to call them back. We do our best to answer every call, give free estimates fast, and do the work right. Customers who make the 25-minute drive tell us they wish they'd called us first.",
   },
   {
     q: "Do you do free estimates for Summerville residents?",
@@ -131,7 +131,7 @@ const Summerville = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Summerville, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              You've been in an accident. The closer shops aren't answering. We're about 25 minutes down I-26 — and we pick up the phone.
+              You've been in an accident. The closer shops aren't calling back. We're about 25 minutes down I-26 — and we do our best to answer every call.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -232,7 +232,7 @@ const Summerville = () => {
           <ul className="space-y-3">
             {[
               "Estimators who do the repairs — the price you get is the price you pay",
-              "BMW-certified and experienced on all makes: trucks, SUVs, European and domestic vehicles",
+              "Factory-trained with 15+ years on BMWs, Audis, and European vehicles — all makes welcome",
               `${REVIEW_COUNT_DISPLAY} five-star Google reviews from drivers across the Charleston area`,
               "We handle every insurance company — you don't spend hours on hold",
               "95+ years of combined collision repair experience on our team",

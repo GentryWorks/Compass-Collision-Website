@@ -180,7 +180,7 @@ const NorthCharleston = () => {
             A Body Shop Near North Charleston <span style={{ color: "#2D5F5D" }}>That Actually Answers</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            After an accident, the last thing you need is to spend two hours calling shops that won't pick up or tell you the wait is two months for even an estimate. We hear that story every week. We answer the phone, get you in fast, and we'll have a free written estimate ready the same day you come in.
+            After an accident, the last thing you need is to spend two hours calling shops that won't call you back or tell you the wait is two months for even an estimate. We hear that story every week. We do our best to answer every call — same-day callbacks if we miss you — and we'll have a free written estimate ready the same day you come in.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             We handle <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Everything is done in-house — no subcontracting.
@@ -383,7 +383,7 @@ const NorthCharleston = () => {
             Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>North Charleston?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            We answer the phone, give you a free estimate the same day, and handle your insurance from start to finish. Just 15 minutes from North Charleston.
+            We do our best to answer every call — same-day callbacks if we miss you. Free estimates, insurance handled from start to finish. Just 15 minutes from North Charleston.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

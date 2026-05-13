@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Do you work on BMWs, Audis, trucks, and SUVs?",
-    a: "Yes. We're BMW-certified and work on everything from F-150s and Tahoes to Audis, Lexuses, and Mercedes. If you drive it, we can fix it. We've repaired Porsches, Range Rovers, and daily drivers alike — all to the same standard.",
+    a: "Yes. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles. We work on everything from F-150s and Tahoes to Audis, Lexuses, and Mercedes. If you drive it, we can fix it. We've repaired Porsches, Range Rovers, and daily drivers alike — all to the same standard.",
   },
   {
     q: "Do I need an appointment for a free estimate?",
@@ -135,7 +135,7 @@ const WestAshley = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>West Ashley</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. {REVIEW_COUNT_DISPLAY} five-star reviews. We answer the phone.
+              We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. {REVIEW_COUNT_DISPLAY} five-star reviews. We do our best to answer every call.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -161,7 +161,7 @@ const WestAshley = () => {
             Getting in an accident is stressful enough. Then you call three shops and get voicemail. You wait for a callback that never comes. You hear "we're booked out two months." That's the reality for most people in Charleston — and it's exactly why our customers are so relieved when they find us.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We're a body shop in West Ashley that actually answers the phone. Our shop is on Dulsey Road off Savannah Highway, which puts us right in the 29407 zip code. For most West Ashley residents, we're a short drive down local roads — no bridge crossing, no I-26 traffic.
+            We're a body shop in West Ashley that actually calls you back. Our shop is on Dulsey Road off Savannah Highway, which puts us right in the 29407 zip code. For most West Ashley residents, we're a short drive down local roads — no bridge crossing, no I-26 traffic.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> including paintless dent removal, and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. All work is done in-house by our own team — no subcontracting, no surprises.
@@ -233,8 +233,8 @@ const WestAshley = () => {
           <ul className="space-y-3">
             {[
               "Located right in West Ashley — 29407 zip code, less than 10 minutes from most neighborhoods",
-              "We answer the phone — no voicemail loop, no weeks-long wait just for an estimate",
-              "BMW-certified with 95+ years of combined collision repair experience on our team",
+              "We do our best to answer every call — same-day callbacks, no weeks-long wait just for an estimate",
+              "Factory-trained with 15+ years on BMWs, Audis, and European vehicles — plus 95+ years of combined team experience",
               "All insurance companies accepted — we handle the entire claims process for you",
               "The people writing your estimate are the same people doing the repair",
               `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the most of any independent shop in the area`,

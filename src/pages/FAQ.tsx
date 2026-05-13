@@ -80,6 +80,10 @@ const faqs: { q: string; a: string; jsx?: React.ReactNode }[] = [
     a: "Yes. Every estimate is free with no obligation. Bring the car in and we'll look at the damage, explain what needs to be done, and give you an honest price. You can also call us and describe the damage for a rough idea before coming in. The in-person estimate is always more accurate since we can check for damage that a description alone won't reveal.",
   },
   {
+    q: "What should I have ready when I call?",
+    a: "The most helpful thing you can have is your VIN — your Vehicle Identification Number. It's on a sticker inside the driver's door jamb or on the dashboard at the base of the windshield. Having your VIN lets us look up your exact vehicle specs and factory paint code before you even come in. Beyond that, a description of the damage, your insurance information (if you're filing a claim), and your vehicle make, model, and year are all helpful. But don't wait to call if you don't have everything — we can walk you through it.",
+  },
+  {
     q: "Do you help with rental car arrangements?",
     a: "We don't provide rentals directly, but we help you coordinate with your insurance. Most collision policies include rental coverage while your car is being repaired. We give your insurer an accurate repair timeline so the rental is set up for the right number of days. We've also given customers a ride to the rental counter when they needed it.",
   },

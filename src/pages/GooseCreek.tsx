@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "What types of vehicles do you repair?",
-    a: "We repair all makes and models — cars, trucks, and SUVs, foreign and domestic. We're BMW-certified and work on everything from F-150s and Tacomas to Audis, BMWs, and family SUVs. If it has collision damage, we fix it.",
+    a: "We repair all makes and models — cars, trucks, and SUVs, foreign and domestic. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles. If it has collision damage, we fix it.",
   },
   {
     q: "Can you fix hail damage?",
@@ -135,7 +135,7 @@ const GooseCreek = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Goose Creek</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just got in an accident and can't get another shop to call you back? We pick up the phone, give you a free estimate fast, and handle every step with your insurance. {REVIEW_COUNT_DISPLAY} five-star reviews. About 20 minutes from Goose Creek.
+              Just got in an accident and can't get another shop to call you back? We do our best to answer every call — same-day callbacks if we miss you. Free estimates fast, every step with your insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. About 20 minutes from Goose Creek.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -158,7 +158,7 @@ const GooseCreek = () => {
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Goose Creek</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We hear it all the time — you've called three shops and none of them called back. Or the first appointment they can offer is in six weeks. An accident is stressful enough on its own. We answer the phone, get you a same-day estimate, and take the repair from there.
+            We hear it all the time — you've called three shops and none of them called back. Or the first appointment they can offer is in six weeks. An accident is stressful enough on its own. We do our best to answer every call and get you a same-day estimate — then we take the repair from there.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our team handles <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching. Everything is done in-house by our own technicians.
@@ -218,8 +218,8 @@ const GooseCreek = () => {
           <ul className="space-y-3">
             {[
               `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the highest-rated body shop in the Charleston area`,
-              "We answer the phone and return calls the same day — unlike most shops",
-              "BMW-certified technicians who work on everything from F-150s to Audis",
+              "We do our best to answer every call and return messages the same day — unlike most shops",
+              "Factory-trained with 15+ years on BMWs, Audis, and European vehicles",
               "USAA and all major insurance carriers accepted — we handle the claim for you",
               "95+ years of combined collision repair experience across our team",
               "All work done in-house — no subcontracting, no surprises",
@@ -309,7 +309,7 @@ const GooseCreek = () => {
             Need Collision Repair Near <span style={{ color: "#1A2E2D" }}>Goose Creek?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            We'll answer the phone, get you a free estimate, and handle the insurance from start to finish. About 20 minutes from Goose Creek. USAA accepted.
+            We'll do our best to answer every call — same-day callbacks if we miss you. Free estimates, insurance handled start to finish. About 20 minutes from Goose Creek. USAA accepted.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>

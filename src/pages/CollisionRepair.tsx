@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     q: "Do you repair luxury and European vehicles?",
-    a: "Yes. We repair all makes and models — BMWs, Audis, Mercedes, Porsches, Lexus, and high-end trucks like the F-150, Silverado, and Ram. Our team includes BMW-certified technicians. If you drive it, we can fix it properly.",
+    a: "Yes. We repair all makes and models — BMWs, Audis, Mercedes, Porsches, Lexus, and high-end trucks like the F-150, Silverado, and Ram. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles. If you drive it, we can fix it properly.",
   },
 ];
 
@@ -224,13 +224,13 @@ const CollisionRepair = () => {
             If you've been in an accident, you already know the frustration. You call four shops. You get three voicemails and one person who says the earliest estimate appointment is two months out. That's the reality for most collision repair customers in the Charleston area right now.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We answer the phone. We offer free same-day estimates. And we have {REVIEW_COUNT_DISPLAY} five-star Google reviews from Charleston drivers who were in the exact same situation you're in.
+            We do our best to answer every call — and if we miss you, we'll call back the same day. We offer free same-day estimates. And we have {REVIEW_COUNT_DISPLAY} five-star Google reviews from Charleston drivers who were in the exact same situation you're in.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our team brings 95+ years of combined experience in the collision repair industry. That experience shows in how we write estimates, how we handle your insurance claim, and how your car looks when you pick it up.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. Our team includes BMW-certified technicians, so even high-end repairs are handled with the precision your vehicle requires.
+            We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles, so even high-end repairs are handled with the precision your vehicle requires.
           </p>
         </div>
       </section>
@@ -447,7 +447,7 @@ const CollisionRepair = () => {
             Need Collision Repair in <span style={{ color: "#1A2E2D" }}>Charleston?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Free estimates. No runaround. We answer the phone. Call us and we'll get you an estimate the same day.
+            Free estimates. No runaround. We do our best to answer every call — same-day callbacks if we miss you. Call us and we'll get you an estimate the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

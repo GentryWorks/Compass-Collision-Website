@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "What kinds of vehicles do you work on?",
-    a: "We work on everything from F-150s and Silverados to BMWs, Audis, and Mercedes. We're BMW-certified and comfortable with European brands, luxury SUVs, and newer trucks. If you drive it, we can fix it.",
+    a: "We work on everything from F-150s and Silverados to BMWs, Audis, and Mercedes. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles. If you drive it, we can fix it.",
   },
   {
     q: "How long will my repair take?",
@@ -142,7 +142,7 @@ const MountPleasant = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Mount Pleasant, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge — and we answer the phone. {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Insurance handled.
+              Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge. We do our best to answer every call — same-day callbacks if we miss you. {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -204,10 +204,10 @@ const MountPleasant = () => {
             Why Mount Pleasant Drivers <span style={{ color: "#2D5F5D" }}>Make the Trip</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Mount Pleasant is one of the fastest-growing areas in the Charleston metro. With more cars on Coleman Boulevard, around Towne Centre, and on US-17, fender benders and parking lot dings are part of daily life. When it happens to you, you want a shop that actually picks up the phone.
+            Mount Pleasant is one of the fastest-growing areas in the Charleston metro. With more cars on Coleman Boulevard, around Towne Centre, and on US-17, fender benders and parking lot dings are part of daily life. When it happens to you, you want a shop that actually calls you back.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We work on the vehicles Mount Pleasant drivers own — BMWs, Audis, F-150s, Silverados, Tahoes, and Range Rovers. We're BMW-certified and handle everything from a scraped bumper to a full collision repair with insurance. When we hand your car back, it looks like it never happened.
+            We work on the vehicles Mount Pleasant drivers own — BMWs, Audis, F-150s, Silverados, Tahoes, and Range Rovers. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles, and we handle everything from a scraped bumper to a full collision repair with insurance. When we hand your car back, it looks like it never happened.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             The drive from Mount Pleasant takes about 20 to 25 minutes. Cross the Arthur Ravenel Jr. Bridge and head toward West Ashley on the Crosstown. Customers coming from Shem Creek or Belle Hall hop on Coleman Boulevard to US-17 and cross the bridge. From the Isle of Palms Connector, it's US-17 West from there.
@@ -249,7 +249,7 @@ const MountPleasant = () => {
             {[
               `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the highest-rated body shop in the Charleston area`,
               "95+ years of combined collision repair experience on our team",
-              "BMW-certified — we work on European brands, luxury SUVs, and trucks",
+              "Factory-trained with 15+ years on BMWs, Audis, and European vehicles",
               "Estimators who do the work — your price is accurate because we know exactly what the job takes",
               "We fight the insurance company for you — including supplements when hidden damage is found",
               "No subcontracting — every repair stays in our shop start to finish",
@@ -339,7 +339,7 @@ const MountPleasant = () => {
             Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>Mount Pleasant?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Just across the Ravenel Bridge. Free estimates. Insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. We answer the phone.
+            Just across the Ravenel Bridge. Free estimates. Insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. Same-day callbacks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>

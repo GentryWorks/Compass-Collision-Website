@@ -86,11 +86,11 @@ const About = () => {
         <title>Auto Body Shop Charleston SC | About Compass Collision</title>
         <meta
           name="description"
-          content="Family-owned auto body shop in Charleston, SC. 95+ years experience, BMW certified. Honest estimates from techs who do the work. Call (843) 380-7055."
+          content="Family-owned auto body shop in Charleston, SC. 95+ years experience, factory-trained technicians. Honest estimates from techs who do the work. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/about`} />
         <meta property="og:title" content="Auto Body Shop Charleston SC | About Compass Collision" />
-        <meta property="og:description" content="Family-owned auto body shop in Charleston, SC. 95+ years experience, BMW certified. Honest estimates from techs who do the work. Call (843) 380-7055." />
+        <meta property="og:description" content="Family-owned auto body shop in Charleston, SC. 95+ years experience, factory-trained technicians. Honest estimates from techs who do the work. Call (843) 380-7055." />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaOrg)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
@@ -125,11 +125,11 @@ const About = () => {
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Charleston's Auto Body Shop
               <span className="block" style={{ color: "#5A9E9B" }}>
-                That Actually Answers the Phone
+                Built on Doing Things Right
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed">
-              Getting in an accident is stressful enough. You shouldn't have to fight to find a shop that picks up, gives you a straight answer, and does the work right. That's exactly why we opened this shop.
+              Getting in an accident is stressful enough. You shouldn't have to fight to find a shop that gives you a straight answer and does the work right. That's exactly why we opened this shop.
             </p>
           </motion.div>
         </div>
@@ -141,14 +141,20 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why We Built This <span style={{ color: "#2D5F5D" }}>Charleston Auto Body Shop</span>
           </h2>
+
+          {/* Proverbs quote */}
+          <blockquote className="border-l-4 pl-6 mb-8 italic text-gray-600 text-base leading-relaxed" style={{ borderColor: "#2D5F5D" }}>
+            "A good name is more desirable than great riches." — Proverbs 22:1
+          </blockquote>
+
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We opened Compass Collision in March 2021 — but the experience behind it goes back more than 95 combined years in the collision repair industry. We had watched too many auto body shops where the person writing the estimate had never actually done the repair.
+            This shop was started out of a desire to change the status quo of the automotive industry. Our owner spent 16+ years as a technician at a large shop and saw lies being told to customers day after day — decisions made not in the best interest of the customer or the car.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            That gap between the estimator and the technician is where problems start. Inaccurate quotes. Unexpected delays. Repairs that don't hold up. We built this shop to close that gap for good.
+            We genuinely want to help people and give this industry a better name. We want you to drive in as a customer and leave as a friend.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Here, the people writing your estimate have done the repair hundreds of times with their own hands. They know exactly what the job takes because they've actually done it. That means your price is accurate from day one — and the repair is done right the first time.
+            Our owner was born and raised right here in the Lowcountry and loves this town. When you bring your car to us, you're working with someone who has a stake in this community — not a franchise location where the manager doesn't know your name.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             We also know the insurance process is a nightmare for most people. When an adjuster sends over a lowball estimate, we don't just accept it. We push back, document the correct scope, and fight to make sure your car gets fixed properly — not just cheaply.
@@ -182,10 +188,10 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h2 className="text-3xl font-extrabold mb-4" style={{ color: "#111" }}>
-                95+ Years of Experience. <span style={{ color: "#2D5F5D" }}>BMW Certified.</span>
+                95+ Years of Experience. <span style={{ color: "#2D5F5D" }}>European Vehicles Too.</span>
               </h2>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
-                Our team brings 95+ years of hands-on collision repair experience. We're BMW certified, and we work on all makes and models — from F-150s and Tacomas to BMW X5s, Audi Q5s, and Range Rovers.
+                Our team brings 95+ years of hands-on collision repair experience. Our owner is factory-trained with 15+ years on BMWs, Audis, and European vehicles — and we work on all makes and models, from F-150s and Tacomas to BMW X5s, Audi Q5s, and Range Rovers.
               </p>
               <p className="text-gray-500 text-base leading-relaxed mb-4">
                 We handle everything in-house. <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Collision repair</Link>. <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Dent repair</Link>. <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>Auto painting</Link> and color matching. No subcontracting. No outsourcing. Your car stays in our shop from start to finish.

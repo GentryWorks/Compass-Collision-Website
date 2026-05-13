@@ -21,11 +21,11 @@ const Contact = () => {
         <title>Contact Compass Collision | Charleston SC Auto Body Shop</title>
         <meta
           name="description"
-          content="Contact our Charleston SC auto body shop for a free collision repair estimate. We answer the phone. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202."
+          content="Contact our Charleston SC auto body shop for a free collision repair estimate. We do our best to answer every call — same-day callbacks. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202."
         />
         <link rel="canonical" href={`${DOMAIN}/contact`} />
         <meta property="og:title" content="Contact Compass Collision | Charleston SC Auto Body Shop" />
-        <meta property="og:description" content="Contact our Charleston SC auto body shop for a free collision repair estimate. We answer the phone. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202." />
+        <meta property="og:description" content="Contact our Charleston SC auto body shop for a free collision repair estimate. We do our best to answer every call — same-day callbacks. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202." />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
@@ -49,7 +49,7 @@ const Contact = () => {
               Contact Our <span style={{ color: "#5A9E9B" }}>Charleston Auto Body Shop</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-4">
-              Tired of calling shops and getting voicemail? We answer the phone. Call us during business hours and you'll talk to a real person — not a recording, not a form, not a two-week wait for a callback.
+              Tired of calling shops and getting voicemail? We do our best to answer every call. If we miss you, we'll call you back the same day — not a two-week wait, not a form to fill out.
             </p>
             <p className="text-gray-400 text-base max-w-xl mx-auto leading-relaxed">
               Our Charleston collision repair shop offers free estimates, usually same business day. Most calls take less than five minutes. No pressure, no sales pitch — just honest answers.
@@ -204,24 +204,29 @@ const Contact = () => {
             <div className="space-y-5">
               {[
                 {
-                  step: "We answer the phone.",
+                  step: "We do our best to take every call.",
                   detail:
-                    "During business hours, a real person picks up. No voicemail maze, no callback request form.",
+                    "Please leave a message if we don't pick up — we return calls the same day.",
                 },
                 {
-                  step: "We ask about the damage.",
+                  step: "Tell us what happened.",
                   detail:
-                    "Tell us what happened and what your car looks like. We'll give you an honest read on the repair — including whether insurance makes sense to use.",
+                    "Let us know what happened and what your needs are. We'll give you an honest read on the repair — including whether insurance makes sense to use.",
                 },
                 {
-                  step: "We schedule your free estimate.",
+                  step: "Have your VIN ready.",
                   detail:
-                    "Most estimates are same or next business day. We don't charge for estimates and we don't make you wait two weeks just to find out what it costs.",
+                    "Your Vehicle Identification Number helps us look up your exact vehicle specs and factory paint code before you even come in. It's on your dashboard or door jamb sticker.",
                 },
                 {
-                  step: "You get a straight answer.",
+                  step: "Schedule your free estimate.",
                   detail:
-                    "We'll tell you what needs to be fixed, what it will cost, and how long it will take. No surprises, no hidden fees.",
+                    "We'll find a convenient time during normal business hours for you to bring the car in. Most estimates are same or next business day.",
+                },
+                {
+                  step: "We'll discuss your options.",
+                  detail:
+                    "We'll walk you through the best options for you and your car to get back to normal — including what the insurance process looks like if you're filing a claim.",
                 },
               ].map(({ step, detail }) => (
                 <div key={step} className="flex items-start gap-4">
@@ -247,6 +252,7 @@ const Contact = () => {
                 What to Have Ready When You Call
               </h3>
               <ul className="text-gray-600 text-sm space-y-2 list-disc list-inside">
+                <li>Your VIN (Vehicle Identification Number) — this is the most helpful thing you can have</li>
                 <li>A description of the damage (photos help if you have them)</li>
                 <li>Your insurance info, if you plan to file a claim</li>
                 <li>The other driver's insurance info, if someone else was at fault</li>
@@ -281,7 +287,7 @@ const Contact = () => {
             Call for a Free <span style={{ color: "#5A9E9B" }}>Estimate</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            Ready to get your car fixed? Give us a call — a real person picks up and you'll have an answer the same day.
+            Ready to get your car fixed? Give us a call — we do our best to answer every call, and if we miss you, we'll call you back the same day.
           </p>
           <div className="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-10">
             <a
@@ -310,7 +316,7 @@ const Contact = () => {
             Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Honest answers. We pick up the phone.
+            {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Honest answers. Same-day callbacks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
