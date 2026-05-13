@@ -179,7 +179,7 @@ const AutoPainting = () => {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Collision Paint Repair That's <span style={{ color: "#2D5F5D" }}>Invisible</span>
@@ -200,7 +200,7 @@ const AutoPainting = () => {
       </section>
 
       {/* What We Paint */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -229,7 +229,7 @@ const AutoPainting = () => {
       </section>
 
       {/* Color Matching Process */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Our Color Matching <span style={{ color: "#2D5F5D" }}>Process</span>
@@ -324,7 +324,7 @@ const AutoPainting = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Choose Us</span>
@@ -345,7 +345,7 @@ const AutoPainting = () => {
       </section>
 
       {/* Service Area */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>

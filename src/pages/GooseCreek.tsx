@@ -146,7 +146,7 @@ const GooseCreek = () => {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Goose Creek</span>
@@ -164,7 +164,7 @@ const GooseCreek = () => {
       </section>
 
       {/* Services */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>Our <span style={{ color: "#2D5F5D" }}>Services</span></h2>
@@ -183,7 +183,7 @@ const GooseCreek = () => {
       </section>
 
       {/* Military / Local Content */}
-      <section className="bg-gray-50 border-t border-gray-200 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             We Know the <span style={{ color: "#2D5F5D" }}>Military Community</span>
@@ -204,10 +204,10 @@ const GooseCreek = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Why Goose Creek Drivers <span style={{ color: "#2D5F5D" }}>Choose Us</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
+            Why Goose Creek Drivers <span style={{ color: "#5A9E9B" }}>Choose Us</span>
           </h2>
           <ul className="space-y-3">
             {[
@@ -219,8 +219,8 @@ const GooseCreek = () => {
               "All work done in-house — no subcontracting, no surprises",
               "Realistic timelines given upfront and honored — we won't sit on your car",
             ].map((item, i) => (
-              <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
-                <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
+              <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-400 text-sm">
+                <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#5A9E9B" }} />
                 {item}
               </motion.li>
             ))}
@@ -248,7 +248,7 @@ const GooseCreek = () => {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>Common <span style={{ color: "#2D5F5D" }}>Questions</span></h2>
@@ -274,7 +274,7 @@ const GooseCreek = () => {
       </section>
 
       {/* Other Areas */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-3xl font-extrabold mb-6" style={{ color: "#111" }}>Also Serving <span style={{ color: "#2D5F5D" }}>Nearby Areas</span></h2>
           <div className="flex flex-wrap justify-center gap-3">

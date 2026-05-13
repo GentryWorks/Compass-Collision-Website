@@ -133,7 +133,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why We Built This <span style={{ color: "#2D5F5D" }}>Charleston Auto Body Shop</span>
@@ -154,7 +154,7 @@ const About = () => {
       </section>
 
       {/* Team Photo + Experience */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <motion.div
@@ -227,7 +227,7 @@ const About = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -245,8 +245,7 @@ const About = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="rounded-xl p-8"
-                style={{ backgroundColor: "#f8f8f8" }}
+                className="rounded-xl p-8 bg-white"
               >
                 <div className="flex gap-0.5 mb-4">
                   {[...Array(5)].map((_, s) => (

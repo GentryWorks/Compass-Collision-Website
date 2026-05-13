@@ -183,7 +183,7 @@ const Contact = () => {
       </section>
 
       {/* What Happens When You Call */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -275,7 +275,7 @@ const Contact = () => {
       <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "#111" }}>
-            Request a Free <span style={{ color: "#2D5F5D" }}>Estimate</span>
+            Request a Free <span style={{ color: "#5A9E9B" }}>Estimate</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-xl mx-auto">
             Fill out the form below and we'll get back to you the same business day. Or call us directly for the fastest response.

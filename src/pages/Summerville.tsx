@@ -142,7 +142,7 @@ const Summerville = () => {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Trusted Collision Repair for <span style={{ color: "#2D5F5D" }}>Summerville Drivers</span>
@@ -160,7 +160,7 @@ const Summerville = () => {
       </section>
 
       {/* Services */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>Our <span style={{ color: "#2D5F5D" }}>Services</span></h2>
@@ -179,7 +179,7 @@ const Summerville = () => {
       </section>
 
       {/* Insurance Section */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             We Handle Your <span style={{ color: "#2D5F5D" }}>Insurance Claim</span>
@@ -197,7 +197,7 @@ const Summerville = () => {
       </section>
 
       {/* Local Content */}
-      <section className="bg-gray-50 border-t border-gray-200 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Serving Summerville and the <span style={{ color: "#2D5F5D" }}>I-26 Corridor</span>
@@ -215,12 +215,12 @@ const Summerville = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
-            Why Summerville Drivers <span style={{ color: "#2D5F5D" }}>Make the Drive</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
+            Why Summerville Drivers <span style={{ color: "#5A9E9B" }}>Make the Drive</span>
           </h2>
-          <p className="text-gray-500 text-base leading-relaxed mb-6">
+          <p className="text-gray-400 text-base leading-relaxed mb-6">
             There are closer shops. But Summerville drivers come to us anyway — and most say they wish they'd called us first instead of wasting a week chasing shops that never called back.
           </p>
           <ul className="space-y-3">
@@ -233,8 +233,8 @@ const Summerville = () => {
               "No subcontracting — your car stays in our shop from drop-off to pickup",
               "Boutique shop feel — you talk to the person doing the work, not a front-desk gatekeeper",
             ].map((item, i) => (
-              <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-500 text-sm">
-                <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#2D5F5D" }} />
+              <motion.li key={i} initial={{ x: -10, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: i * 0.05 }} className="flex items-start gap-3 text-gray-400 text-sm">
+                <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#5A9E9B" }} />
                 {item}
               </motion.li>
             ))}
@@ -243,7 +243,7 @@ const Summerville = () => {
       </section>
 
       {/* What to Expect */}
-      <section className="bg-gray-50 border-t border-gray-200 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             What to Expect When <span style={{ color: "#2D5F5D" }}>You Come In</span>
@@ -306,7 +306,7 @@ const Summerville = () => {
       </section>
 
       {/* Other Areas */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-3xl font-extrabold mb-6" style={{ color: "#111" }}>Also Serving <span style={{ color: "#2D5F5D" }}>Nearby Areas</span></h2>
           <div className="flex flex-wrap justify-center gap-3">

@@ -162,7 +162,7 @@ const FAQ = () => {
       </section>
 
       {/* FAQ Accordions */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="flex flex-col gap-3">
             {faqs.map((faq, i) => (
@@ -206,19 +206,19 @@ const FAQ = () => {
       </section>
 
       {/* Still Have Questions */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#1A2E2D" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "#111" }}>
-            Still Have <span style={{ color: "#2D5F5D" }}>Questions?</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white">
+            Still Have <span style={{ color: "#5A9E9B" }}>Questions?</span>
           </h2>
-          <p className="text-gray-500 text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            We're happy to walk you through anything about your repair. Call us or visit our <Link to="/contact" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>contact page</Link> to send us a message.
+          <p className="text-gray-400 text-base leading-relaxed mb-8 max-w-xl mx-auto">
+            We're happy to walk you through anything about your repair. Call us or visit our <Link to="/contact" className="font-semibold no-underline hover:opacity-80" style={{ color: "#5A9E9B" }}>contact page</Link> to send us a message.
           </p>
           <a
             href={PHONE_HREF}
             onClick={() => trackPhoneClick("faq")}
             className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline"
-            style={{ backgroundColor: "#2D5F5D" }}
+            style={{ backgroundColor: "#E8833A" }}
           >
             <Phone className="w-4 h-4" />
             Call: {PHONE}

@@ -209,7 +209,7 @@ const CollisionRepair = () => {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Collision Repair in Charleston Done <span style={{ color: "#2D5F5D" }}>Right</span>
@@ -230,7 +230,7 @@ const CollisionRepair = () => {
       </section>
 
       {/* What We Repair */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -259,7 +259,7 @@ const CollisionRepair = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why Charleston Trusts Us for <span style={{ color: "#2D5F5D" }}>Collision Repair</span>
@@ -283,7 +283,7 @@ const CollisionRepair = () => {
       </section>
 
       {/* Our Process */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center" style={{ color: "#111" }}>
             Our Collision Repair <span style={{ color: "#2D5F5D" }}>Process</span>
@@ -364,7 +364,7 @@ const CollisionRepair = () => {
       </section>
 
       {/* Service Area */}
-      <section className="bg-gray-50 py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>

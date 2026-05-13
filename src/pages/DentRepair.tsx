@@ -175,7 +175,7 @@ const DentRepair = () => {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Dent Repair in <span style={{ color: "#2D5F5D" }}>Charleston, SC</span>
@@ -193,7 +193,7 @@ const DentRepair = () => {
       </section>
 
       {/* Types of Dents */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
@@ -222,7 +222,7 @@ const DentRepair = () => {
       </section>
 
       {/* PDR vs Traditional */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Paintless Dent Repair vs. <span style={{ color: "#2D5F5D" }}>Traditional Dent Repair</span>
@@ -237,7 +237,7 @@ const DentRepair = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
-              className="bg-gray-50 rounded-xl border border-gray-200 px-6 py-8"
+              className="bg-white rounded-xl border border-gray-200 px-6 py-8"
             >
               <h3 className="font-extrabold text-base uppercase tracking-wide mb-4" style={{ color: "#2D5F5D" }}>
                 Paintless Dent Repair (PDR)
@@ -264,7 +264,7 @@ const DentRepair = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="bg-gray-50 rounded-xl border border-gray-200 px-6 py-8"
+              className="bg-white rounded-xl border border-gray-200 px-6 py-8"
             >
               <h3 className="font-extrabold text-base uppercase tracking-wide mb-4" style={{ color: "#2D5F5D" }}>
                 Traditional Dent Repair
@@ -294,7 +294,7 @@ const DentRepair = () => {
       </section>
 
       {/* Hail Damage + Insurance */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Hail Damage Repair <span style={{ color: "#2D5F5D" }}>and Insurance Claims</span>
@@ -367,7 +367,7 @@ const DentRepair = () => {
       </section>
 
       {/* Why Us */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "#F4EFE6" }} className="py-20">
         <div className="max-w-[800px] mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6" style={{ color: "#111" }}>
             Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Trust Us</span>
@@ -385,7 +385,7 @@ const DentRepair = () => {
       </section>
 
       {/* Service Area */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-white py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
