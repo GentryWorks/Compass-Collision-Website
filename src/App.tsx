@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Pages
 const Index = lazy(() => import("./pages/Index"));
@@ -27,6 +28,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const AppLayout = () => {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <main className="pt-20 min-h-screen">
         <Suspense fallback={null}>
