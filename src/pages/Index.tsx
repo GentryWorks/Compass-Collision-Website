@@ -266,7 +266,7 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl font-medium italic max-w-lg mb-4">
-              A boutique experience for collision repair.
+              Collision repair that's personal, honest, and local — the way it should be.
             </p>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
               Other shops won't call you back. We do our best to answer every call — and if we miss you, we call back the same day. Free estimates, cars in within days. {REVIEW_COUNT_DISPLAY} five-star reviews. All insurance accepted.
