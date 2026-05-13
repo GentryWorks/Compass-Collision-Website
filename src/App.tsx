@@ -21,6 +21,7 @@ const Gallery = lazy(() => import("./pages/Gallery"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const Blog = lazy(() => import("./pages/Blog"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const AppLayout = () => {
@@ -44,6 +45,7 @@ const AppLayout = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
