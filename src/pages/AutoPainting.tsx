@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import heroImg from "@/assets/classic-ford-truck-paint-after-charleston.webp";
 import { trackPhoneClick } from "@/utils/tracking";
 
@@ -113,12 +113,12 @@ const AutoPainting = () => {
         <title>Auto Painting Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. 272 five-star reviews. Free estimates. Call (843) 380-7055."
+          content={`Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/auto-painting`} />
         <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <meta property="og:title" content={`Auto Painting Charleston SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Auto painting in Charleston, SC. Panel painting, bumper refinishing, and factory color matching. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -158,7 +158,7 @@ const AutoPainting = () => {
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Panel painting. Bumper refinishing. Color matching down to the exact factory code. 272 five-star reviews. When we paint a panel, you can't tell where the repair ends and the original begins.
+              Panel painting. Bumper refinishing. Color matching down to the exact factory code. {REVIEW_COUNT_DISPLAY} five-star reviews. When we paint a panel, you can't tell where the repair ends and the original begins.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -336,7 +336,7 @@ const AutoPainting = () => {
             Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Choose Us</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We have 272 five-star reviews on Google. Not because we ask people to leave reviews — because customers are genuinely relieved when the car comes back looking right. "My BMW looks brand new and the paint is a perfect match" is something we hear regularly, and it doesn't happen by accident.
+            We have {REVIEW_COUNT_DISPLAY} five-star reviews on Google. Not because we ask people to leave reviews — because customers are genuinely relieved when the car comes back looking right. "My BMW looks brand new and the paint is a perfect match" is something we hear regularly, and it doesn't happen by accident.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             We work on everything from F-150s and Silverados to BMWs, Audis, Mercedes, and Lexus vehicles. BMW-certified repair means we understand how the factory finishes on these vehicles are built — and what it takes to match them correctly.
@@ -428,7 +428,7 @@ const AutoPainting = () => {
             Need a Panel <span style={{ color: "#1A2E2D" }}>Repainted?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Free estimates. Factory color matching. 272 five-star reviews. We'll make it look like it never happened.
+            Free estimates. Factory color matching. {REVIEW_COUNT_DISPLAY} five-star reviews. We'll make it look like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

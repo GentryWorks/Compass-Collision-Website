@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "Is it worth driving from Mount Pleasant across the bridge for a repair?",
-    a: "Our customers from Mount Pleasant think so. The drive takes about 20 to 25 minutes and gets you honest estimates from the people who actually do the repairs. With 272 five-star reviews, the quality speaks for itself. Many Mount Pleasant drivers have been coming back to us for years.",
+    a: `Our customers from Mount Pleasant think so. The drive takes about 20 to 25 minutes and gets you honest estimates from the people who actually do the repairs. With ${REVIEW_COUNT_DISPLAY} five-star reviews, the quality speaks for itself. Many Mount Pleasant drivers have been coming back to us for years.`,
   },
   {
     q: "Can I call for a rough estimate before making the drive?",
@@ -114,11 +114,11 @@ const MountPleasant = () => {
         <title>Body Shop Mount Pleasant SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Trusted body shop near Mount Pleasant, SC. Collision repair, dent repair, and auto painting. 272 five-star reviews. Free estimates. Call (843) 380-7055."
+          content={`Trusted body shop near Mount Pleasant, SC. Collision repair, dent repair, and auto painting. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/mount-pleasant`} />
         <meta property="og:title" content={`Body Shop Mount Pleasant SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Trusted body shop near Mount Pleasant, SC. Collision repair, dent repair, and auto painting. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Trusted body shop near Mount Pleasant, SC. Collision repair, dent repair, and auto painting. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -142,7 +142,7 @@ const MountPleasant = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Mount Pleasant, SC</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge — and we answer the phone. 272 five-star reviews. Free estimates. Insurance handled.
+              Just had an accident? Other shops not calling back? We're just across the Ravenel Bridge — and we answer the phone. {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Insurance handled.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -171,7 +171,7 @@ const MountPleasant = () => {
             Our team handles <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> including paintless dent removal, and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with computerized color matching. Every repair stays in-house — we don't subcontract.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            With 95+ years of combined experience and 272 five-star Google reviews, we're the body shop Mount Pleasant residents trust when they need it done right.
+            With 95+ years of combined experience and {REVIEW_COUNT_DISPLAY} five-star Google reviews, we're the body shop Mount Pleasant residents trust when they need it done right.
           </p>
         </div>
       </section>
@@ -247,7 +247,7 @@ const MountPleasant = () => {
           </h2>
           <ul className="space-y-3">
             {[
-              "272 five-star Google reviews — the highest-rated body shop in the Charleston area",
+              `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the highest-rated body shop in the Charleston area`,
               "95+ years of combined collision repair experience on our team",
               "BMW-certified — we work on European brands, luxury SUVs, and trucks",
               "Estimators who do the work — your price is accurate because we know exactly what the job takes",
@@ -339,7 +339,7 @@ const MountPleasant = () => {
             Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>Mount Pleasant?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Just across the Ravenel Bridge. Free estimates. Insurance handled. 272 five-star reviews. We answer the phone.
+            Just across the Ravenel Bridge. Free estimates. Insurance handled. {REVIEW_COUNT_DISPLAY} five-star reviews. We answer the phone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("mount-pleasant")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>

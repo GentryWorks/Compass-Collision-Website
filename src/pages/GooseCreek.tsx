@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -114,11 +114,11 @@ const GooseCreek = () => {
         <title>Collision Repair Goose Creek | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. 272 five-star reviews. Free estimates. Call (843) 380-7055."
+          content={`Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/goose-creek`} />
         <meta property="og:title" content={`Collision Repair Goose Creek | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Collision repair near Goose Creek, SC. USAA accepted. We handle the insurance for you. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -135,7 +135,7 @@ const GooseCreek = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>Goose Creek</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Just got in an accident and can't get another shop to call you back? We pick up the phone, give you a free estimate fast, and handle every step with your insurance. 272 five-star reviews. About 20 minutes from Goose Creek.
+              Just got in an accident and can't get another shop to call you back? We pick up the phone, give you a free estimate fast, and handle every step with your insurance. {REVIEW_COUNT_DISPLAY} five-star reviews. About 20 minutes from Goose Creek.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("goose-creek")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -217,7 +217,7 @@ const GooseCreek = () => {
           </h2>
           <ul className="space-y-3">
             {[
-              "272 five-star Google reviews — the highest-rated body shop in the Charleston area",
+              `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the highest-rated body shop in the Charleston area`,
               "We answer the phone and return calls the same day — unlike most shops",
               "BMW-certified technicians who work on everything from F-150s to Audis",
               "USAA and all major insurance carriers accepted — we handle the claim for you",

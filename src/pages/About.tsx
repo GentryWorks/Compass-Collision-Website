@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Users, Shield, Star, Clock } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import teamImg from "@/assets/compass-collision-team-charleston.webp";
 import shopImg from "@/assets/compass-collision-shop-exterior-bays-charleston.webp";
 import { trackPhoneClick } from "@/utils/tracking";
@@ -26,7 +26,7 @@ const values = [
   {
     icon: <Star className="w-6 h-6" />,
     title: "Quality You Can See",
-    text: "272 five-star Google reviews. When you pick up your car, the damage is invisible. That is the standard we hold ourselves to on every single repair.",
+    text: `${REVIEW_COUNT_DISPLAY} five-star Google reviews. When you pick up your car, the damage is invisible. That is the standard we hold ourselves to on every single repair.`,
   },
 ];
 
@@ -194,7 +194,7 @@ const About = () => {
                 When your car comes back to you, it's clean. We vacuum the interior and wipe everything down before we hand you the keys. Most shops don't do that. We think it's the least we can do.
               </p>
               <p className="text-gray-500 text-base leading-relaxed">
-                272 five-star Google reviews. Charleston trusts us to get the job done right.
+                {REVIEW_COUNT_DISPLAY} five-star Google reviews. Charleston trusts us to get the job done right.
               </p>
             </motion.div>
           </div>
@@ -237,7 +237,7 @@ const About = () => {
               What Charleston Customers <span style={{ color: "#2D5F5D" }}>Say About Us</span>
             </h2>
             <p className="text-gray-500 text-base max-w-xl mx-auto">
-              272 Google reviews at 5.0 stars. Here are a few of our favorites.
+              {REVIEW_COUNT_DISPLAY} Google reviews at 5.0 stars. Here are a few of our favorites.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

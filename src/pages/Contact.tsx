@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, EMAIL, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, EMAIL, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const Contact = () => {
@@ -43,7 +43,7 @@ const Contact = () => {
               className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6"
               style={{ backgroundColor: "#2D5F5D" }}
             >
-              272 Five-Star Reviews
+              {REVIEW_COUNT_DISPLAY} Five-Star Reviews
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Contact Our <span style={{ color: "#5A9E9B" }}>Charleston Auto Body Shop</span>
@@ -310,7 +310,7 @@ const Contact = () => {
             Ready to Get Your <span style={{ color: "#1A2E2D" }}>Car Fixed?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            272 five-star reviews. Free estimates. Honest answers. We pick up the phone.
+            {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Honest answers. We pick up the phone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

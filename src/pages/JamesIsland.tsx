@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -114,11 +114,11 @@ const JamesIsland = () => {
         <title>Body Shop James Island | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. 272 five-star reviews. Free estimates. Call (843) 380-7055."
+          content={`Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/james-island`} />
         <meta property="og:title" content={`Body Shop James Island | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -232,7 +232,7 @@ const JamesIsland = () => {
           </h2>
           <ul className="space-y-3">
             {[
-              "272 five-star Google reviews — read them before you call",
+              `${REVIEW_COUNT_DISPLAY} five-star Google reviews — read them before you call`,
               "Just 10 to 15 minutes from James Island via the Crosstown",
               "We answer the phone — no voicemail, no 2-week wait for an estimate",
               "Estimators do the repairs — accurate pricing from day one",
@@ -325,7 +325,7 @@ const JamesIsland = () => {
             Need a Body Shop Near <span style={{ color: "#1A2E2D" }}>James Island?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            272 five-star reviews. Free estimates. We answer the phone. Just 10 to 15 minutes from James Island — and your car comes back looking like it never happened.
+            {REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. We answer the phone. Just 10 to 15 minutes from James Island — and your car comes back looking like it never happened.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("james-island")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>

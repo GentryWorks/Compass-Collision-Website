@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import heroImg from "@/assets/collision-repair-truck-bed-dent-during-charleston.webp";
 import { trackPhoneClick } from "@/utils/tracking";
 
@@ -109,12 +109,12 @@ const DentRepair = () => {
         <title>Dent Repair Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. 272 five-star reviews. Free estimates. Call (843) 380-7055."
+          content={`Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/dent-repair`} />
         <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <meta property="og:title" content={`Dent Repair Charleston SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -154,7 +154,7 @@ const DentRepair = () => {
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Door dings. Hail damage. Parking lot dents. We remove dents with paintless dent repair when possible and traditional methods when needed. Most jobs are done same day. 272 five-star reviews.
+              Door dings. Hail damage. Parking lot dents. We remove dents with paintless dent repair when possible and traditional methods when needed. Most jobs are done same day. {REVIEW_COUNT_DISPLAY} five-star reviews.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -343,7 +343,7 @@ const DentRepair = () => {
               {
                 step: "04",
                 title: "Quality Check and Pickup",
-                text: "We inspect the repair under multiple lighting conditions before we hand the car back. The result should be invisible. If it's not right, we fix it. That's the standard we hold ourselves to across all 272 five-star reviews.",
+                text: `We inspect the repair under multiple lighting conditions before we hand the car back. The result should be invisible. If it's not right, we fix it. That's the standard we hold ourselves to across all ${REVIEW_COUNT_DISPLAY} five-star reviews.`,
               },
             ].map((item, i) => (
               <motion.div
@@ -379,13 +379,13 @@ const DentRepair = () => {
             Why Charleston Drivers <span style={{ color: "#2D5F5D" }}>Trust Us</span>
           </h2>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We have 272 five-star Google reviews — and that number isn't an accident. Customers come to us after getting nowhere with dealership body shops booked out for months or chain shops that won't return a call. We answer the phone. We give free estimates, usually same day. And we do the work right.
+            We have {REVIEW_COUNT_DISPLAY} five-star Google reviews — and that number isn't an accident. Customers come to us after getting nowhere with dealership body shops booked out for months or chain shops that won't return a call. We answer the phone. We give free estimates, usually same day. And we do the work right.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our technicians have handled dent repair on every vehicle type that drives through Charleston — from daily drivers to BMWs, Audis, Lexus SUVs, and newer trucks. We know how each paint system behaves, and we won't rush a repair just to move the car out of the bay.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            You'll know the price before we touch the car. You'll know which method we're using and why. And when you pick up, the repair will be invisible — or we'll make it right. That's the standard we've held for every one of those 272 reviews.
+            You'll know the price before we touch the car. You'll know which method we're using and why. And when you pick up, the repair will be invisible — or we'll make it right. That's the standard we've held for every one of those {REVIEW_COUNT_DISPLAY} reviews.
           </p>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Wrench, Paintbrush, CircleDot, MapPin, ChevronDown, Star, Shield, Clock, Users } from "lucide-react";
-import { PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
+import { PHONE, PHONE_HREF, ADDRESS, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import heroImg from "@/assets/camaro-zl1-collision-repair-after-charleston.webp";
 import jeepBefore from "@/assets/jeep-grand-cherokee-collision-repair-before-charleston.webp";
@@ -40,7 +40,7 @@ const services = [
 ];
 
 const stats = [
-  { value: "272", label: "Five-star Google reviews" },
+  { value: REVIEW_COUNT_DISPLAY, label: "Five-star Google reviews" },
   { value: "95+", label: "Years combined experience" },
   { value: "5.0", label: "Perfect star rating" },
   { value: "Free", label: "Every estimate, every time" },
@@ -163,11 +163,11 @@ const Index = () => {
         <title>Auto Body Shop Charleston SC | Compass Collision</title>
         <meta
           name="description"
-          content="Charleston's trusted auto body shop. 272 five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055."
+          content={`Charleston's trusted auto body shop. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}`} />
         <meta property="og:title" content="Auto Body Shop Charleston SC | Compass Collision" />
-        <meta property="og:description" content="Charleston's trusted auto body shop. 272 five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055." />
+        <meta property="og:description" content={`Charleston's trusted auto body shop. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. We answer the phone and get your car in within days. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -203,7 +203,7 @@ const Index = () => {
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "5.0",
-              reviewCount: "272",
+              reviewCount: REVIEW_COUNT_DISPLAY,
               bestRating: "5",
             },
             areaServed: [
@@ -236,7 +236,7 @@ const Index = () => {
       <div style={{ backgroundColor: "#2D5F5D" }} className="text-white text-[13px] font-semibold py-2.5 px-4">
         <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-10 text-center">
           <span>We Answer the Phone</span>
-          <span>272 Five-Star Google Reviews</span>
+          <span>{REVIEW_COUNT_DISPLAY} Five-Star Google Reviews</span>
           <span>Free Estimates — Always</span>
         </div>
       </div>
@@ -266,7 +266,7 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Other shops won't call you back. We answer the phone, give free estimates, and get your car in within days — not months. 272 five-star reviews. BMW certified. All insurance accepted.
+              Other shops won't call you back. We answer the phone, give free estimates, and get your car in within days — not months. {REVIEW_COUNT_DISPLAY} five-star reviews. BMW certified. All insurance accepted.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -407,7 +407,7 @@ const Index = () => {
               Why Charleston Trusts <span style={{ color: "#5A9E9B" }}>Us</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Most body shops in Charleston are booked 6 to 10 weeks out. We get you in within days. Here's why 272 customers gave us five stars.
+              Most body shops in Charleston are booked 6 to 10 weeks out. We get you in within days. Here's why {REVIEW_COUNT_DISPLAY} customers gave us five stars.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -444,7 +444,7 @@ const Index = () => {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold mb-3" style={{ color: "#111" }}>
-              272 Five-Star Reviews. <span style={{ color: "#2D5F5D" }}>Here's Why.</span>
+              {REVIEW_COUNT_DISPLAY} Five-Star Reviews. <span style={{ color: "#2D5F5D" }}>Here's Why.</span>
             </h2>
             <p className="text-gray-600 text-lg">Real reviews from real customers in Charleston. Read them all on Google.</p>
           </div>
@@ -497,7 +497,7 @@ const Index = () => {
             You just got in an accident. Your car is damaged. You're calling body shops in Charleston and nobody answers. The one shop that picks up says they can't even look at your car for two months. Sound familiar? We hear this from nearly every customer who finds us. It's the number one reason people drive past closer shops to bring their car to our auto body shop in Charleston, SC.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We do things differently here. We answer the phone — a real person, not a voicemail. We give free estimates, usually the same day you call. And we get your car in within days, not months. Our team has 95+ years of combined experience in collision repair, dent repair, and auto painting. We've built 272 five-star reviews on Google because we treat your car like it's our own.
+            We do things differently here. We answer the phone — a real person, not a voicemail. We give free estimates, usually the same day you call. And we get your car in within days, not months. Our team has 95+ years of combined experience in collision repair, dent repair, and auto painting. We've built {REVIEW_COUNT_DISPLAY} five-star reviews on Google because we treat your car like it's our own.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             We work on everything from F-150s and Silverados to BMWs, Audis, and Porsches. We're BMW certified, which means we follow the manufacturer's exact repair procedures for BMW vehicles. That matters if you drive a 3 Series, an X5, or any other BMW — proper certification means your car is repaired to factory spec, not just cosmetically patched. Most shops in Charleston can't say that.
@@ -656,7 +656,7 @@ const Index = () => {
             Don't Wait Months for a Repair. <span style={{ color: "#1A2E2D" }}>Call Us Today.</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            Free estimates. We answer the phone. We get your car in within days. 272 five-star reviews from people who felt the same relief you're about to feel.
+            Free estimates. We answer the phone. We get your car in within days. {REVIEW_COUNT_DISPLAY} five-star reviews from people who felt the same relief you're about to feel.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

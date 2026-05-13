@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -110,11 +110,11 @@ const Summerville = () => {
         <title>Collision Repair Summerville SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Collision repair near Summerville, SC. 272 five-star reviews. Estimators who do the repairs. All insurance accepted. Free estimates. Call (843) 380-7055."
+          content={`Collision repair near Summerville, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Estimators who do the repairs. All insurance accepted. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/summerville`} />
         <meta property="og:title" content={`Collision Repair Summerville SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Collision repair near Summerville, SC. 272 five-star reviews. Estimators who do the repairs. All insurance accepted. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Collision repair near Summerville, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Estimators who do the repairs. All insurance accepted. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -157,7 +157,7 @@ const Summerville = () => {
             Getting into an accident is stressful enough. Then you call three shops and none of them answer. The one that does is booked for months. We hear this from Summerville drivers every week.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            Our shop is in West Ashley — about 25 minutes from Summerville via I-26. We have 272 five-star Google reviews and we've been fixing cars in the Charleston area for decades. We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching.
+            Our shop is in West Ashley — about 25 minutes from Summerville via I-26. We have {REVIEW_COUNT_DISPLAY} five-star Google reviews and we've been fixing cars in the Charleston area for decades. We offer <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repair</Link> (including paintless dent removal), and <Link to="/auto-painting" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>auto painting</Link> with factory color matching.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
             Here's something that matters: the people who write your estimate are the same people who do the repair. That means your price is honest from day one — no surprise charges after we've already taken your car apart.
@@ -233,7 +233,7 @@ const Summerville = () => {
             {[
               "Estimators who do the repairs — the price you get is the price you pay",
               "BMW-certified and experienced on all makes: trucks, SUVs, European and domestic vehicles",
-              "272 five-star Google reviews from drivers across the Charleston area",
+              `${REVIEW_COUNT_DISPLAY} five-star Google reviews from drivers across the Charleston area`,
               "We handle every insurance company — you don't spend hours on hold",
               "95+ years of combined collision repair experience on our team",
               "No subcontracting — your car stays in our shop from drop-off to pickup",
@@ -341,7 +341,7 @@ const Summerville = () => {
             Done Waiting on Shops That <span style={{ color: "#1A2E2D" }}>Don't Call Back?</span>
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-            We're 25 minutes from Summerville. Free estimates. 272 five-star reviews. We handle your insurance so you don't have to.
+            We're 25 minutes from Summerville. Free estimates. {REVIEW_COUNT_DISPLAY} five-star reviews. We handle your insurance so you don't have to.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} onClick={() => trackPhoneClick("summerville")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>

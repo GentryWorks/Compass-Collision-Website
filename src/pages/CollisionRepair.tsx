@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, Shield, Clock, Wrench, MapPin } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, ADDRESS, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import heroImg from "@/assets/jeep-grand-cherokee-collision-repair-after-charleston.webp";
 import { trackPhoneClick } from "@/utils/tracking";
 
@@ -143,12 +143,12 @@ const CollisionRepair = () => {
         <title>Collision Repair Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Collision repair in Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055."
+          content={`Collision repair in Charleston, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/collision-repair`} />
         <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <meta property="og:title" content={`Collision Repair Charleston SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Collision repair in Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055." />
+        <meta property="og:description" content={`Collision repair in Charleston, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free same-day estimates. We handle your insurance claim. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -179,7 +179,7 @@ const CollisionRepair = () => {
               className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6"
               style={{ backgroundColor: "#2D5F5D" }}
             >
-              272 Five-Star Reviews in Charleston
+              {REVIEW_COUNT_DISPLAY} Five-Star Reviews in Charleston
             </div>
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-white">
               Collision Repair
@@ -224,7 +224,7 @@ const CollisionRepair = () => {
             If you've been in an accident, you already know the frustration. You call four shops. You get three voicemails and one person who says the earliest estimate appointment is two months out. That's the reality for most collision repair customers in the Charleston area right now.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
-            We answer the phone. We offer free same-day estimates. And we have 272 five-star Google reviews from Charleston drivers who were in the exact same situation you're in.
+            We answer the phone. We offer free same-day estimates. And we have {REVIEW_COUNT_DISPLAY} five-star Google reviews from Charleston drivers who were in the exact same situation you're in.
           </p>
           <p className="text-gray-500 text-base leading-relaxed mb-4">
             Our team brings 95+ years of combined experience in the collision repair industry. That experience shows in how we write estimates, how we handle your insurance claim, and how your car looks when you pick it up.

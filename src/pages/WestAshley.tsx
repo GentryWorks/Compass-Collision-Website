@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -114,11 +114,11 @@ const WestAshley = () => {
         <title>Body Shop West Ashley | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. 272 five-star reviews. Free estimates. Call (843) 380-7055."
+          content={`Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/west-ashley`} />
         <meta property="og:title" content={`Body Shop West Ashley | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. 272 five-star reviews. Free estimates. Call (843) 380-7055." />
+        <meta property="og:description" content={`Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -135,7 +135,7 @@ const WestAshley = () => {
               <span className="block" style={{ color: "#5A9E9B" }}>West Ashley</span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. 272 five-star reviews. We answer the phone.
+              We're right here in West Ashley — less than 10 minutes from most of your neighborhood. Collision repair, dent repair, and auto painting. {REVIEW_COUNT_DISPLAY} five-star reviews. We answer the phone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={PHONE_HREF} onClick={() => trackPhoneClick("west-ashley")} className="inline-flex items-center justify-center gap-2 text-white font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:opacity-90 transition-opacity no-underline" style={{ backgroundColor: "#E8833A" }}>
@@ -201,7 +201,7 @@ const WestAshley = () => {
             Our shop is in the 29407 zip code. If you're in Avondale, Shadowmoss, the Bees Ferry corridor, or anywhere near Savannah Highway, you're minutes from our door. That proximity matters when your car is in the shop. You can drop it off before work and pick it up on your way home.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            We've been working on West Ashley vehicles since 2021. In that time, we've built 272 five-star Google reviews — mostly from neighbors who found us after other shops stopped returning their calls. We'd like to earn that same trust from you.
+            We've been working on West Ashley vehicles since 2021. In that time, we've built {REVIEW_COUNT_DISPLAY} five-star Google reviews — mostly from neighbors who found us after other shops stopped returning their calls. We'd like to earn that same trust from you.
           </p>
         </div>
       </section>
@@ -237,7 +237,7 @@ const WestAshley = () => {
               "BMW-certified with 95+ years of combined collision repair experience on our team",
               "All insurance companies accepted — we handle the entire claims process for you",
               "The people writing your estimate are the same people doing the repair",
-              "272 five-star Google reviews — the most of any independent shop in the area",
+              `${REVIEW_COUNT_DISPLAY} five-star Google reviews — the most of any independent shop in the area`,
               "All work done in-house — no subcontracting",
               "We work on everything from F-150s and Tahoes to BMWs, Audis, and Porsches",
             ].map((item, i) => (

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronDown, CheckCircle, MapPin, Wrench, Paintbrush, CircleDot } from "lucide-react";
-import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN } from "@/data/constants";
+import { BUSINESS_NAME, PHONE, PHONE_HREF, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import { trackPhoneClick } from "@/utils/tracking";
 
 const services = [
@@ -114,11 +114,11 @@ const NorthCharleston = () => {
         <title>Body Shop North Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content="Body shop serving North Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055."
+          content={`Body shop serving North Charleston, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/north-charleston`} />
         <meta property="og:title" content={`Body Shop North Charleston SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content="Body shop serving North Charleston, SC. 272 five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055." />
+        <meta property="og:description" content={`Body shop serving North Charleston, SC. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free same-day estimates. We handle your insurance. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://compasscollisionsc.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>
@@ -189,7 +189,7 @@ const NorthCharleston = () => {
             We also handle the insurance process for you. That means we call the adjuster, we review the estimate for accuracy, and we push back when the initial figure isn't right. You shouldn't have to fight your own insurance company after an accident — we do that part.
           </p>
           <p className="text-gray-500 text-base leading-relaxed">
-            Our shop is at 1949 Dulsey Road in Charleston, about 15 to 20 minutes from most North Charleston neighborhoods. We've got 272 five-star Google reviews and our team carries 95+ years of combined collision repair experience.
+            Our shop is at 1949 Dulsey Road in Charleston, about 15 to 20 minutes from most North Charleston neighborhoods. We've got {REVIEW_COUNT_DISPLAY} five-star Google reviews and our team carries 95+ years of combined collision repair experience.
           </p>
         </div>
       </section>
@@ -265,7 +265,7 @@ const NorthCharleston = () => {
           </p>
           <ul className="space-y-3">
             {[
-              "272 five-star Google reviews from customers across the Charleston area",
+              `${REVIEW_COUNT_DISPLAY} five-star Google reviews from customers across the Charleston area`,
               "95+ years of combined collision repair experience on our team",
               "Free same-day estimates — no appointment needed for a quote",
               "We handle the full insurance process: adjuster calls, paperwork, supplement filing",
