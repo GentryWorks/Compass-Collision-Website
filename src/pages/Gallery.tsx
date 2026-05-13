@@ -37,6 +37,7 @@ interface GalleryImage {
   src: string;
   alt: string;
   category: Category;
+  label?: string;
   caption?: string;
 }
 
@@ -163,6 +164,7 @@ const images: GalleryImage[] = [
     src: teamPhoto,
     alt: "Compass Collision team in Charleston SC",
     category: "Shop",
+    label: "Our Crew",
   },
   {
     src: waitingRoom,
@@ -292,7 +294,7 @@ const Gallery = () => {
                     className="text-[10px] font-bold uppercase tracking-widest block mb-1"
                     style={{ color: "#2D5F5D" }}
                   >
-                    {img.category}
+                    {img.label ?? img.category}
                   </span>
                   {img.caption && (
                     <p className="text-gray-600 text-xs leading-snug">{img.caption}</p>
