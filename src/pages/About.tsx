@@ -128,8 +128,11 @@ const About = () => {
                 Built on Doing Things Right
               </span>
             </h1>
+            <p className="text-white/80 text-lg md:text-xl font-medium mb-4">
+              Locally Owned and Operated
+            </p>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed">
-              Getting in an accident is stressful enough. You shouldn't have to fight to find a shop that gives you a straight answer and does the work right. That's exactly why we opened this shop.
+              There is nothing convenient about needing collision work on your vehicle. Let us help minimize the challenges of this experience and get you back to your life before the accident.
             </p>
           </motion.div>
         </div>
