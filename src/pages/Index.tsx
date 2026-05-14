@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Wrench, Paintbrush, CircleDot, MapPin, ChevronDown, Star, Shield, Clock, Users } from "lucide-react";
-import { PHONE, PHONE_HREF, ADDRESS, DOMAIN, REVIEW_COUNT_DISPLAY } from "@/data/constants";
+import { PHONE, PHONE_HREF, ADDRESS, DOMAIN, REVIEW_COUNT, REVIEW_COUNT_DISPLAY } from "@/data/constants";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import heroImg from "@/assets/camaro-zl1-collision-repair-after-charleston.webp";
 import jeepBefore from "@/assets/jeep-grand-cherokee-collision-repair-before-charleston.webp";
@@ -197,13 +197,13 @@ const Index = () => {
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: "32.7876",
-              longitude: "-79.9918",
+              latitude: 32.7876,
+              longitude: -79.9918,
             },
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "5.0",
-              reviewCount: REVIEW_COUNT_DISPLAY,
+              reviewCount: REVIEW_COUNT,
               bestRating: "5",
             },
             areaServed: [

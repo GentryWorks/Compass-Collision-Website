@@ -114,11 +114,11 @@ const WestAshley = () => {
         <title>Body Shop West Ashley | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content={`Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
+          content={`Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/west-ashley`} />
         <meta property="og:title" content={`Body Shop West Ashley | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content={`Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. Located right in your neighborhood. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
+        <meta property="og:description" content={`Body shop in West Ashley, Charleston. Collision repair, dent repair, and auto painting. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>

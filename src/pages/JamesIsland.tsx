@@ -114,11 +114,11 @@ const JamesIsland = () => {
         <title>Body Shop James Island | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content={`Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
+          content={`Trusted body shop near James Island. Collision repair, dent repair, and auto painting. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/james-island`} />
         <meta property="og:title" content={`Body Shop James Island | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content={`Trusted body shop near James Island. Collision repair, dent repair, and auto painting. 10-15 minutes away. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
+        <meta property="og:description" content={`Trusted body shop near James Island. Collision repair, dent repair, and auto painting. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>

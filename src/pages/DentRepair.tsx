@@ -109,12 +109,12 @@ const DentRepair = () => {
         <title>Dent Repair Charleston SC | {BUSINESS_NAME}</title>
         <meta
           name="description"
-          content={`Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
+          content={`Dent repair in Charleston, SC. PDR and traditional repair for door dings and hail damage. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`}
         />
         <link rel="canonical" href={`${DOMAIN}/dent-repair`} />
         <link rel="preload" as="image" href={heroImg} type="image/webp" />
         <meta property="og:title" content={`Dent Repair Charleston SC | ${BUSINESS_NAME}`} />
-        <meta property="og:description" content={`Dent repair in Charleston, SC. PDR and traditional dent repair for door dings, hail damage, and more. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
+        <meta property="og:description" content={`Dent repair in Charleston, SC. PDR and traditional repair for door dings and hail damage. ${REVIEW_COUNT_DISPLAY} five-star reviews. Free estimates. Call (843) 380-7055.`} />
         <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaService)}</script>
         <script type="application/ld+json">{JSON.stringify(schemaFaq)}</script>

@@ -21,11 +21,11 @@ const Contact = () => {
         <title>Contact Compass Collision | Charleston SC Auto Body Shop</title>
         <meta
           name="description"
-          content="Contact our Charleston SC auto body shop for a free collision repair estimate. We do our best to answer every call — same-day callbacks. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202."
+          content="Contact our Charleston SC auto body shop for a free estimate. We do our best to answer every call — same-day callbacks. Call (843) 380-7055."
         />
         <link rel="canonical" href={`${DOMAIN}/contact`} />
         <meta property="og:title" content="Contact Compass Collision | Charleston SC Auto Body Shop" />
-        <meta property="og:description" content="Contact our Charleston SC auto body shop for a free collision repair estimate. We do our best to answer every call — same-day callbacks. Call (843) 380-7055 or visit 1949 Dulsey Road, Unit 202." />
+        <meta property="og:description" content="Contact our Charleston SC auto body shop for a free estimate. We do our best to answer every call — same-day callbacks. Call (843) 380-7055." />
         <meta property="og:image" content="https://www.compasscollisioncharleston.com/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(schemaBreadcrumb)}</script>
       </Helmet>
