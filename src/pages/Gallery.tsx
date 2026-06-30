@@ -253,8 +253,7 @@ const Gallery = () => {
             Use the filters above to browse by repair type. The <strong>Collision Repair</strong> tab shows before,
             during, and after photos — so you can see exactly what the process looks like from start to finish.{" "}
             <strong>Auto Painting</strong> includes color-match work and custom paint jobs. The{" "}
-            <strong>Shop</strong> tab shows our facility, our team, and the certifications we've earned. Where you see
-            a caption, it describes the vehicle, the damage, and what we did to fix it.
+            <strong>Shop</strong> tab shows our facility, our team, and the certifications we've earned.
           </p>
         </div>
       </section>
@@ -280,17 +279,6 @@ const Gallery = () => {
                   width={760}
                   height={507}
                 />
-                <div className="px-4 py-3">
-                  <span
-                    className="text-[10px] font-bold uppercase tracking-widest block mb-1"
-                    style={{ color: "#2D5F5D" }}
-                  >
-                    {img.label ?? img.category}
-                  </span>
-                  {img.caption && (
-                    <p className="text-gray-600 text-xs leading-snug">{img.caption}</p>
-                  )}
-                </div>
               </motion.div>
             ))}
           </div>
