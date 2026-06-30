@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "How long does collision repair take?",
-    a: "It depends on the extent of the damage and parts availability. Minor collision repairs often take three to five days. More extensive structural work can take one to two weeks. We give you a realistic timeline upfront and keep you updated throughout — your car won't go into a black hole.",
+    a: "It depends on the extent of the damage and parts availability. Minor collision repairs often take three to five days. More extensive repairs can take one to two weeks. We give you a realistic timeline upfront and keep you updated throughout — your car won't go into a black hole.",
   },
   {
     q: "What vehicles do you work on?",

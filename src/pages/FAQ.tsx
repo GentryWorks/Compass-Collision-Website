@@ -13,19 +13,19 @@ const faqs: { q: string; a: string; jsx?: React.ReactNode }[] = [
   },
   {
     q: "How long does a typical repair take?",
-    a: "It depends on the damage. Minor dent repairs can be done in a few hours. Most collision repairs take 3 to 10 business days. Jobs with structural damage or special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.",
+    a: "It depends on the damage. Minor dent repairs can be done in a few hours. Most collision repairs take 3 to 10 business days. Jobs with special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.",
     jsx: (
       <>
-        It depends on the damage. Minor <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repairs</Link> can be done in a few hours. Most <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repairs</Link> take 3 to 10 business days. Jobs with structural damage or special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.
+        It depends on the damage. Minor <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>dent repairs</Link> can be done in a few hours. Most <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repairs</Link> take 3 to 10 business days. Jobs with special-order parts can take 2 weeks or more. We give you an honest timeline before we start and keep you updated throughout — your car won't go into a black hole.
       </>
     ),
   },
   {
     q: "How much does collision repair cost?",
-    a: "Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of structural damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the repair.",
+    a: "Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of the damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the repair.",
     jsx: (
       <>
-        Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of structural damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>.
+        Every repair is different, so we don't quote numbers until we've seen the car. What we can tell you: every estimate is free, the price you're quoted is the price you pay, and there are no surprise charges. If you're going through insurance, your out-of-pocket cost is typically just your deductible. Factors that affect the total include the extent of the damage, whether the airbags deployed, what parts need to be ordered, and whether the vehicle has driver-assist sensors that need recalibration after the <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>.
       </>
     ),
   },
@@ -89,10 +89,10 @@ const faqs: { q: string; a: string; jsx?: React.ReactNode }[] = [
   },
   {
     q: "How do I know if I need collision repair or just dent repair?",
-    a: "It comes down to the paint and the structure. If the paint is cracked or the metal is torn, you need collision repair. If there's structural damage underneath — bent frame rails, crumpled supports — that's also collision territory. If the paint is still intact and the dent is shallow, paintless dent repair may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.",
+    a: "It comes down to the paint and the surface. If the paint is cracked or the metal is torn, you need collision repair. If the paint is still intact and the dent is shallow, paintless dent repair may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.",
     jsx: (
       <>
-        It comes down to the paint and the structure. If the paint is cracked or the metal is torn, you need <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>. If there's structural damage underneath — bent frame rails, crumpled supports — that's also collision territory. If the paint is still intact and the dent is shallow, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>paintless dent repair</Link> may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.
+        It comes down to the paint and the surface. If the paint is cracked or the metal is torn, you need <Link to="/collision-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>collision repair</Link>. If the paint is still intact and the dent is shallow, <Link to="/dent-repair" className="font-semibold no-underline hover:opacity-80" style={{ color: "#2D5F5D" }}>paintless dent repair</Link> may be all you need. Bring the car in and we'll tell you exactly which service fits. There's no charge to take a look.
       </>
     ),
   },

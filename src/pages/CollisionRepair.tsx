@@ -12,7 +12,6 @@ const damageTypes = [
   "Rear-end collisions",
   "Side-impact damage",
   "Front-end collisions",
-  "Frame damage and structural repair",
   "Bumper damage and replacement",
   "Quarter panel damage",
   "Door damage and replacement",
@@ -39,7 +38,7 @@ const processSteps = [
   {
     step: "04",
     title: "Repair and Restore",
-    text: "We fix the structural damage first, then restore every panel and paint it to factory color. Everything is done in-house — no farming out to subcontractors.",
+    text: "We restore every panel and paint it to factory color. Everything is done in-house — no farming out to subcontractors.",
   },
   {
     step: "05",
@@ -51,7 +50,7 @@ const processSteps = [
 const faqs = [
   {
     q: "How long does collision repair take?",
-    a: "Most collision repairs take 3 to 10 business days depending on the severity. Minor fender benders are often done in 3 to 5 days. Major structural repairs can take 2 weeks or more. We give you a realistic timeline before we start and keep you updated the whole way through.",
+    a: "Most collision repairs take 3 to 10 business days depending on the severity. Minor fender benders are often done in 3 to 5 days. Larger repairs or jobs requiring special-order parts can take 2 weeks or more. We give you a realistic timeline before we start and keep you updated the whole way through.",
   },
   {
     q: "Do you work with all insurance companies?",
@@ -188,7 +187,7 @@ const CollisionRepair = () => {
               </span>
             </h1>
             <p className="text-gray-300 text-base md:text-lg max-w-lg leading-relaxed mb-10">
-              Your car got hit. Now you need it fixed right. We handle everything from minor fender benders to major structural damage — and we deal with your insurance company so you don't have to.
+              Your car got hit. Now you need it fixed right. We handle everything from minor fender benders to major collision damage — and we deal with your insurance company so you don't have to.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
